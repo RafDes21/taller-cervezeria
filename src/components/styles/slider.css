@@ -16,8 +16,8 @@
   left: 0;
   z-index: 1;
   background-image: linear-gradient(
-    rgba(0, 0, 0, 0.285) 50%,
-    rgba(0, 0, 0, 0.648) 80%
+    rgba(0, 0, 0, 0.385) 50%,
+    rgba(0, 0, 0, 0.939) 80%
   );
 }
 
