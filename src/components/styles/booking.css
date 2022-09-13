@@ -28,7 +28,7 @@
     align-items: center;
     padding: 30px;
 }
-@media (max-width: 416px){
+@media (max-width: 443px){
   
     .booking-message{
         font-family: "Jost", sans-serif;
@@ -51,7 +51,7 @@
 @media (min-width: 768px){
     .contain-2{
         display: flex;
-        justify-content:space-around;
+        justify-content:space-between;
         align-items: center;
         padding: 30px;
     }

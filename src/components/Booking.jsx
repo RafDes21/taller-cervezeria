@@ -4,6 +4,7 @@ import "./styles/booking.css"
 const Booking = () => {
   return (
     <div className='container-fluid bg-black'>
+    <div className='container'>
       <div className='row'>
         <div className='col-0 col-md-4 col-lg-6'>
         </div>
@@ -12,6 +13,8 @@ const Booking = () => {
             <a className='booking' href='#'>Realizar Reserva</a>
         </div>
       </div>
+    </div>
+      
     </div>
   )
 }

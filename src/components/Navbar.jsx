@@ -20,7 +20,7 @@ const Navbar = () => {
         <span className='text-white fs-1'><GiHamburgerMenu/></span>
       </button>
       
-      <div className='secondary-navBar container-fluid'>
+      <div className='secondary-navBar container'>
       <div className='row'>
       <div className='col-md-3'>
         <ul className="navbar-nav d-flex justify-content-evenly">
