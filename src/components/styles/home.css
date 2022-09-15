@@ -57,7 +57,7 @@ justify-content: flex-end;
 /*Experiencia*/
 
 .Experiencia{
-  min-height: 25em;
+  min-height: 15rem;
   background-color: orange;
   position: relative;
   overflow: hidden;
@@ -70,20 +70,18 @@ justify-content: flex-end;
 
 .Experiencia-line{
   position:absolute;
-  height: 25em;
-  left: -65%;
+  height: 15em;
+  left: -55%;
 }
 .Experiencia-wrapper{
     position:absolute;
 }
 .Experiencia-logo{
-  max-width: 15em;
-  
+  min-width: 35%;
   margin: 0 1.5em 
 }
 .Experiencia-text{
- 
-  font-size: 1.5em;
+   font-size: 18px;
   font-family: "Jost";
   color:white;
   margin: 0 1em;
@@ -103,6 +101,12 @@ justify-content: flex-end;
 }
 
 @media (min-width: 768px){
+
+  .Experiencia{
+    min-height: 25em;
+    max-width: 1400px;
+    margin:auto;
+  }
   .Experiencia-img-desk{
     display:block;
     max-width: 20em;
@@ -116,6 +120,12 @@ justify-content: flex-end;
 
 }
 
+@media (min-width: 1200px){
+  .Experiencia{
+    min-height: 35em;
+  }
+}
+
 /*Lugar*/
 
 .Lugar{
@@ -123,6 +133,8 @@ justify-content: flex-end;
   background-color: burlywood;
   overflow: hidden;
   position: relative;
+  max-width: 1400px;
+  margin:auto;
 }
 
 .Lugar-line{
@@ -155,18 +167,19 @@ justify-content: flex-end;
 }
 
 .lugar1{
-  background-image: url("/img/lugar/lugar1.png");
+  background-image: url("/img/lugar/lugar1b.png");
   background-position:top;
   grid-column-start: 1;
   grid-column-end: -1;
   min-width: 100%;
 }
 .lugar2{
-  background-image: url("/img/lugar/lugar2.png");
+  background-image: url("/img/lugar/lugar2b.jpeg");
   min-height: 25em;
 }
 .lugar3{
-  background-image: url("/img/lugar/lugar3.png");
+  background-image: url("/img/lugar/lugar3b.jpeg");
+  background-position:bottom;
 }
 .lugar4{
 display:none;
@@ -217,12 +230,14 @@ background-image: url("/img/lugar/lugar4.png");
 /*Menu*/
 
 .Menu{
-  min-height: 60em;
+  min-height: 45em;
   background-color: brown;
   overflow: hidden;
   position: relative;
   color: white;
   font-family: "Jost";
+  max-width: 1400px;
+  margin:auto;
   }
 
 .Menu-line{
@@ -241,11 +256,10 @@ background-image: url("/img/lugar/lugar4.png");
 .Menu-content{
   display: flex;
   flex-direction: column;
-  justify-content: center;
+  justify-content: space-around;
 }
 
 .Menu-card{
-  min-height:10em;
   display:flex;
   align-items: center;
   justify-content: center;
@@ -261,26 +275,41 @@ font-weight: 600;
 }
 
 .Menu-card-img{
-  max-width: 20em;
+  max-width: 60%;
 }
 
+.Menu-card-img1{
+  max-width: 50%;
+}
 .menu3{
   display:none;
 }
 
+@media (min-width: 490px){
+  .Menu{
+    min-height: 55em;
+  }
+}
+@media (min-width: 600px){
+  .Menu{
+    min-height: 65em;
+  }
+}
+
+
 @media (min-width: 768px){
 
   .Menu{
-    min-height: 40em;
+    min-height: 42em;
   }
   .Menu-card-img{
-    max-width: 15em;
+    max-width: 90%;
   }
   .Menu-content{
     max-width: 100%;
     flex-direction: row;
     align-items: center;
-    justify-content: space-around;
+    justify-content: center;
   }
 
   .Menu-card{
@@ -298,7 +327,16 @@ font-weight: 600;
     flex-direction: column-reverse;
   }
 
+  .Menu-line{
+    left: 0;
+    top:4em;
+  }
+}
 
+@media (min-width: 1100px){
+  .Menu{
+    min-height: 50em;
+  }
 }
 
 
@@ -311,6 +349,8 @@ font-weight: 600;
   position: relative;
   color: white;
   font-family: "Jost";
+  margin:auto;
+  max-width:1400px;
 }
 
 .Eventos-line{
@@ -343,25 +383,35 @@ font-weight: 600;
   }
   
   .Eventos-card-img1{
-    max-width: 22em;
+    max-width: 60%;
   }
 
   .Eventos-card-img2{
-    max-width: 16em;
+    max-width: 45%;
   }
 
   @media (min-width: 768px){
 
     .Eventos-content{
       display:flex;
-      justify-content: center;
+      justify-content: space-between;
     }
     .Eventos-card{
       flex-direction: column;
     }
     .Eventos-card:first-child{
       flex-direction: column-reverse;
-      top: 30px;
-    }
+      }
 
+      .Eventos-card-img1{
+        max-width: 60%;
+      }
+    
+      .Eventos-card-img2{
+        max-width: 30%;
+      }
+
+      .Eventos-line{
+        left:0;
+      }
   }

@@ -20,7 +20,7 @@ const Menu = () => {
               <h4>Tacos veloces</h4>
               <p>Sabrosa carne vacuna, palta y cebolla</p>
             </div>
-            <img src="./img/menu/menu1.png" alt="imagen menu"className='Menu-card-img' />
+            <img src="./img/menu/menu1.png" alt="imagen menu"className='Menu-card-img Menu-card-img1' />
           </div>
           <div className='Menu-card menu2'>
             <img src="./img/menu/menu2.png" alt="imagen menu"className='Menu-card-img' />
