@@ -9,7 +9,7 @@ import Slider from "../components/home/Slider";
 const Home = () => {
   return (
     <>
-      <Slider />
+      <Slider/>
       <Booking />
       <Experience />
       <Lugar />

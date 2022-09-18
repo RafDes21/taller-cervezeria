@@ -1,7 +1,7 @@
 import React, { useEffect, useState } from "react";
 import "./stylesHome/slider.css";
-import { imagenes } from "./Slider"; //array de imágenes
-import { menus } from "./menu"; //array de imágenes
+import imagenes from "./SliderImg"; //array de imágenes
+import menus from "./menus"; //array de imágenes
 
 const Slider = () => {
   const [item, setItem] = useState(0); //acá enviaremos la posición de la imagen
