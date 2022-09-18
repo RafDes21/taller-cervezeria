@@ -1,0 +1,40 @@
+@import url("https://fonts.googleapis.com/css2?family=Jost:wght@400&display=swap");
+
+.footer {
+  font-family: "Jost", sans-serif;
+  height: 20%;
+  color: #ffffff;
+  /* background-color: #010101; */
+}
+.footerDerechos p {
+  margin: auto 0;
+}
+
+.footerLogo {
+  position: relative;
+}
+.footerLogo img {
+  position: absolute;
+  width: 100%;
+  top: -120%;
+  left: 50%;
+  transform: translateX(-50%);
+}
+
+.footerLogo h6 {
+  position: absolute;
+  bottom: 0;
+  left: 0;
+  width: 100%;
+  text-align: center;
+  color: #fad02c;
+}
+
+.footerRedes {
+  justify-content: space-around;
+  align-items: center;
+}
+.footerRedes a {
+  color: #ffffff;
+  font-size: 40px;
+}

@@ -1,0 +1,67 @@
+@import url("https://fonts.googleapis.com/css2?family=Jost:wght@400&display=swap");
+
+.bg-black{
+    margin-top: 50px;
+}
+.booking-message{
+    font-family: "Jost", sans-serif;
+    color: #ffffff;
+    /* word-spacing: 0.10em; */
+    font-size: 18px;
+}
+.booking{
+    border: 1px solid #FAD02C;
+    color: #FAD02C;
+    text-decoration: none;
+    padding: 5px 40px;
+    border-radius: 5px;
+    font-family: "Jost", sans-serif;
+    /* word-spacing: 0.20em; */
+    font-size: 18px;
+    
+}
+.booking:hover{
+    background-color: #FAD02C;
+    color: black;
+    box-shadow: 0 0 20px #FAD02C, 0 0 4px #FAD02C, 0 0 20px #FAD02C;
+}
+.contain-2{
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    padding: 30px;
+}
+@media (max-width: 443px){
+  
+    .booking-message{
+        font-family: "Jost", sans-serif;
+        color: #ffffff;
+        word-spacing: 0.10em;
+        font-size: 16px;
+    }
+    .booking{
+        border: 1px solid #FAD02C;
+        color: #FAD02C;
+        text-decoration: none;
+        padding: 5px 10px;
+        border-radius: 5px;
+        font-family: "Jost", sans-serif;
+        /* word-spacing: 0.20em; */
+        font-size: 16px;
+        
+    }
+}
+@media (min-width: 768px){
+    .contain-2{
+        display: flex;
+        justify-content:space-between;
+        align-items: center;
+        padding: 30px;
+    }
+    .booking-message{
+        font-family: "Jost", sans-serif;
+        color: #ffffff;
+        word-spacing: 0.10em;
+        font-size: 20px;
+    }
+}

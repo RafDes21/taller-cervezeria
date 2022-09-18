@@ -1,82 +1,63 @@
 import React, { useState } from 'react'
-import "./styles/navBar.css"
+import "./navBar.css"
 import {GiHamburgerMenu} from "react-icons/gi"
+import { NavLink } from 'react-router-dom';
 
 const Navbar = () => {
 
-  const [alto, setAlto] = useState(false);
+  const [mobile, setMobile] = useState(false);
  
-  function activarMenu() {//Esta función activa y desactiva el nav responsive
-    setAlto(!alto)
-    document.querySelector('.deploy-nav').classList.toggle('show')
-    }
+  // function activarMenu() {//Esta función activa y desactiva el nav responsive
+  //   setAlto(!alto)
+  //   document.querySelector('.deploy-nav').classList.toggle('show')
+  //   }
   
   return (
-    <div style={{backgroundColor:"black"}}>
-    <nav className="navbar navbar-expand-lg navbar-light bg-color">
-    <div className="container-fluid" >
-      <a className="navbar-brand text-white" href="#"><span className='title'>EL TALLER</span><span className='fs-6'>CERVEZERIA</span></a>
-      <button className="navbar-toggler" onClick={activarMenu} >
-        <span className='text-white fs-1'><GiHamburgerMenu/></span>
-      </button>
-      
-      <div className='secondary-navBar container'>
-      <div className='row'>
-      <div className='col-md-3'>
-        <ul className="navbar-nav d-flex justify-content-evenly">
-        <li className="nav-item">
-            <a className="nav-link text-white" href="#">EL LUGAR</a>
-          </li>
-          <li className="nav-item ">
-            <a className="nav-link text-white" href="#">EL MENU</a>
-          </li>
-        </ul>
-      </div>
-      <div className='col-md-4 position-relative'>
-        <img className='logo' src='./logos/logo.png'></img>
-      </div>
-      <div className='col-md-5'>
-      <ul className="navbar-nav d-flex justify-content-evenly">
-      <li className="nav-item">
-            <a className="nav-link text-white"  href="#">EVENTOS</a>
-          </li>
-          <li className="nav-item">
-            <a className="nav-link text-white"  href="#">RESERVAS</a>
-          </li>
-          <li className="nav-item">
-            <a className="nav-link text-white" href="#">NOSOTROS</a>
-          </li>
-        </ul>
-      </div>
-      </div>
-       </div>
-    </div>
-  </nav>
-  <div className='nuevo' style={{marginBottom:alto? "320px" : "0px", transition:"0.5s", backgroundColor:"blue"}}></div>
- <div className="deploy-nav" >
-        <ul className="navbar-nav" >
-          <li className="nav-item">
-            <a className="nav-link text-white title" onClick={activarMenu}  href="#"><span>EL LUGAR</span></a>
-          </li>
-          <li className="nav-item ">
-            <a className="nav-link text-white title" onClick={activarMenu} href="#"><span>EL MENU</span></a>
-          </li>
-          <li className="nav-item">
-            <a className="nav-link text-white title" onClick={activarMenu}  href="#"><span>EVENTOS</span></a>
-          </li>
-          <li className="nav-item">
-            <a className="nav-link text-white title" onClick={activarMenu}  href="#"><span>RESERVAS</span></a>
-          </li>
-          <li className="nav-item">
-            <a className="nav-link text-white title" onClick={activarMenu}  href="#"><span>NOSOTROS</span></a>
-          </li>
-        </ul>
-      </div>
+    <div id='navBar' className='container-fluid ' >
+    <div  className='container'>
+       <div className='row'>
+           
+           <div className='col-md-4'>
+           <a className="nav-link text-white" href="#"><span className='taller'>EL TALLER</span><span className='cervezeria'> CERVEZERIA</span></a>
+           </div>
+
+          <div className='col-md-8'>
+               <nav >
+                  <ul className={mobile?'show' : 'deploy-nav'}
+                   onClick={()=>setMobile(false)}> 
+                    <li >
+                       <NavLink className='nav-link' to="">HOME</NavLink>
+                    </li>
+                    <li >
+                       <NavLink className='nav-link' to="lugar">EL LUGAR</NavLink>
+                    </li>
+                    <li>
+                      <NavLink className='nav-link' to='menu'>EL MENÚ</NavLink>
+                    </li>
+                    <li>
+                      <NavLink className='nav-link' to='eventos'>EVENTOS</NavLink>
+                    </li>
+                    <li>
+                      <NavLink className='nav-link' to='reservas'>RESERVAS</NavLink>
+                    </li>
+                    <li>
+                      <NavLink className='nav-link' to='nosotros'>NOSOTROS</NavLink>
+                    </li>
+                  </ul>
+                </nav>
+          </div>
+          
+          </div>
+              <div onClick={()=>setMobile(!mobile)} className='menu'>
+                  <GiHamburgerMenu/>
+          </div> 
+          </div>                 
   </div>
-  )
-}
+ 
+ )}
 
 export default Navbar
+
        
 
        
