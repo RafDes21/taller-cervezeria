@@ -5,7 +5,7 @@ import menus from "./menus"; //array de imágenes
 
 const Slider = () => {
   const [item, setItem] = useState(0); //acá enviaremos la posición de la imagen
-  //const [aparece, setAparece] = useState(); //controlamos el estado de la opacidad y transición
+  const [aparece, setAparece] = useState(); //controlamos el estado de la opacidad y transición
   const [logo, setLogo] = useState();
   const [vector, setVector] = useState();
   const [menu, setMenu] = useState();
@@ -13,12 +13,12 @@ const Slider = () => {
 
   const opacity = () => {
     if (item < imagenes.length - 1) {
-      //setAparece({ opacity: "1" });
+      setAparece({ opacity: "0" });
       animaciones();
       setItem(item + 1);
     } else {
       setItem(0);
-      //setAparece({ opacity: "1" });
+      setAparece({ opacity: "0" });
       setLogo({
         right: "0",
         top: "-7%",
@@ -87,20 +87,20 @@ const Slider = () => {
     }
   };
 
-  // useEffect(() => {
+   useEffect(() => {
+     setAparece({ opacity: "1", transition: "all 1s" });
     
-  // }, [item]);
+   }, [item]);
   
-  setInterval(() => {
-    // setAparece({ opacity: "1", transition: "all 1s" });
-    opacity();
-  }, 5000);
+  // setInterval(() => {
+  //   opacity();
+  // }, 5000);
   return (
     <div className="container">
       <div className="slider" onClick={opacity}>
         <img
           className="slider-img"
-          // style={aparece}
+          style={aparece}
           src={imagenes[item]}
           alt="imagenesDeFondo"
         />

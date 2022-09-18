@@ -22,6 +22,7 @@
 .slider .slider-img {
   width: 100%;
   height: 100%;
+  transition: all 2s;
 }
 .slider .slider-logo {
   width: 30%;
