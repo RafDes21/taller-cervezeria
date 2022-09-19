@@ -14,8 +14,8 @@ const Slider = () => {
   const opacity = () => {
     if (item < imagenes.length - 1) {
       setAparece({ opacity: "0" });
-      animaciones();
       setItem(item + 1);
+      animaciones();
     } else {
       setItem(0);
       setAparece({ opacity: "0" });
@@ -39,13 +39,6 @@ const Slider = () => {
     if (item === 0) {
       setLogo({
         left: "3%",
-        top: "25%",
-        width: "30%",
-        transitionDuration: "2s",
-      });
-      setVector({
-        transform: " translateX(-10%)",
-        transitionDuration: "2s",
         top: "-10%",
       });
       setMenu({
@@ -87,17 +80,15 @@ const Slider = () => {
     }
   };
 
-   useEffect(() => {
-     setAparece({ opacity: "1", transition: "all 1s" });
-    
-   }, [item]);
+  useEffect(() => {
+    const imagenesCambio = setInterval(opacity, 5000);
+    setAparece({ opacity: "1", transition: "all 2s" });
+    return ()=>{clearInterval(imagenesCambio)}
+  }, [item]);
   
-  // setInterval(() => {
-  //   opacity();
-  // }, 5000);
   return (
     <div className="container">
-      <div className="slider" onClick={opacity}>
+      <div className="slider">
         <img
           className="slider-img"
           style={aparece}
