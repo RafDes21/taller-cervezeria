@@ -5,16 +5,24 @@ import Experience from "../components/home/Experience";
 import Lugar from "../components/home/Lugar";
 import Menu from "../components/home/Menu";
 import Slider from "../components/home/Slider";
+import "./rutaHome.css";
 
 const Home = () => {
   return (
     <>
-      <Slider/>
+      <Slider />
       <Booking />
-      <Experience />
-      <Lugar />
-      <Menu />
-      <Eventos />
+      <div className="main container">
+        <img src="./imgMain/imgTop.png" />
+        <div className="main-division"></div>
+        <img src="./imgMain/imgbottom.png" />
+        <div className="main-secciones">
+          <Experience />
+          <Lugar />
+          <Menu />
+          <Eventos />
+        </div>
+      </div>
     </>
   );
 };
