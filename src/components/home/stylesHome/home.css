@@ -63,11 +63,12 @@
   z-index: 1;
   left: -2%;
   top: -20%;
-  animation-name: deploy;
+  animation-name: expe;
   animation-duration: 2s;
   animation-iteration-count: infinite;
+  
 }
-@keyframes deploy {
+@keyframes expe {
   0% {
     filter: drop-shadow(0 2px 2px rgb(79, 14, 14));
   }

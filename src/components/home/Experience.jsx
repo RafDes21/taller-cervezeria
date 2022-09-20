@@ -50,7 +50,7 @@ const Experience = () => {
       </motion.h2>
       <motion.img
         variants={imageAnimate}
-        src="./img/pathComplete.svg"
+        src="./imgSlider/vector.png"
         alt="img-experiencia"
         className="experiencia-linea"
       />
