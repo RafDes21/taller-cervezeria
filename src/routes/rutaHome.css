@@ -1,18 +1,24 @@
-.main{
- position: relative;
- border: 1px solid green ;
- height: 300px;
+.main {
+  position: relative;
+  height: 100%;
+  padding-bottom: 60px;
 }
-.main-secciones{
-    position: absolute;
-    left: 0;
-    top: 0;
-    width: 100%;
+.main-secciones {
+  width: 100%;
 }
-.main img{
-    width: 100%;
-   
+.main .fondo {
+  position: absolute;
+  height: 50%;
+  width: 100%;
+  z-index: -1;
+  left: 0;
 }
-.main-division{
-    height: 100px;
+.main img {
+  width: 100%;
+  height: 100%;
+}
+.main-division {
+  height: 50px;
+  background-color: #010101;
+  filter: drop-shadow(10px 8px 13px #010101);
 }

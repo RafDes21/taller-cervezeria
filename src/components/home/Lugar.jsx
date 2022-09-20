@@ -27,7 +27,7 @@ const Lugar = () => {
       initial={"offscreen"}
       whileInView={"onscreen"}
       viewport={{ once: false, amount: 0.5 }}
-      className="container-fluid lugar"
+      className="container-fluid px-0 lugar"
     >
       <motion.div variants={textLugarAnimate} className="lugar-titulo">
         <div>
@@ -68,11 +68,11 @@ const Lugar = () => {
           />
         </div>
       </motion.div>
-      <div className="Section-btn">
+      <motion.div variants={imageLugarAnimate} className="Section-btn container-fluid">
         <Link to="/lugar">
-          <motion.button variants={imageLugarAnimate} className="Section-button">Ver Ubicación</motion.button>
+          <button className="Section-button">Ver Ubicación</button>
         </Link>
-      </div>
+      </motion.div>
     </motion.div>
   );
 };

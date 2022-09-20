@@ -12,9 +12,9 @@ import Navbar from "./components/Navbar";
 function App() {
   return (
     <Router>
-    <Navbar/>
+      <Navbar />
       <Routes>
-        <Route exact path="/" element={<Home/>} />
+        <Route exact path="/" element={<Home />} />
         <Route exact path="/lugar" element={<LugarMas />} />
         <Route exact path="/menu" element={<MenuMas />} />
         <Route exact path="/eventos" element={<EventosMas />} />

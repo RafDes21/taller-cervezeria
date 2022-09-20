@@ -1,42 +1,96 @@
-import React from 'react'
-import { Link } from 'react-router-dom'
-import "./stylesHome/home.css"
+import React from "react";
+import { Link } from "react-router-dom";
+import { motion } from "framer-motion/dist/framer-motion";
+import "./stylesHome/home.css";
+
+const textEventosAnimate = {
+  offscreen: { y: 150, opacity: 0 },
+  onscreen: {
+    y: 0,
+    opacity: 1,
+    transition: { duration: 0.5 },
+  },
+};
+const imagevectorAnimate = {
+  offscreen: { y: 400, opacity: 0 },
+  onscreen: {
+    y: 0,
+    opacity: 1,
+    transition: { duration: 1.5 },
+  },
+};
+const imageEventosAnimate = {
+  offscreen: { y: 150, opacity: 0 },
+  onscreen: {
+    y: 0,
+    opacity: 1,
+    transition: { duration: 1 },
+  },
+};
 
 const Eventos = () => {
   return (
-    <div className='Eventos'>
-            <div className='line-wrapper'>
-        <img src="./img/path2.svg" alt='imagenVector' className="Eventos-line"/>
+    <motion.div
+      initial={"offscreen"}
+      whileInView={"onscreen"}
+      viewport={{ once: false, amount: 0.5 }}
+      className="eventos"
+    >
+      <motion.div variants={textEventosAnimate} className="lugar-titulo">
+        <div className="eventos-linea">
+          <motion.img
+            variants={imagevectorAnimate}
+            src="./imgSlider/vector.png"
+          />
+        </div>
+        <div>
+          <h2 className="Section-title mx-3">EVENTOS</h2>
+          <p className="Section-subtitle mx-3">Diversión a toda marcha</p>
+        </div>
+        <div className="eventos-link">
+          <Link className="Section-link" to="/lugar">
+            Ver más...
+          </Link>
+        </div>
+      </motion.div>
+      <div className="row">
+        <div className="col-6 eventos1">
+          <motion.div variants={textEventosAnimate} className="eventos-text">
+            <h4>Karaoke</h4>
+            <p>Jueves 21 horas</p>
+          </motion.div>
+          <motion.img
+            variants={imageEventosAnimate}
+            className="eventos-img1"
+            src="./img/eventos/eventos1.png"
+            alt="imagen-eventos"
+          />
+        </div>
+        <div className="col-6 eventos2">
+          <motion.div variants={textEventosAnimate} className="eventos-text">
+            <h4>Karaoke</h4>
+            <p>Jueves 21 horas</p>
+          </motion.div>
+          <motion.img
+            variants={imageEventosAnimate}
+            className="eventos-img2"
+            src="./img/eventos/eventos2.png"
+            alt="imagen-eventos"
+          />
+        </div>
       </div>
-      <div className="Eventos-wrapper container-fluid">
-        <div className="Section-header">
-          <h2 className="Section-title">EVENTOS</h2> 
-          <Link to="/lugar" className="Section-link">Ver Más</Link>
-        </div>
-        <h3 className="Section-subtitle">Puesta a punto de sabores</h3>
-        
-        <div className='Eventos-content'>
-          <div className='Eventos-card'>
-            <div className='Eventos-card-text'>
-              <h4>Karaoke</h4>
-              <p>Jueves 21 horas</p>
-            </div>
-            <img src="./img/eventos/eventos1.png" alt="imagen eventos"className='Eventos-card-img1' />
-          </div>
-          <div className='Eventos-card'>
-            <img src="./img/eventos/eventos2.png" alt="imagen eventos"className='Eventos-card-img2' />
-            <div className='Eventos-card-text'>
-              <h4>Bandas <br/>en vivo</h4>
-              <p>Viernes 21 horas</p>
-            </div>
-          </div>
-        </div>
-        <div className="Section-button-wrapper">
-          <Link to="/lugar"><button className='Section-button'>Arma tu evento</button></Link>
-        </div>
-    </div>
-    </div>
-  )
-}
+      <div className="Section-btnMenu">
+        <Link to="/lugar">
+          <motion.button
+            variants={imageEventosAnimate}
+            className="Section-button"
+          >
+            Arma tu evento
+          </motion.button>
+        </Link>
+      </div>
+    </motion.div>
+  );
+};
 
-export default Eventos
+export default Eventos;

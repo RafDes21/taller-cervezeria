@@ -1,8 +1,5 @@
-import React from 'react'
+import React from "react";
 
 export const LugarMas = () => {
-  return (
-    <div>Lugar</div>
-  )
-}
-
+  return <div>Lugar</div>;
+};
