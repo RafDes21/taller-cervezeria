@@ -13,9 +13,9 @@ const Home = () => {
       <Slider />
       <Booking />
       <div className="main container">
-        <img src="./imgMain/imgTop.png" />
+        <img src="./imgMain/imgTop.png" alt="imagenTop" />
         <div className="main-division"></div>
-        <img src="./imgMain/imgbottom.png" />
+        <img src="./imgMain/imgbottom.png" alt="imagenBottom"/>
         <div className="main-secciones">
           <Experience />
           <Lugar />
