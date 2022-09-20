@@ -21,7 +21,7 @@ function App() {
         <Route exact path="/reservas" element={<ReservasMas />} />
         <Route exact path="/nosotros" element={<NosotrosMas />} />
       </Routes>
-      {/* <Footer /> */}
+      <Footer />
     </Router>
   );
 }

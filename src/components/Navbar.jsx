@@ -1,7 +1,7 @@
 import React, { useState } from 'react'
 import "./navBar.css"
 import {GiHamburgerMenu} from "react-icons/gi"
-import { NavLink } from 'react-router-dom';
+import { Link, NavLink } from 'react-router-dom';
 
 const Navbar = () => {
 
@@ -18,7 +18,7 @@ const Navbar = () => {
        <div className='row'>
            
            <div className='col-md-4'>
-           <a className="nav-link text-white" href="#"><span className='taller'>EL TALLER</span><span className='cervezeria'> CERVEZERIA</span></a>
+           <Link className="nav-link text-white" to="/lugar"><span className='taller'>EL TALLER</span><span className='cervezeria'> CERVEZERIA</span></Link>
            </div>
 
           <div className='col-md-8'>

@@ -1,16 +1,17 @@
 import React from 'react'
+import { Link } from 'react-router-dom'
 import "./stylesHome/home.css"
 
 const Eventos = () => {
   return (
     <div className='Eventos'>
             <div className='line-wrapper'>
-        <img src="./img/path2.svg" className="Eventos-line"></img>
+        <img src="./img/path2.svg" alt='imagenVector' className="Eventos-line"/>
       </div>
       <div className="Eventos-wrapper container-fluid">
         <div className="Section-header">
           <h2 className="Section-title">EVENTOS</h2> 
-          <a href="#" className="Section-link">Ver Más</a>
+          <Link to="/lugar" className="Section-link">Ver Más</Link>
         </div>
         <h3 className="Section-subtitle">Puesta a punto de sabores</h3>
         
@@ -31,7 +32,7 @@ const Eventos = () => {
           </div>
         </div>
         <div className="Section-button-wrapper">
-          <a href="#"><button className='Section-button'>Arma tu evento</button></a>
+          <Link to="/lugar"><button className='Section-button'>Arma tu evento</button></Link>
         </div>
     </div>
     </div>
