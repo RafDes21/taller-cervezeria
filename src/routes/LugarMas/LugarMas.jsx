@@ -26,9 +26,9 @@ export const LugarMas = () => {
         <div  className="Lugar-img-wrapper ">
           <img className="Lugar-img col-12 mb-3" src="./img/LugarMas/dentro1.png"></img>
           <div className="row">
-          <img className="Lugar-img-dsk col-4" src="./img/LugarMas/dentro2.png" alt="Foto de interior"></img>
-          <img className="Lugar-img-dsk col-4" src="./img/LugarMas/dentro3.png"alt="Foto de interior"></img>
-          <img className="Lugar-img-dsk col-4" src="./img/LugarMas/dentro4.png"alt="Foto de interior"></img>
+          <img className="Lugar-img-dsk col-4 col-md-4 col-lg-4" src="./img/LugarMas/dentro2.png" alt="Foto de interior"></img>
+          <img className="Lugar-img-dsk col-4 col-md-4 col-lg-4" src="./img/LugarMas/dentro3.png"alt="Foto de interior"></img>
+          <img className="Lugar-img-dsk col-4 col-md-4 col-lg-4" src="./img/LugarMas/dentro4.png"alt="Foto de interior"></img>
           </div>
         </div>
       </div>
