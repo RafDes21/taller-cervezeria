@@ -18,7 +18,7 @@ const Navbar = () => {
        <div className='row'>
            
            <div className='col-md-4'>
-           <Link className="nav-link text-white" to="/lugar"><span className='taller'>EL TALLER</span><span className='cervezeria'> CERVEZERIA</span></Link>
+           <Link className="nav-link text-white" to="/lugar"><span className='taller'>EL TALLER</span><span className='cervezeria'> CERVECERIA</span></Link>
            </div>
 
           <div className='col-md-8'>

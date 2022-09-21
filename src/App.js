@@ -1,7 +1,7 @@
 import React from "react";
 import Footer from "./components/Footer";
 import { BrowserRouter as Router, Route, Routes } from "react-router-dom";
-import { LugarMas } from "./routes/LugarMas";
+import { LugarMas } from "./routes/LugarMas/LugarMas";
 import { MenuMas } from "./routes/MenuMas";
 import { EventosMas } from "./routes/EventosMas";
 import { ReservasMas } from "./routes/ReservasMas";
