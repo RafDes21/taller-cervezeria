@@ -1,48 +1,32 @@
 import React from "react";
 import "./stylesHome/home.css";
-// import { motion } from "framer-motion/dist/framer-motion";
-
-// const textAnimate = {
-//   offscreen: { y: 100, opacity: 0 },
-//   onscreen: {
-//     y: 0,
-//     opacity: 1,
-//     transition: {duration: 0.5 },
-//   },
-// };
-// const mensajeAnimate = {
-//   offscreen: { y: 100, opacity: 0 },
-//   onscreen: {
-//     y: 0,
-//     opacity: 1,
-//     transition: {duration: 0.5 },
-//   },
-// };
-// const imageAnimate = {
-//   offscreen: { y: 400, opacity: 0 },
-//   onscreen: {
-//     y: 0,
-//     opacity: 1,
-//     transition: {duration: 1 },
-//   },
-// };
-// const logosAnimate = {
-//   offscreen: { y: 100, opacity: 0 },
-//   onscreen: {
-//     y: 0,
-//     opacity: 1,
-//     transition: {duration: 0.7 },
-//   },
-// };
+import { motion } from "framer-motion/dist/framer-motion";
 
 const Experience = () => {
+  const textLugarAnimate = {
+    offscreen: { filter: " drop-shadow(2px 2px 10px rgb(0, 0, 0))" },
+    onscreen: {
+      filter: "drop-shadow(2px 2px 10px rgb(255, 0, 0))",
+      transition: {
+        duration: 0.1,
+        yoyo: 4,
+      },
+    },
+  };
+
   return (
-    <div className="container-fluid experiencia">
+    <motion.div
+      initial={"offscreen"}
+      whileInView={"onscreen"}
+      viewport={{ once: false, amount: 0.5 }}
+      className="container-fluid experiencia"
+    >
       <h2 className="Section-title">LA EXPERIENCIA</h2>
-      <img
+      <motion.img
+        variants={textLugarAnimate}
+        className="experiencia-linea"
         src="./imgSlider/vector.png"
         alt="img-experiencia"
-        className="experiencia-linea"
       />
       <div className="row">
         <div className="col-6 col-md-4 experiencia-logo">
@@ -70,7 +54,7 @@ const Experience = () => {
           />
         </div>
       </div>
-    </div>
+    </motion.div>
   );
 };
 

@@ -1,14 +1,31 @@
 import React from "react";
 import { Link } from "react-router-dom";
+import { motion } from "framer-motion/dist/framer-motion";
 
 import "./stylesHome/home.css";
 
 const Eventos = () => {
+
+  const textLugarAnimate = {
+    offscreen: { filter: " drop-shadow(2px 2px 10px rgb(0, 0, 0))" },
+    onscreen: {
+      // opacity: 1,
+      filter: "drop-shadow(2px 2px 10px rgb(255, 0, 0))",
+      transition: {
+        duration: 0.1,
+        yoyo:4
+      },
+    },
+  };
   return (
-    <div className="eventos">
+    <motion.div
+     initial={"offscreen"}
+      whileInView={"onscreen"}
+      viewport={{ once: false, amount: 0.5 }} 
+    className="eventos">
       <div className="lugar-titulo">
         
-          <img className="eventos-linea" src="./imgSlider/vector.png" />
+          <motion.img  variants={textLugarAnimate} className="eventos-linea" src="./imgSlider/vector.png" />
         
         <div>
           <h2 className="Section-title">EVENTOS</h2>
@@ -49,7 +66,7 @@ const Eventos = () => {
           <button className="Section-button">Arma tu evento</button>
         </Link>
       </div>
-    </div>
+    </motion.div>
   );
 };
 
