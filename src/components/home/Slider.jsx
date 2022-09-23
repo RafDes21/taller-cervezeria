@@ -54,7 +54,7 @@ const Slider = () => {
     <div>
       <div id="carrusel">
         <div className="carrusel1" style={active1}>
-          <img src="./imgSlider/carrusel1.png"></img>
+          <img alt="imagen" src="./imgSlider/carrusel1.png"/>
           <img
             className="slider-logo"
             src="./logos/logo2.png"
@@ -71,7 +71,7 @@ const Slider = () => {
           <h1 className="slider-mensaje mensaje1">Amigos, Comidas y Carros</h1>
         </div>
         <div className="carrusel2" style={active2}>
-          <img src="./imgSlider/carrusel2.png"></img>
+          <img alt="imagen" src="./imgSlider/carrusel2.png"></img>
           <img
             className="slider-logo"
             src="./logos/logo2.png"
@@ -88,7 +88,7 @@ const Slider = () => {
           <h1 className="slider-mensaje mensaje2">Amigos, Comidas y Carros</h1>
         </div>
         <div className="carrusel3" style={active3}>
-          <img src="./imgSlider/carrusel3.png"></img>
+          <img alt="imagen" src="./imgSlider/carrusel3.png"></img>
           <img
             className="slider-logo"
             src="./logos/logo2.png"
