@@ -10,32 +10,15 @@ import "./rutaHome.css";
 
 const Home = () => {
   return (
-    <>
+    <div className="main">
       <Slider />
       <Booking />
-      <div className="main container px-0">
-        <div className="fondo">
-          <img
-            className="main-imagen"
-            src="./imgMain/imgTop.png"
-            alt="imagenTop"
-          />
-          <div className="main-division"></div>
-          <img
-            className="main-imagen"
-            src="./imgMain/imgbottom.png"
-            alt="imagenBottom"
-          />
-        </div>
-        <div className="main-secciones">
-          <Experience />
-          <Lugar />
-          <Menu />
-          <Eventos />
-          <Instagram />
-        </div>
-      </div>
-    </>
+      <Experience />
+      <Lugar />
+      <Menu />
+      <Eventos />
+      <Instagram />
+    </div>
   );
 };
 

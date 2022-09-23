@@ -1,24 +1,10 @@
 .main {
-  position: relative;
-  height: 100%;
-  padding-bottom: 60px;
-}
-.main-secciones {
+  max-width: 1440px;
   width: 100%;
-}
-.main .fondo {
-  position: absolute;
-  height: 50%;
-  width: 100%;
-  z-index: -1;
-  left: 0;
-}
-.main img {
-  width: 100%;
-  height: 100%;
-}
-.main-division {
-  height: 50px;
-  background-color: #010101;
-  filter: drop-shadow(10px 8px 13px #010101);
+  margin: 0 auto;
+  background-image: url("./imgTop.png"), url("./imgbottom.png");
+  background-attachment: fixed, fixed;
+  background-repeat: no-repeat, no-repeat;
+  background-position:center, center;
+  background-size: cover, cover;
 }

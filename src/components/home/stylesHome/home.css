@@ -2,14 +2,30 @@
 @import url("https://fonts.googleapis.com/css2?family=Oleo+Script+Swash+Caps&display=swap");
 
 /*Etiquetas comunes a las secciones*/
+:root {
+  --font-family: "Jost", sans-serif;
+  --font-familySecundario: "Train One";
+  --color-primary: rgba(254, 254, 254, 1);
+  --color-secondary: rgba(250, 208, 44, 1);
+  --color-background: rgba(1, 1, 1, 1);
+}
 
 .Section-title {
-  color: white;
-  font-family: "Jost";
-  font-style: normal;
+  font-family: var(--font-family);
+  font-size: 20px;
   font-weight: 700;
-  font-size: 22px;
-  margin-right: 1em;
+  line-height: 29px;
+  margin-top: 11px;
+}
+.Section-texto {
+  font-family: var(--font-family);
+  z-index: 2;
+}
+.Section-sub-title {
+  font-family: var(--font-familySecundario);
+  font-size: 16px;
+  font-weight: 400;
+ 
 }
 .Section-link {
   text-decoration: none;
@@ -21,10 +37,7 @@
   padding: 4px;
   border-radius: 5px;
 }
-.Section-subtitle {
-  font-family: "Oleo Script Swash Caps", cursive;
-  font-size: 16px;
-}
+
 .Section-btn {
   display: flex;
   justify-content: flex-end;
@@ -56,19 +69,19 @@
   color: #ffffff;
 }
 
+
 .experiencia .experiencia-linea {
   width: 150%;
-  height: 150%;
+  height: 100%;
   position: absolute;
-  z-index: 1;
-  left: -2%;
-  top: -20%;
   animation-name: expe;
-  animation-duration: 2s;
-  animation-iteration-count: infinite;
-  
+  left: -40%;
+  top: 0%;
+  animation-duration: 0.5s;
+  animation-iteration-count: 4;
+  filter: drop-shadow(2px 2px 10px rgb(255, 0, 0));
 }
-@keyframes expe {
+ @keyframes expe {
   0% {
     filter: drop-shadow(0 2px 2px rgb(79, 14, 14));
   }
@@ -78,95 +91,97 @@
   100% {
     filter: drop-shadow(0 2px 13px rgb(255, 0, 0));
   }
-}
-.experiencia .experiencia-logo img {
-  position: relative;
+} 
+.experiencia .experiencia-logo {
   z-index: 2;
-  width: 80%;
+}
+.experiencia .caja-logo {
+  width: 60%;
+  margin-left: 10%;
 }
 .experiencia .experiencia-imagen {
   display: none;
 }
-.experiencia .experiencia-mensaje {
-  display: flex;
-}
-.Experiencia-text {
-  font-size: 18px;
-  font-family: "Jost";
-  color: white;
-  z-index: 2;
-  position: relative;
-  margin: auto;
-  padding: 0 20px;
+
+.experiencia-mensaje {
+  font-size: 16px;
+  font-weight: 400;
+  text-align: center;
+  margin-top: 20%;
 }
 @media (min-width: 768px) {
-  .experiencia .experiencia-imagen {
-    display: flex;
-    justify-content: flex-end;
-    align-items: flex-end;
-  }
-  .experiencia .experiencia-imagen img {
-    z-index: 2;
+  .experiencia {
+    overflow: hidden;
     position: relative;
+    color: var(--color-primary);
+    padding: 20px 0;
+  }
+  .experiencia .experiencia-imagen {
+    display: block;
+    z-index: 2;
+  }
+  .experiencia .experiencia-img-desk {
     width: 80%;
-    height: 80%;
   }
 
   .experiencia-mensaje {
-    display: flex;
-  }
-  .Experiencia-text {
-    font-size: 20px;
+    font-size: 24px;
     font-family: "Jost";
-    color: white;
+    color: var(--color-primary);
     z-index: 2;
     position: relative;
   }
   .experiencia .experiencia-linea {
-    width: 140%;
-    height: 100%;
+    width: 150%;
+    height: 200%;
     position: absolute;
     z-index: 1;
-    left: -37%;
-    top: -0%;
+    left: -7%;
+    top: -50%;
   }
 }
 @media (min-width: 991px) {
-  .experiencia .experiencia-imagen {
-    display: flex;
-    justify-content: flex-end;
-    align-items: flex-end;
+
+  .Section-title {
+    font-family: var(--font-family);
+    font-size: 20px;
+    font-weight: 700;
+    line-height: 29px;
+    margin-top: 11px;
+    font-size: 48px;
+    padding-left: 80px;
   }
-  .experiencia .experiencia-imagen img {
-    z-index: 2;
-    position: relative;
-    width: 80%;
-    height: 80%;
+  
+  .experiencia .experiencia-img-desk {
+    
+    width: 90%;
+    height: 90%;
   }
 
-  .experiencia .experiencia-logo img {
-    z-index: 2;
+  .experiencia .caja-logo{
+
     width: 80%;
     height: 80%;
-    margin-top: 20%;
+    margin-top: 5%;
   }
   .experiencia .experiencia-linea {
-    width: 140%;
+    width: 120%;
     height: 100%;
     position: absolute;
     z-index: 1;
-    left: -37%;
+    left: -3%;
     top: -0%;
   }
   .experiencia-mensaje {
     display: flex;
   }
-  .Experiencia-text {
-    font-size: 28px;
-    font-family: "Jost";
-    color: white;
+  .experiencia .experiencia-mensaje {
+    font-size: 36px;
+    font-family:var(--font-family);
+    color: var(--color-primary);
     z-index: 2;
     position: relative;
+    
   }
 }
 /* El Lugar */
@@ -194,12 +209,17 @@
   background-color: #010101;
   box-shadow: 3px 4px 10px #010101;
   padding: 10px 0;
- 
 }
 
 @media (min-width: 768px) {
   .oculto {
     display: block;
+  }
+  .Section-sub-title {
+    font-family: var(--font-familySecundario);
+    font-size: 24px;
+    font-weight: 400;
+   
   }
   .mostrar {
     display: none;
@@ -212,10 +232,21 @@
     display: flex;
     justify-content: flex-end;
     background-color: #010101;
-    
+
     padding: 30px 0;
   }
 }
+@media (min-width: 991px) {
+
+  .Section-sub-title {
+    font-family: var(--font-familySecundario);
+    font-size: 36px;
+    font-weight: 400;
+    padding-left: 80px;
+  }
+  
+}
+
 
 /* El Menu */
 
@@ -226,15 +257,17 @@
 }
 .menu-linea {
   position: absolute;
-  width: 400%;
-  left: -30%;
+  width: 500%;
   height: 100%;
-  top: 5%;
+  transform: rotate(-20deg);
+  left: -40%;
+  top: -40%;
   animation-name: deploy;
-  animation-duration: 2s;
-  animation-iteration-count: infinite;
+  animation-duration: 0.5s;
+  animation-iteration-count: 4;
+  filter: drop-shadow(2px 2px 10px rgb(255, 0, 0));
 }
-@keyframes deploy {
+ @keyframes deploy {
   0% {
     filter: drop-shadow(0 2px 2px rgb(79, 14, 14));
   }
@@ -244,7 +277,7 @@
   100% {
     filter: drop-shadow(0 2px 13px rgb(255, 0, 0));
   }
-}
+} 
 .menu-linea img {
   height: 100%;
 }
@@ -321,9 +354,10 @@
     padding: 0;
   }
   .menu-linea {
-    left: -100%;
-    width: 300%;
-    top: -15%;
+    transform: rotate(0);
+    width: 140%;
+    height: 150%;
+    left: -35%;
   }
   .menu-seccion1 .menu1 {
     width: 75%;
@@ -360,6 +394,14 @@
     font-family: "Jost";
   }
 }
+@media (min-width: 991px) {
+  .menu-linea{
+    width: 120%;
+    height: 80%;
+    left: -5%;
+    top: 5%;
+  }
+}
 
 /* Eventos */
 
@@ -381,11 +423,12 @@
   height: 100%;
   top: -10%;
   transform: rotate(-30deg);
-  animation-name: deploy;
-  animation-duration: 2s;
-  animation-iteration-count: infinite;
+  animation-name: eventos;
+  animation-duration: 0.5s;
+  animation-iteration-count: 4;
+  filter: drop-shadow(2px 2px 10px rgb(255, 0, 0));
 }
-@keyframes deploy {
+ @keyframes eventos {
   0% {
     filter: drop-shadow(0 2px 2px rgb(79, 14, 14));
   }
@@ -395,7 +438,7 @@
   100% {
     filter: drop-shadow(0 2px 13px rgb(255, 0, 0));
   }
-}
+} 
 .eventos1 {
   z-index: 3;
 }
@@ -442,9 +485,7 @@
     height: 100%;
     top: 10%;
     transform: rotate(-20deg);
-    animation-name: deploy;
-    animation-duration: 2s;
-    animation-iteration-count: infinite;
+    
   }
 }
 

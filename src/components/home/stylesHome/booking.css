@@ -1,67 +1,100 @@
 @import url("https://fonts.googleapis.com/css2?family=Jost:wght@400&display=swap");
 
-.bg-black{
-    margin-top: 50px;
+:root {
+  --font-family: "Jost", sans-serif;
+  --color-primary: rgba(254, 254, 254, 1);
+  --color-secondary: rgba(250, 208, 44, 1);
+  --color-background: rgba(1, 1, 1, 1);
 }
-.booking-message{
+#booKing {
+  max-width: 1440px;
+  width: 100%;
+  height: 46px;
+  background-color: var(--color-background);
+  margin: 0 auto;
+  display: flex;
+  justify-content: space-around;
+  align-items: center;
+}
+.booking-message {
+  font-family: var(--font-family);
+  color: var(--color-primary);
+  font-weight: 400;
+  font-size: 16px;
+}
+.booking {
+  border: 1px solid var(--color-secondary);
+  color: var(--color-secondary);
+  text-decoration: none;
+  font-size: 16px;
+  font-weight: 400;
+  border-radius: 5px;
+  font-family: "Jost", sans-serif;
+  padding: 4px 15px;
+}
+.booking:hover {
+  background-color: var(--color-secondary);
+  color: black;
+  box-shadow: 0 0 20px var(--color-secondary), 0 0 4px var(--color-secondary),
+    0 0 20px var(--color-secondary);
+}
+
+@media (min-width: 768px) {
+  #booKing {
+    max-width: 1440px;
+    width: 100%;
+    height: 70px;
+    background-color: var(--color-background);
+    margin: 0 auto;
+    display: flex;
+    justify-content: end;
+    align-items: center;
+    padding-right: 80px;
+  }
+  .booking-message {
     font-family: "Jost", sans-serif;
-    color: #ffffff;
-    /* word-spacing: 0.10em; */
-    font-size: 18px;
-}
-.booking{
-    border: 1px solid #FAD02C;
-    color: #FAD02C;
+    color: var(--color-primary);
+    word-spacing: 0.1em;
+    font-size: 24px;
+  }
+  .booking {
+    border: 1px solid var(--color-secondary);
+    color: var(--color-secondary);
     text-decoration: none;
-    padding: 5px 40px;
     border-radius: 5px;
     font-family: "Jost", sans-serif;
-    /* word-spacing: 0.20em; */
-    font-size: 18px;
-    
+    padding: 4px 15px;
+    font-size: 24px;
+    margin-left: 40px;
+  }
 }
-.booking:hover{
-    background-color: #FAD02C;
-    color: black;
-    box-shadow: 0 0 20px #FAD02C, 0 0 4px #FAD02C, 0 0 20px #FAD02C;
-}
-.contain-2{
+
+@media (min-width: 991px) {
+  #booKing {
+    max-width: 1440px;
+    width: 100%;
+    height: 70px;
+    background-color: var(--color-background);
+    margin: 0 auto;
     display: flex;
-    justify-content: space-between;
+    justify-content: end;
     align-items: center;
-    padding: 30px;
-}
-@media (max-width: 443px){
-  
-    .booking-message{
-        font-family: "Jost", sans-serif;
-        color: #ffffff;
-        word-spacing: 0.10em;
-        font-size: 16px;
-    }
-    .booking{
-        border: 1px solid #FAD02C;
-        color: #FAD02C;
-        text-decoration: none;
-        padding: 5px 10px;
-        border-radius: 5px;
-        font-family: "Jost", sans-serif;
-        /* word-spacing: 0.20em; */
-        font-size: 16px;
-        
-    }
-}
-@media (min-width: 768px){
-    .contain-2{
-        display: flex;
-        justify-content:space-between;
-        align-items: center;
-        padding: 30px;
-    }
-    .booking-message{
-        font-family: "Jost", sans-serif;
-        color: #ffffff;
-        word-spacing: 0.10em;
-        font-size: 20px;
-    }
+    padding-right: 80px;
+  }
+  .booking-message {
+    font-family: "Jost", sans-serif;
+    color: var(--color-primary);
+    word-spacing: 0.1em;
+    font-size: 36px;
+  }
+  .booking {
+    border: 1px solid var(--color-secondary);
+    color: var(--color-secondary);
+    text-decoration: none;
+    border-radius: 5px;
+    font-family: "Jost", sans-serif;
+    padding: 4px 15px;
+    font-size: 32px;
+    margin-left: 40px;
+  }
 }

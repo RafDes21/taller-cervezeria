@@ -1,132 +1,114 @@
 import React, { useEffect, useState } from "react";
 import "./stylesHome/slider.css";
-import imagenes from "./SliderImg"; //array de imágenes
+// import imagenes from "./SliderImg"; //array de imágenes
 import menus from "./menus"; //array de imágenes
 
 const Slider = () => {
-  const [item, setItem] = useState(0); //acá enviaremos la posición de la imagen
-  const [aparece, setAparece] = useState(); //controlamos el estado de la opacidad y transición
-  const [logo, setLogo] = useState();
-  const [vector, setVector] = useState();
-  const [menu, setMenu] = useState();
-  const [parrafo, setParrafo] = useState();
+  const [active1, setActive1] = useState({ opacity: "1", transition: "0.2s" });
+  const [active2, setActive2] = useState({ opacity: "0" });
+  const [active3, setActive3] = useState({ opacity: "0" });
+  const [vector1, setVector1] = useState("slider-vector");
+  const [vector2, setVector2] = useState();
+  const [vector3, setVector3] = useState();
+  const [item, setItem] = useState(1);
 
-  const opacity = () => {
-    if (item < imagenes.length - 1) {
-      setAparece({ opacity: "0" });
-      setItem(item + 1);
-      animaciones();
-    } else {
-      setItem(0);
-      setAparece({ opacity: "0" });
-      setLogo({
-        right: "0",
-        top: "-7%",
-        width: "30%",
-        transitionDuration: "2s",
-      });
-      setVector({
-        top: "-30%",
-        transform: " translateX(0)",
-        transitionDuration: "2s",
-      });
-      setMenu({ right: "-5%", transitionDuration: "2s" });
-      setParrafo({ left: "5%", transitionDuration: "2s" });
-    }
-  };
-
-  const animaciones = () => {
-    if (item === 0) {
-      setLogo({
-        left: "3%",
-        top: "-10%",
-      });
-      setMenu({
-        width: "25%",
-        height: "45%",
-        bottom: "3%",
-        right: "1%",
-        transitionDuration: "2s",
-      });
-      setParrafo({
-        left: "7%",
-        top: "70%",
-        fontZise: "24px",
-        transitionDuration: "2s",
-      });
-    }
-
+  const cambio = () => {
+    console.log("click");
     if (item === 1) {
-      console.log("estamos");
-      setLogo({
-        right: "0.5%",
-        top: "50%",
-        width: "30%",
-        transitionDuration: "2s",
-      });
-      setVector({
-        transform: " translateX(-10%)",
-        top: "25%",
-        transitionDuration: "2s",
-      });
-      setMenu({
-        right: "2%",
-        top: "10%",
-        width: "35%",
-        height: "40%",
-        transitionDuration: "2s",
-      });
-      setParrafo({ left: "15%", bottom: "0", transitionDuration: "2s" });
+      setActive1({ opacity: "0" });
+      setActive2({ opacity: "1", transition: "0.2s" });
+      setActive3({ opacity: "0" });
+      setVector1();
+      setVector2("slider-vector");
+      setVector3();
+      setItem(item + 1);
+    }
+    if (item === 2) {
+      setActive1({ opacity: "0" });
+      setActive2({ opacity: "0" });
+      setActive3({ opacity: "1 ", transition: "0.2s" });
+      setVector1();
+      setVector2();
+      setVector3("slider-vector");
+      setItem(item + 1);
+    }
+    if (item === 3) {
+      setActive1({ opacity: "1", transition: "0.2s" });
+      setActive2({ opacity: "0" });
+      setActive3({ opacity: "0" });
+      setVector1("slider-vector");
+      setVector2();
+      setVector3();
+      setItem(1);
     }
   };
-
   useEffect(() => {
-    const imagenesCambio = setInterval(opacity, 5000);
-    setAparece({ opacity: "1", transition: "all 2s" });
-    return ()=>{clearInterval(imagenesCambio)}
+    const imagenesCambio = setInterval(cambio, 5000);
+
+    return () => {
+      clearInterval(imagenesCambio);
+    };
   }, [item]);
-  
+
   return (
-    <div className="container">
-      <div className="slider">
-        <img
-          className="slider-img"
-          style={aparece}
-          src={imagenes[item]}
-          alt="imagenesDeFondo"
-        />
-        <img
-          className="slider-logo"
-          style={logo}
-          src="./logos/logo2.png"
-          alt="imagenLogo"
-        />
-        <img
-          className="slider-vector"
-          style={vector}
-          src="./imgSlider/vector.png"
-          alt="imagenVector"
-        />
-        <img
-          className="slider-menu"
-          style={menu}
-          src={menus[item]}
-          alt="imagenTaco"
-        />
-        <div className="slider-parrafo" style={parrafo}>
-          {item === 1 ? (
-            <p style={parrafo}>Amigos, Comida y Carros</p>
-          ) : (
-            <p>
-              Amigos,
-              <br />
-              Comida y
-              <br />
-              Carros
-            </p>
-          )}
+    <div>
+      <div id="carrusel">
+        <div className="carrusel1" style={active1}>
+          <img src="./imgSlider/carrusel1.png"></img>
+          <img
+            className="slider-logo"
+            src="./logos/logo2.png"
+            alt="imagenLogo"
+          />
+          <img
+            id="slider1"
+            className={vector1}
+            src="./imgSlider/vector.png"
+            alt="imagenVector"
+          />
+          <img className="slider-menu" src={menus[0]} alt="imagenTaco" />
+
+          <h1 className="slider-mensaje mensaje1">Amigos, Comidas y Carros</h1>
+        </div>
+        <div className="carrusel2" style={active2}>
+          <img src="./imgSlider/carrusel2.png"></img>
+          <img
+            className="slider-logo"
+            src="./logos/logo2.png"
+            alt="imagenLogo"
+          />
+          <img
+            id="slider2"
+            className={vector2}
+            src="./imgSlider/vector.png"
+            alt="imagenVector"
+          />
+          <img className="slider-menu" src={menus[1]} alt="imagenTaco" />
+
+          <h1 className="slider-mensaje mensaje2">Amigos, Comidas y Carros</h1>
+        </div>
+        <div className="carrusel3" style={active3}>
+          <img src="./imgSlider/carrusel3.png"></img>
+          <img
+            className="slider-logo"
+            src="./logos/logo2.png"
+            alt="imagenLogo"
+          />
+          <img
+            id="slider3"
+            className={vector3}
+            src="./imgSlider/vector.png"
+            alt="imagenVector"
+          />
+          <img className="slider-menu" src={menus[2]} alt="imagenTaco" />
+
+          <h1 className="slider-mensaje mensaje3">
+            Amigos,
+            <br /> Comidas y<br /> Carros
+          </h1>
         </div>
       </div>
+      {/* <button onClick={cambio}> click</button> */}
     </div>
   );
 };

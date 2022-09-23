@@ -1,78 +1,43 @@
 import React from "react";
 import { Link } from "react-router-dom";
-import { motion } from "framer-motion/dist/framer-motion";
-import "./stylesHome/home.css";
 
-const textEventosAnimate = {
-  offscreen: { y: 150, opacity: 0 },
-  onscreen: {
-    y: 0,
-    opacity: 1,
-    transition: { duration: 0.5 },
-  },
-};
-const imagevectorAnimate = {
-  offscreen: { y: 400, opacity: 0 },
-  onscreen: {
-    y: 0,
-    opacity: 1,
-    transition: { duration: 1.5 },
-  },
-};
-const imageEventosAnimate = {
-  offscreen: { y: 150, opacity: 0 },
-  onscreen: {
-    y: 0,
-    opacity: 1,
-    transition: { duration: 1 },
-  },
-};
+import "./stylesHome/home.css";
 
 const Eventos = () => {
   return (
-    <motion.div
-      initial={"offscreen"}
-      whileInView={"onscreen"}
-      viewport={{ once: false, amount: 0.5 }}
-      className="eventos"
-    >
-      <motion.div variants={textEventosAnimate} className="lugar-titulo">
-        <div className="eventos-linea">
-          <motion.img
-            variants={imagevectorAnimate}
-            src="./imgSlider/vector.png"
-          />
-        </div>
+    <div className="eventos">
+      <div className="lugar-titulo">
+        
+          <img className="eventos-linea" src="./imgSlider/vector.png" />
+        
         <div>
-          <h2 className="Section-title mx-3">EVENTOS</h2>
-          <p className="Section-subtitle mx-3">Diversión a toda marcha</p>
+          <h2 className="Section-title">EVENTOS</h2>
+          <p className="Section-sub-title">Diversión a toda marcha</p>
         </div>
         <div className="eventos-link">
           <Link className="Section-link" to="/lugar">
             Ver más...
           </Link>
         </div>
-      </motion.div>
+      </div>
       <div className="row">
         <div className="col-6 eventos1">
-          <motion.div variants={textEventosAnimate} className="eventos-text">
+          <div className="eventos-text">
             <h4>Karaoke</h4>
             <p>Jueves 21 horas</p>
-          </motion.div>
-          <motion.img
-            variants={imageEventosAnimate}
+          </div>
+          <img
             className="eventos-img1"
             src="./img/eventos/eventos1.png"
             alt="imagen-eventos"
           />
         </div>
         <div className="col-6 eventos2">
-          <motion.div variants={textEventosAnimate} className="eventos-text">
+          <div className="eventos-text">
             <h4>Karaoke</h4>
             <p>Jueves 21 horas</p>
-          </motion.div>
-          <motion.img
-            variants={imageEventosAnimate}
+          </div>
+          <img
             className="eventos-img2"
             src="./img/eventos/eventos2.png"
             alt="imagen-eventos"
@@ -81,15 +46,10 @@ const Eventos = () => {
       </div>
       <div className="Section-btnMenu">
         <Link to="/lugar">
-          <motion.button
-            variants={imageEventosAnimate}
-            className="Section-button"
-          >
-            Arma tu evento
-          </motion.button>
+          <button className="Section-button">Arma tu evento</button>
         </Link>
       </div>
-    </motion.div>
+    </div>
   );
 };
 
