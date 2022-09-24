@@ -7,8 +7,9 @@
 }
 
 .content{
-    /* background-color: red; */
     background-image: url(/img/LugarMas/back.png);
+    background-repeat: no-repeat;
+    background-attachment:fixed;
     padding:2em;
 }
 
@@ -18,17 +19,18 @@
 }
 
 .Header-text{
-    margin-top: -15%;
+    margin-top: 40%;
     min-width:100%;
     /* background-color: crimson; */
 }
 .Lugar-header-img{
     min-width: 100%;
+    min-height: 120em;
     background-color:red;
-    mask-image: -webkit-gradient(linear, left top, 
+    /* mask-image: -webkit-gradient(linear, left top, 
     left bottom, from(rgba(0,0,0,1)), to(rgba(0,0,0,0)));
     -webkit-mask-image: -webkit-gradient(linear, left top, 
-    left bottom, from(rgba(0,0,0,1)), to(rgba(0,0,0,0)));
+    left bottom, from(rgba(0,0,0,1)), to(rgba(0,0,0,0))); */
 }
 
 .Lugar-h2{
@@ -97,9 +99,18 @@ p{
 
 .Lugar-img-dsk{
     display: none;
-    width: 25%;
+    width: 100%;
     /* min-height: 10em;
     background-color: red; */
+}
+
+.map-wrapper{
+    display: flex;
+    justify-content: center;
+}
+
+.map{
+    border-radius: 20px;
 }
 
 @media (min-width: 768px) {
