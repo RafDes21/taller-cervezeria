@@ -21,7 +21,7 @@ const Instagram = () => {
           </Link>
         </div>
       </div>
-      <div className="row">
+      <div className="row mx-0">
         <div className="col-12 col-md-6 caja-instagram">
           <img className="instagram-imagenes" src="./img/instagram/img1.png" alt="imagenInstagram" />
           <img className="instagram-imagenes" src="./img/instagram/img2.png" alt="imagenInstagram" />
@@ -33,7 +33,7 @@ const Instagram = () => {
           <img className="instagram-imagenes" src="./img/instagram/img3.png" alt="imagenInstagram" />
         </div>
       </div>
-      <div  className="row instagram-oculto2">
+      <div  className="row instagram-oculto2 mx-0">
         <div className="col-12 col-md-6 caja-instagram">
           <img className="instagram-imagenes" src="./img/instagram/img1.png" alt="imagenInstagram" />
           <img className="instagram-imagenes" src="./img/instagram/img2.png" alt="imagenInstagram" />

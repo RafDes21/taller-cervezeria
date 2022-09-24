@@ -116,7 +116,7 @@
     left: 0;
     text-align: center;
     top: 56px;
- 
+    padding: 0;
   }
   .show li .nav-link {
     font-size: 16px;

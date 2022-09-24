@@ -1,10 +1,26 @@
 .main {
   max-width: 1440px;
-  width: 100%;
   margin: 0 auto;
   background-image: url("./imgTop.png"), url("./imgbottom.png");
   background-attachment: fixed, fixed;
   background-repeat: no-repeat, no-repeat;
-  background-position:center, center;
+  background-position: center, center;
   background-size: cover, cover;
+  /* padding: 0 17px; */
 }
+
+/* @media only screen and (min-width: 769px) {
+  .main {
+    padding: 0 34px;
+  }
+}
+@media only screen and (min-width: 991px) {
+  .main {
+    padding: 0 80px;
+  }
+} */
+/* @media only screen and (min-width: 769px) {
+  .show {
+    display: none;
+  }
+} */

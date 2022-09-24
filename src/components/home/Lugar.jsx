@@ -4,7 +4,7 @@ import "./stylesHome/home.css";
 
 const Lugar = () => {
   return (
-    <div className="container-fluid px-0 lugar">
+    <div className="px-0 lugar">
       <div className="lugar-titulo">
         <div>
           <h2 className="Section-title">EL LUGAR</h2>
@@ -16,7 +16,7 @@ const Lugar = () => {
           </Link>
         </div>
       </div>
-      <div className="row">
+      <div className="row mx-0">
         <div className="col-12 col-md-4">
           <img
             src="./img/lugar/lugar1.png"
@@ -44,7 +44,7 @@ const Lugar = () => {
           />
         </div>
       </div>
-      <div className="Section-btn container-fluid">
+      <div className="Section-btn">
         <Link to="/lugar">
           <button className="Section-button">Ver Ubicación</button>
         </Link>

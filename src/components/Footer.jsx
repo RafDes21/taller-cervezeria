@@ -9,7 +9,8 @@ import { Link } from "react-router-dom";
 
 const Footer = () => {
   return (
-    <div className="container footer">
+    <div id="footer">
+    <div className="footer">
       <div className="row">
         <div className="col-4 footerDerechos ">
           <h6>Unite al equipo!</h6>
@@ -37,6 +38,7 @@ const Footer = () => {
           </div>
         </div>
       </div>
+    </div>
     </div>
   );
 };

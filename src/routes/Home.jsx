@@ -11,7 +11,7 @@ import "./rutaHome.css";
 const Home = () => {
   return (
     <div className="main">
-      <Slider />
+       <Slider />
       <Booking />
       <Experience />
       <Lugar />
