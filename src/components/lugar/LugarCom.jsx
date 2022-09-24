@@ -3,12 +3,12 @@ import "./LugarMas.css"
 
 const LugarCom = () => {
   return (
-    <div className="Lugar-wrapper container-fluid">
+    <div className="Lugar-wrapper">
     <div className="Header">
       <img
         src="./img/LugarMas/imgHeader.png"
         alt="Lugar-header-img"
-        className="Lugar-header-img img-fluid"
+        className="Lugar-header-img"
       />
       <div className="Header-text">
         <h2 className="Lugar-h2">EL LUGAR</h2>
@@ -45,22 +45,22 @@ const LugarCom = () => {
               alt="imagen"
               src="./img/LugarMas/dentro1.png"
             />
-            <div className="row">
-              <div className="col-4 col-md-4 col-lg-4">
+            <div className="row d-flex wrap">
+              <div className="col-4">
                 <img
                   className="Lugar-img-dsk "
                   src="./img/LugarMas/dentro2.png"
                   alt="Foto de interior"
                 ></img>
               </div>
-              <div className="col-4 col-md-4 col-lg-4">
+              <div className="col-4">
                 <img
                   className="Lugar-img-dsk "
                   src="./img/LugarMas/dentro3.png"
                   alt="Foto de interior"
                 ></img>
               </div>
-              <div className="col-4 col-md-4 col-lg-4">
+              <div className="col-4">
                 <img
                   className="Lugar-img-dsk "
                   src="./img/LugarMas/dentro4.png"
@@ -85,31 +85,43 @@ const LugarCom = () => {
               />
             </div>
             <div className="row">
+            <div className="col-4">
               <img
-                className="Lugar-img-dsk col-4"
+                className="Lugar-img-dsk"
                 src="./img/LugarMas/fuera2.png"
                 alt="Foto de exterior"
               ></img>
+            </div>
+
+            <div className="col-4"> 
               <img
-                className="Lugar-img-dsk col-4"
+                className="Lugar-img-dsk"
                 src="./img/LugarMas/fuera3.png"
                 alt="Foto de exterior"
               ></img>
+            </div>
+
+            <div className="col-4">
               <img
-                className="Lugar-img-dsk col-4"
+                className="Lugar-img-dsk"
                 src="./img/LugarMas/fuera4.png"
                 alt="Foto de exterior"
               ></img>
+            </div>
             </div>
           </div>
         </div>
         <div className="Lugar-container">
           <h4 className="Lugar-h4 txt-center">DONDE ENCONTRARNOS</h4>
-          <img
+
+          <div className="embed-responsive embed-responsive-16by9 map-wrapper">
+          <iframe className="embed-responsive-item map " src="https://www.google.com/maps/embed?pb=!1m14!1m8!1m3!1d15044.840074962005!2d-99.1792661!3d19.4895981!3m2!1i1024!2i768!4f13.1!3m3!1m2!1s0x0%3A0x8365a16997cecbf6!2sPasaje%20Ferrer%C3%ADa!5e0!3m2!1ses-419!2sar!4v1664049591781!5m2!1ses-419!2sar" width="1280" height="600" title='mapa' allowfullscreen="" loading="lazy" referrerpolicy="no-referrer-when-downgrade"></iframe>
+          </div>
+          {/* <img
             alt="imagen"
             className="Lugar-img p-3 mb-3 mx-auto"
             src="./img/LugarMas/donde.png"
-          />
+          /> */}
         </div>
       </div>
     </section>
