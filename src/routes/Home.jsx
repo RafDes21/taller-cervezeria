@@ -11,13 +11,15 @@ import "./rutaHome.css";
 const Home = () => {
   return (
     <div className="main">
-       <Slider />
-      <Booking />
-      <Experience />
-      <Lugar />
-      <Menu />
-      <Eventos />
-      <Instagram />
+      <Slider />
+      <div className="main-section">
+        <Booking />
+        <Experience />
+        <Lugar />
+        <Menu />
+        <Eventos />
+        <Instagram />
+      </div>
     </div>
   );
 };
