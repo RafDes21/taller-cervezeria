@@ -1,0 +1,135 @@
+@import url("https://fonts.googleapis.com/css2?family=Jost:ital,wght@0,200;0,400;1,100&family=Oleo+Script&display=swap");
+@import url("https://fonts.googleapis.com/css2?family=Oleo+Script+Swash+Caps&display=swap");
+
+:root {
+  --font-family: "Jost", sans-serif;
+  --font-familySecundario: "Train One";
+  --color-primary: rgba(254, 254, 254, 1);
+  --color-secondary: rgba(250, 208, 44, 1);
+  --color-background: rgba(1, 1, 1, 1);
+  ---buttom-shadow: 0 0 20px #fad02c, 0 0 4px #fad02c, 0 0 20px #fad02c;
+}
+
+.lugar {
+  max-width: 1440px;
+  color: var(--color-primary);
+  font-family: var(--font-family);
+  position: relative;
+  padding: 40px 17px;
+}
+.lugar-title {
+  font-size: 20px;
+  font-weight: 700;
+}
+.Section-sub-title {
+  font-family: var(--font-familySecundario);
+  font-size: 16px;
+  font-weight: 400;
+  text-align: left;
+}
+.lugar .lugar-link {
+  position: absolute;
+  font-size: 16px;
+  top: 10%;
+  right: 0;
+  transform: translateX(-50%);
+  color: var(--color-secondary);
+}
+.lugar .Lugar-img {
+  padding: 5px;
+  height: 100%;
+}
+.oculto {
+  display: none;
+}
+.Section-btn {
+    margin: 40px 0;
+  display: flex;
+  justify-content: flex-end;
+}
+.Section-button {
+  border-radius: 5px;
+  padding: 5px 40px;
+  text-decoration: none;
+  list-style: none;
+  font-size: 16px;
+  font-weight: 400;
+}
+
+@media (min-width: 768px) {
+  .lugar {
+    max-width: 1440px;
+    color: var(--color-primary);
+    font-family: var(--font-family);
+    position: relative;
+    padding: 40px 34px;
+  }
+  .lugar-title {
+    font-size: 30px;
+    font-weight: 700;
+  }
+  .oculto {
+    display: block;
+  }
+  .Section-sub-title {
+    font-family: var(--font-familySecundario);
+    font-size: 24px;
+    font-weight: 400;
+  }
+  .mostrar {
+    display: none;
+  }
+  .lugar .Lugar-img {
+    padding: 0px;
+    height: 100%;
+  }
+
+  .Section-button {
+    display: flex;
+    justify-content: flex-end;
+    border-radius: 5px;
+    padding: 5px 40px;
+    text-decoration: none;
+    list-style: none;
+    font-size: 24px;
+    font-weight: 400;
+  }
+}
+@media (min-width: 991px) {
+  .lugar {
+    max-width: 1440px;
+    color: var(--color-primary);
+    font-family: var(--font-family);
+    position: relative;
+    padding: 40px 80px;
+  }
+  .lugar-title {
+    font-size: 48px;
+    font-weight: 800;
+  }
+  .Section-sub-title {
+    font-family: var(--font-familySecundario);
+    font-size: 36px;
+    font-weight: 400;
+    text-align: left;
+  }
+  .lugar .lugar-link {
+    position: absolute;
+    font-weight: 500;
+    font-size: 36px;
+    top: 13%;
+    right: 0;
+    transform: translateX(-50%);
+    color: var(--color-secondary);
+  }
+  .Section-button {
+    display: flex;
+    justify-content: flex-end;
+    border-radius: 5px;
+    padding: 5px 40px;
+    text-decoration: none;
+    list-style: none;
+    font-size: 32px;
+    font-weight: 400;
+  }
+}

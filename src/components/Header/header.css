@@ -1,3 +1,15 @@
+@import url("https://fonts.googleapis.com/css2?family=Jost:ital,wght@0,200;0,400;1,100&family=Oleo+Script&display=swap");
+@import url("https://fonts.googleapis.com/css2?family=Oleo+Script+Swash+Caps&display=swap");
+
+:root {
+  --font-family: "Jost", sans-serif;
+  --font-familySecundario: "Train One";
+  --color-primary: rgba(254, 254, 254, 1);
+  --color-secondary: rgba(250, 208, 44, 1);
+  --color-background: rgba(1, 1, 1, 1);
+  ---buttom-shadow: 0 0 20px #fad02c, 0 0 4px #fad02c, 0 0 20px #fad02c;
+}
+
 .header-img {
   max-width: 1440px;
   margin: 0 auto;
@@ -31,5 +43,58 @@
     height: 650px;
     position: relative;
     box-shadow: 0 50px 50px #070707;
+  }
+}
+
+.header-textos h1{
+  font-family: var(--font-family);
+  color: var(--color-primary);
+  font-size: 24px;
+  font-weight: 700;
+  position: relative;
+  z-index:2;
+  text-align: center;
+}
+.header-textos h3{
+  font-family: var(--font-familySecundario);
+  color: var(--color-primary);
+  font-size: 16px;
+  font-weight: 400;
+  position: relative;
+  z-index:2;
+  text-align: center;
+}
+@media screen and (min-width: 700px) {
+  .header-textos h1{
+    font-family: var(--font-family);
+    font-size: 48px;
+    font-weight: 700;
+    position: relative;
+    z-index:2;
+  }
+  .header-textos h3{
+    font-family: var(--font-familySecundario);
+    font-size: 30px;
+    font-weight: 400;
+    position: relative;
+    z-index:2;
+    color: var(--color-primary);
+  }
+}
+@media screen and (min-width: 991px) {
+  .header-textos h1{
+    font-family: var(--font-family);
+    font-size: 78px;
+    font-weight: 700;
+    position: relative;
+    z-index:2;
+  }
+  .header-textos h3{
+    font-family: var(--font-familySecundario);
+    font-size: 60px;
+    font-weight: 400;
+    position: relative;
+    z-index:2;
+    color: var(--color-primary);
   }
 }

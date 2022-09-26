@@ -41,24 +41,24 @@
     left bottom, from(rgba(0,0,0,1)), to(rgba(0,0,0,0)));
 } */
 
-.Lugar-h2{
+/* .Lugar-h2{
     color: white;
-    /* background-color: yellow; */
+    /* background-color: yellow; 
     font-family: 'Jost', sans-serif;
     font-weight: 700;
     font-size: 3em;
     text-align: center;
     z-index: 2;
     position: relative;
-}
+} */
 
-.Lugar-h3{
+/* .Lugar-h3{
     color: white;
     font-family: 'Train One', cursive;
     font-size: 1.5em;
-    /* background-color: orange; */
+    /* background-color: orange; 
     text-align: center;
-}
+} */
 
 .Lugar-h4{
     color: white;

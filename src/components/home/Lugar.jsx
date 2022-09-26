@@ -1,23 +1,23 @@
 import React from "react";
 import { Link } from "react-router-dom";
-import "./stylesHome/home.css";
+import "./stylesHome/lugar.css";
 
 const Lugar = () => {
   return (
-    <div className="px-0 lugar">
+    <div className="lugar">
       <div className="lugar-titulo">
         <div>
-          <h2 className="Section-title">EL LUGAR</h2>
+          <h2 className="lugar-title">EL LUGAR</h2>
           <p className="Section-sub-title">Unos boxes muy chingones</p>
         </div>
         <div className="lugar-link">
-          <Link className="Section-link" to="/lugar">
+          <Link className="nav-link Section-link" to="/lugar">
             Ver más...
           </Link>
         </div>
       </div>
       <div className="row mx-0">
-        <div className="col-12 col-md-4">
+        <div className="col-12 col-md-4 px-0">
           <img
             src="./img/lugar/lugar1.png"
             alt="imagen-eltaller"
@@ -29,14 +29,14 @@ const Lugar = () => {
             className="Lugar-img oculto"
           />
         </div>
-        <div className="col-6 col-md-4">
+        <div className="col-6 col-md-4 px-0">
           <img
             src="./img/lugar/lugar2b.jpeg"
             alt="imagen-eltaller"
             className="Lugar-img"
           />
         </div>
-        <div className="col-6 col-md-4">
+        <div className="col-6 col-md-4 px-0">
           <img
             src="./img/lugar/lugar3b.jpeg"
             alt="imagen-eltaller"
@@ -45,7 +45,7 @@ const Lugar = () => {
         </div>
       </div>
       <div className="Section-btn">
-        <Link to="/lugar">
+        <Link className="nav-link" to="/lugar">
           <button className="Section-button">Ver Ubicación</button>
         </Link>
       </div>

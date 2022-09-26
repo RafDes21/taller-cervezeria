@@ -12,14 +12,12 @@ const Home = () => {
   return (
     <div className="main">
       <Slider />
-      <div className="main-section">
-        <Booking />
-        <Experience />
-        <Lugar />
-        <Menu />
-        <Eventos />
-        <Instagram />
-      </div>
+      <Booking />
+      <Experience />
+      <Lugar />
+      {/* <Menu />
+      <Eventos />
+      <Instagram /> */}
     </div>
   );
 };

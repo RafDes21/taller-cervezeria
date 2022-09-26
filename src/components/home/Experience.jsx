@@ -1,5 +1,5 @@
 import React from "react";
-import "./stylesHome/home.css";
+import "./stylesHome/experiencia.css";
 import { motion } from "framer-motion/dist/framer-motion";
 
 const Experience = () => {
@@ -19,38 +19,48 @@ const Experience = () => {
       initial={"offscreen"}
       whileInView={"onscreen"}
       viewport={{ once: false, amount: 0.5 }}
-      className="container-fluid experiencia"
+      className="experiencia"
     >
-      <h2 className="Section-title">LA EXPERIENCIA</h2>
       <motion.img
         variants={textLugarAnimate}
-        className="experiencia-linea"
-        src="./imgSlider/vector.png"
-        alt="img-experiencia"
+        className="vector"
+        src="./assets/vector/vect.png"
       />
-      <div className="row">
-        <div className="col-6 col-md-4 experiencia-logo">
+
+      <h1 className="experiencia-h1">EXPERIENCIA</h1>
+      <h1 className="experiencia-desktop">EXPERIENCIA "EL TALLER"</h1>
+      <motion.img
+      variants={textLugarAnimate}
+        className="experiencia-desktop__vector"
+        src="./assets/vector/vectorDesktop.png"
+        alt="vectorimagen"
+      />
+      <div className="row mx-0">
+        <div className="col-6 experiencia-caja1 px-0">
+          <p className="experiencia-caja1__texto">
+            Un lugar que combina la amistad, rica comida y la pasión por los
+            carros
+          </p>
+          <p className="experiencia-desktop__p">
+            Un lugar que combina la amistad, rica comida y la pasión por los
+            carros, Veni a vivir esta experiencia única
+          </p>
           <img
-            src="./logos/logo.png"
-            alt="logo-eltaller"
-            className="caja-logo"
+            className="experiencia-desktop__logo"
+            src="./assets/logos/logo.png"
+            alt="logoDesktop"
           />
         </div>
-        <div className="col-6 col-md-4 Section-texto">
-          <p className="experiencia-mensaje">
-            Un lugar que combina
-            <br />
-            la amistad, rica
-            <br />
-            comida y la pasión
-            <br /> por los carros
-          </p>
-        </div>
-        <div className="col-0 col-md-4 experiencia-imagen">
+        <div className="col-6 experiencia-caja2 px-0">
           <img
-            src="./img/experiencias1.png"
-            alt="logo-eltaller"
-            className="experiencia-img-desk"
+            className="experiencia-logo"
+            src="./assets/logos/logo.png"
+            alt="logo"
+          />
+          <img
+            className="experiencia-desktop__cerveza"
+            src="./assets/instagram/img3.png"
+            alt="imagen-cerveza"
           />
         </div>
       </div>

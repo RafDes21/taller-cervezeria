@@ -11,7 +11,7 @@
   ---buttom-shadow: 0 0 20px #fad02c, 0 0 4px #fad02c, 0 0 20px #fad02c;
 }
 
-.Section-title {
+/* .Section-title {
   font-family: var(--font-family);
   font-size: 20px;
   font-weight: 700;
@@ -64,180 +64,11 @@
 
 /*Experiencia*/
 
-.experiencia {
-  overflow: hidden;
-  position: relative;
-  color: #ffffff;
-}
+
+/* El Lugar 
 
 
-.experiencia .experiencia-linea {
-  width: 150%;
-  height: 100%;
-  position: absolute;
-  animation-name: expe;
-  left: -40%;
-  top: 0%;
-
-}
-
-.experiencia .experiencia-logo {
-  z-index: 2;
-}
-.experiencia .caja-logo {
-  width: 60%;
-  margin-left: 10%;
-}
-.experiencia .experiencia-imagen {
-  display: none;
-}
-
-.experiencia-mensaje {
-  font-size: 16px;
-  font-weight: 400;
-  text-align: center;
-  margin-top: 20%;
-}
-@media (min-width: 768px) {
-  .experiencia {
-    overflow: hidden;
-    position: relative;
-    color: var(--color-primary);
-    padding: 20px 0;
-  }
-  .experiencia .experiencia-imagen {
-    display: block;
-    z-index: 2;
-  }
-  .experiencia .experiencia-img-desk {
-    width: 80%;
-  }
-
-  .experiencia-mensaje {
-    font-size: 24px;
-    font-family: "Jost";
-    color: var(--color-primary);
-    z-index: 2;
-    position: relative;
-  }
-  .experiencia .experiencia-linea {
-    width: 150%;
-    height: 200%;
-    position: absolute;
-    z-index: 1;
-    left: -7%;
-    top: -50%;
-  }
-}
-@media (min-width: 991px) {
-
-  .Section-title {
-    font-family: var(--font-family);
-    font-size: 20px;
-    font-weight: 700;
-    line-height: 29px;
-    margin-top: 11px;
-    font-size: 48px;
-    padding-left: 80px;
-  }
-  
-  .experiencia .experiencia-img-desk {
-    
-    width: 90%;
-    height: 90%;
-  }
-
-  .experiencia .caja-logo{
-
-    width: 80%;
-    height: 80%;
-    margin-top: 5%;
-  }
-  .experiencia .experiencia-linea {
-    width: 120%;
-    height: 100%;
-    position: absolute;
-    z-index: 1;
-    left: -3%;
-    top: -0%;
-  }
-  .experiencia-mensaje {
-    display: flex;
-  }
-  .experiencia .experiencia-mensaje {
-    font-size: 36px;
-    font-family:var(--font-family);
-    color: var(--color-primary);
-    z-index: 2;
-    position: relative;
-    
-  }
-}
-/* El Lugar */
-.lugar {
-  margin: 10px 0;
-  color: #ffffff;
-  position: relative;
-}
-.lugar .lugar-link {
-  position: absolute;
-  top: 2%;
-  left: 50%;
-  transform: translateX(-50%);
-}
-.lugar .Lugar-img {
-  padding: 5px;
-  height: 100%;
-}
-.oculto {
-  display: none;
-}
-.Section-btn {
-  display: flex;
-  justify-content: flex-end;
-  background-color: #010101;
-  box-shadow: 3px 4px 10px #010101;
-  padding: 10px 0;
-}
-
-@media (min-width: 768px) {
-  .oculto {
-    display: block;
-  }
-  .Section-sub-title {
-    font-family: var(--font-familySecundario);
-    font-size: 24px;
-    font-weight: 400;
-   
-  }
-  .mostrar {
-    display: none;
-  }
-  .lugar .Lugar-img {
-    padding: 0px;
-    height: 100%;
-  }
-  .Section-btn {
-    display: flex;
-    justify-content: flex-end;
-    background-color: #010101;
-
-    padding: 30px 0;
-  }
-}
-@media (min-width: 991px) {
-
-  .Section-sub-title {
-    font-family: var(--font-familySecundario);
-    font-size: 36px;
-    font-weight: 400;
-    padding-left: 80px;
-  }
-  
-}
-
-
-/* El Menu */
+/* El Menu 
 
 .seccion-menu {
   color: #ffffff;
@@ -379,7 +210,7 @@
   }
 }
 
-/* Eventos */
+/* Eventos 
 
 .eventos {
   color: #ffffff;
@@ -452,7 +283,7 @@
   }
 }
 
-/* Instagram */
+/* Instagram 
 
 .instagram {
   position: relative;
@@ -492,4 +323,4 @@
   .caja-instagram {
     margin: 20px 0;
   }
-}
+} */

@@ -1,17 +1,17 @@
 import React from "react";
-import Header from "../Header/Header";
+import { Header, Texto } from "../Header/Header";
 import "./LugarMas.css";
 
 const LugarCom = () => {
   const img = "./img/LugarMas/imgHeader.png";
+  const h1 = "EL LUGAR";
+  const h3 = "Unos boxes muy chingones";
+
   return (
     <div className="Lugar-wrapper">
       <Header img={img} />
       <section className="content">
-        <div className="Header-text">
-          <h2 className="Lugar-h2">EL LUGAR</h2>
-          <h3 className="Lugar-h3">Unos boxes muy chingones</h3>
-        </div>
+        <Texto texto1={h1} texto2={h3} />
         <div className="wrapper">
           <p className="Lugar-header-text">
             Gracias a nuestra ambientación podras trasnsportante y sentir la

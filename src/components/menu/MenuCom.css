@@ -18,9 +18,9 @@
     background-size: cover;
     background-attachment: fixed;
   }
-.Menu-h2{
+/* .Menu-h2{
     color: white;
-    /* background-color: yellow; */
+    /* background-color: yellow; 
     font-family: 'Jost';
     font-weight: 700;
     font-size: 3em;
@@ -33,12 +33,12 @@ h3{
     color: white;
     font-family: 'Train One', cursive;
     font-size: 1.5em;
-    /* background-color: orange; */
+    /* background-color: orange; 
     text-align: center;
     padding-bottom: 2em;
     z-index: 2;
     position: relative;
-}
+} */
 
 h4{
     color: white;
