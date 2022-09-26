@@ -1,11 +1,14 @@
 import React from 'react'
+import Header from '../Header/Header'
 import "./MenuCom.css"
 
 const MenuCom = () => {
+
+  const img = "./assets/menu/menu.png"
   return (
 <div className='Menu-wrapper'> 
-  <section className="Menu-header">
-    <img src="#" alt="imagen menu" className='Menu-header-img'/>
+ <Header img={img}/>
+  <section className="Menu-content">
     <div className="Menu-titulo">
       <h2 className='Menu-h2'>
         EL MENU
@@ -14,8 +17,6 @@ const MenuCom = () => {
         La comida de los maestros
       </h3>
     </div>
-  </section>
-  <section className="Menu-content">
     <div className="Menu-comida">
       <div className="Menu-comida-card">
         <img src="#" alt="imagen menu" />

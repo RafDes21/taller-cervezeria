@@ -1,12 +1,19 @@
 @import url('https://fonts.googleapis.com/css2?family=Train+One&display=swap');
 @import url('https://fonts.googleapis.com/css2?family=Jost:wght@700&display=swap');
 .Lugar-wrapper{
-    margin:auto;
+    margin:0 auto;
     /* background-color: aqua; */
     max-width: 1440px;
 }
+.content {
+    padding: 37px 25px;
+    background-image: url(/img/LugarMas/back.png);
+    background-repeat: no-repeat;
+    background-size: cover;
+    background-attachment: fixed;
+  }
 
-.content{
+/* .content{
     width: 100%;
     background-image: url(/img/LugarMas/back.png);
     background-repeat: repeat-y;
@@ -14,25 +21,25 @@
     background-attachment:fixed;
     background-position: left;
     padding:2em;
-}
+} */
 
-.wrapper{
+/* .wrapper{
     max-width: 1440px;
     margin:auto;
-}
+} */
 
-.Header-text{
-    margin-top: -10%;
+/* .Header-text{
+     margin-top: -10%;
     min-width:100%;
-    /* background-color: crimson; */
-}
-.Lugar-header-img{
+    background-color: crimson;
+} */
+/* .Lugar-header-img{
     min-width: 100%;
     mask-image: -webkit-gradient(linear, left top, 
     left bottom, from(rgba(0,0,0,1)), to(rgba(0,0,0,0)));
     -webkit-mask-image: -webkit-gradient(linear, left top, 
     left bottom, from(rgba(0,0,0,1)), to(rgba(0,0,0,0)));
-}
+} */
 
 .Lugar-h2{
     color: white;
@@ -41,6 +48,8 @@
     font-weight: 700;
     font-size: 3em;
     text-align: center;
+    z-index: 2;
+    position: relative;
 }
 
 .Lugar-h3{

@@ -11,8 +11,8 @@ const Footer = () => {
   return (
     <div id="footer">
       <div className="footer">
-        <div className="row mx-0">
-          <div className="col-4 footerDerechos ">
+        <div className="row mx-0 p-0">
+          <div className="col-3 col-sm-4 footerDerechos ">
             <div className="footerDerechos-texto">
               <h6>Unite al equipo!</h6>
               <p>
@@ -26,7 +26,7 @@ const Footer = () => {
               <br /> calle 1 nro 2345, pasaje ferreira
             </p>
           </div>
-          <div className="col-4 footerLogo">
+          <div className="col-6 col-sm-4 footerLogo">
             <img className="footer-logo" src="./logos/logo.png" alt="logo" />
             <p className="footer-p">
               +54-22152312 <br />
@@ -41,7 +41,7 @@ const Footer = () => {
               </p>
             </div>
           </div>
-          <div className="col-4 footerRedes">
+          <div className="col-3 col-sm-4 footerRedes">
             <h4>Seguinos:</h4>
             <h4 className="footerRedes-texto">Seguinos en nuestras redes:</h4>
             <div className="caja-footerRedes">

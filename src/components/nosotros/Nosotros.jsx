@@ -1,13 +1,14 @@
 import React from "react";
+import Header from "../Header/Header";
+import NosDesktop from "./NosDesktop";
 import "./nosotros.css";
 
 const Nosotros = () => {
+  const img = "./assets/nosotros/nosotros.png"
   return (
     <div id="nosotros">
       <img className="vector" src="./assets/vector/vect.png" />
-      <div className="nosotros-img">
-        <img src="./assets/nosotros/nosotros.png" />
-      </div>
+      <Header img={img}/>
       <div className="nosotros">
         <h1 className="text-center">NOSOTROS</h1>
         <h3 className="text-center">La pasión nos inspira</h3>
@@ -56,6 +57,9 @@ const Nosotros = () => {
             </p>
           </div>
         </section>
+        <div className="nosotros-desktop">
+          <NosDesktop />
+        </div>
       </div>
     </div>
   );

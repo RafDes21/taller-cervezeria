@@ -1,0 +1,122 @@
+:root {
+  --font-family: "Jost", sans-serif;
+  --font-familySecundario: "Train One";
+  --color-primary: rgba(254, 254, 254, 1);
+  --color-secondary: rgba(250, 208, 44, 1);
+  --color-background: rgba(1, 1, 1, 1);
+  ---buttom-shadow: 0 0 20px #fad02c, 0 0 4px #fad02c, 0 0 20px #fad02c;
+  --color-alternativo-footer: #939294;
+}
+
+.nosDesktop .nosDesktop-caja1 .logos-index {
+  height: 50%;
+  transform: translateY(100%);
+  top: -50%;
+  position: relative;
+}
+.nosDesktop .nosDesktop-caja2 {
+  position: relative;
+  height: 350px;
+  margin: 40px 0;
+}
+.nosDesktop .nosDesktop-caja3 {
+  margin: 40px 0;
+  margin-bottom: 80px;
+}
+
+.nosDesktop .nosDesktop-caja1 img {
+  width: 336px;
+  height: 336px;
+  position: absolute;
+}
+.nosDesktop .nosDesktop-caja1 .logo1 {
+  top: -10%;
+  left: -20%;
+}
+.nosDesktop .nosDesktop-caja1 .logo2 {
+  top: 12%;
+  left: -10%;
+}
+.nosDesktop .nosDesktop-caja1 .logo3 {
+  top: 34%;
+  left: 0%;
+}
+
+.nosDesktop .nosDesktop-caja2 .circular-vector {
+  position: absolute;
+  top: 0%;
+  height: 100%;
+  width: 100%;
+}
+.caja2-logos {
+  display: flex;
+  justify-content: space-around;
+}
+.nosDesktop .nosDesktop-caja2 .logos {
+  width: 140px;
+  border-radius: 50%;
+  z-index: 2;
+  margin-top: -40px;
+}
+.nosDesktop .nosDesktop-caja3 span {
+  font-family: var(--font-familySecundario);
+}
+.nosDesktop .nosDesktop-caja3 .sub-caja1 {
+  width: 90%;
+  text-align: center;
+  margin: 0 auto;
+  font-size: 24px;
+}
+.nosDesktop .nosDesktop-caja3 .sub-caja2 {
+  font-size: 36px;
+}
+@media screen and (min-width: 991px) {
+  .nosDesktop .nosDesktop-caja3 .sub-caja2 {
+    font-size: 48px;
+  }
+  .nosDesktop .nosDesktop-caja3 .sub-caja1 {
+    width: 90%;
+    text-align: center;
+    margin: 0 auto;
+    font-size: 36px;
+  }
+  .nosDesktop .nosDesktop-caja1 .logos-index {
+    height: 50%;
+    width: 50%;
+    margin-top: 10%;
+    margin-left: 40%;
+    position: relative;
+  }
+  .nosDesktop .nosDesktop-caja1 .logo1 {
+    top: -20%;
+    left: -50%;
+  }
+  .nosDesktop .nosDesktop-caja1 .logo2 {
+    top: 5%;
+    left: -30%;
+  }
+  .nosDesktop .nosDesktop-caja1 .logo3 {
+    top: 30%;
+    left: -10%;
+  }
+  .nosDesktop .nosDesktop-caja2 .logos {
+    width: 245px;
+    border-radius: 50%;
+    z-index: 2;
+    margin-top: -50px;
+  }
+  .nosDesktop .nosDesktop-caja2 .circular-vector {
+    position: absolute;
+    top: 25%;
+    height: 100%;
+    width: 100%;
+  }
+  .nosDesktop .nosDesktop-caja2 {
+    position: relative;
+    height: 350px;
+    margin: 80px 0;
+  }
+  .nosDesktop .nosDesktop-caja3 {
+    margin: 150px 0;
+  }
+}

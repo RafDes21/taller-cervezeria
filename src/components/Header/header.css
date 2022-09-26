@@ -1,0 +1,35 @@
+.header-img {
+  max-width: 1440px;
+  margin: 0 auto;
+  top: 56px;
+  height: 270px;
+  position: relative;
+  box-shadow: 0 50px 50px #070707;
+}
+.header-img::before {
+  position: absolute;
+  content: "";
+  width: 100%;
+  height: 100%;
+  background: linear-gradient(180deg, rgba(7, 7, 7, 0) 0%, #070707 100%);
+}
+.header-img img {
+  height: 100%;
+  width: 100%;
+}
+@media screen and (min-width: 700px) {
+  .header-img {
+    top: 56px;
+    height: 360px;
+    position: relative;
+    box-shadow: 0 50px 50px #070707;
+  }
+}
+@media screen and (min-width: 991px) {
+  .header-img {
+    top: 56px;
+    height: 650px;
+    position: relative;
+    box-shadow: 0 50px 50px #070707;
+  }
+}
