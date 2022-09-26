@@ -6,19 +6,21 @@
   background-repeat: no-repeat, no-repeat;
   background-position: center, center;
   background-size: cover, cover;
-  /* padding: 0 17px; */
 }
-
-/* @media only screen and (min-width: 769px) {
-  .main {
+.main .main-section{
+  
+  padding: 0 17px;
+}
+@media only screen and (min-width: 769px) {
+  .main .main-section {
     padding: 0 34px;
   }
 }
 @media only screen and (min-width: 991px) {
-  .main {
+  .main .main-section {
     padding: 0 80px;
   }
-} */
+}
 /* @media only screen and (min-width: 769px) {
   .show {
     display: none;
