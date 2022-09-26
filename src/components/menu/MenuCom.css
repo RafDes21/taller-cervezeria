@@ -1,0 +1,115 @@
+@import url('https://fonts.googleapis.com/css2?family=Train+One&display=swap');
+@import url('https://fonts.googleapis.com/css2?family=Jost:wght@700&display=swap');
+
+.Menu-wrapper{
+    margin: auto;
+    margin-top: 4em;
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    max-width: 1440px;
+}
+
+.Menu-h2{
+    color: white;
+    /* background-color: yellow; */
+    font-family: 'Jost';
+    font-weight: 700;
+    font-size: 3em;
+    text-align: center;
+}
+
+h3{
+    color: white;
+    font-family: 'Train One', cursive;
+    font-size: 1.5em;
+    /* background-color: orange; */
+    text-align: center;
+    padding-bottom: 2em;
+}
+
+h4{
+    color: white;
+    font-family: 'Train One', cursive;
+    font-size: 1.5em;
+    /* background-color: orange; */
+    text-align: center;
+    padding-top: 2em;
+}
+h5{
+    color: white;
+    font-family: 'Jost', cursive;
+    font-size: 1rem;
+    /* background-color: orange; */
+    text-align: left;
+}
+
+p{
+    font-family: 'Jost';
+    color: white;
+    text-align: center;
+}
+
+button{
+    border: 1px solid #fad02c;
+    color: #fad02c;
+    background: none;
+    margin: 10px;
+    text-decoration: none;
+    padding: 5px 40px;
+    border-radius: 5px;
+    font-family: "Jost", sans-serif;
+    font-size: 18px;
+}
+
+button:hover{
+        background-color: #fad02c;
+        color: black;
+        box-shadow: var(---buttom-shadow);
+      }
+
+.Menu-header{
+    width: 100%;
+    display: flex;
+    flex-direction: column;
+}
+
+.Menu-header-img{
+    width: 100%;
+    min-height: 50vh;
+    background-color: violet;
+}
+
+.Menu-titulo{
+    margin-top: -2.5em;
+}
+
+.Menu-comida-card{
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+}
+.Menu-comida-card img{
+    min-height: 8em;
+    background-color: tomato;
+}
+
+.Menu-bebidas-slider{
+display: flex;
+flex-wrap: nowrap;
+flex-direction: row;
+justify-content: space-around;
+align-items: center;
+}
+.Menu-bebidas-slider img{
+    min-height: 8em;
+    background-color:teal;
+}
+
+.Menu-carta{
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    padding-bottom: 3em;
+}
