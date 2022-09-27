@@ -46,6 +46,10 @@
   }
 }
 
+.header-textos{
+  margin-bottom: 3em;
+}
+
 .header-textos h1{
   font-family: var(--font-family);
   color: var(--color-primary);

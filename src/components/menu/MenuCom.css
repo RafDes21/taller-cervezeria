@@ -51,15 +51,17 @@ h4{
 h5{
     color: white;
     font-family: 'Jost', cursive;
-    font-size: 1rem;
+    font-size: 20px;
     /* background-color: orange; */
     text-align: left;
+    font-weight: 600!important ;
 }
 
 p{
     font-family: 'Jost';
     color: white;
     text-align: center;
+    font-size: 14px;
 }
 
 button{
@@ -84,12 +86,13 @@ button:hover{
     width: 100%;
     display: flex;
     flex-direction: column;
+
 }
 
 .Menu-header-img{
     width: 100%;
     min-height: 50vh;
-    background-color: violet;
+    /* background-color: violet; */
 }
 
 .Menu-titulo{
@@ -100,10 +103,12 @@ button:hover{
     display: flex;
     flex-direction: column;
     align-items: center;
+    padding-bottom: 2em;
 }
 .Menu-comida-card img{
-    min-height: 8em;
-    background-color: tomato;
+    width:70%;
+    margin-bottom: 1em;
+    /* background-color: tomato; */
 }
 
 .Menu-bebidas-slider{
@@ -114,8 +119,7 @@ justify-content: space-around;
 align-items: center;
 }
 .Menu-bebidas-slider img{
-    min-height: 8em;
-    background-color:teal;
+    width: 30%;
 }
 
 .Menu-carta{
