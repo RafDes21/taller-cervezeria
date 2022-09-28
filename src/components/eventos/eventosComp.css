@@ -113,7 +113,7 @@ input:focus{
 }
 
 .Eventos-detalle h4{
-padding:0;
+    padding:0;
 }
 
 @media only screen and (min-width: 768px) {
@@ -123,6 +123,19 @@ padding:0;
     }
     .Eventos-detalle h4{
         font-size: 2em;
+    }
+
+    .inputContainer input{
+        padding: 12px 5px;
+    }
+    .inputContainer input::placeholder{
+        font-size: 20px;
+    }
+
+    .inputContainer label{
+        font-size: 20px;
+        top: 0.1em;
+        left: 2em;
     }
 }
 
