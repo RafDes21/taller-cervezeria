@@ -3,12 +3,12 @@ import "./stylesHome/menu.css";
 import { TituloSecciones } from "../Header/Header";
 import { motion } from "framer-motion/dist/framer-motion";
 import { Link } from "react-router-dom";
+import MenuDesk from "./desktop/MenuDesk";
 
 const Menu = () => {
-
-  const titulo = "EL MENÚ"
-  const subtitulo = "Puesta a punto de sabores"
-  const link = " Ver más..."
+  const titulo = "EL MENÚ";
+  const subtitulo = "Puesta a punto de sabores";
+  const link = " Ver más...";
 
   const textLugarAnimate = {
     offscreen: { filter: " drop-shadow(2px 2px 10px rgb(0, 0, 0))" },
@@ -25,15 +25,15 @@ const Menu = () => {
       initial={"offscreen"}
       whileInView={"onscreen"}
       viewport={{ once: false, amount: 0.5 }}
-      className="container-fluid seccion-menu"
+      className="seccion-menu"
     >
       <motion.img
         variants={textLugarAnimate}
         className="vector"
         src="./assets/vector/vect.png"
       />
-       <TituloSecciones titulo={titulo} subtitulo = {subtitulo} verMas = {link}/>
-      <div className="row">
+      <TituloSecciones titulo={titulo} subtitulo={subtitulo} verMas={link} />
+      <div className="row menu-mobile">
         <div className="col-12 col-md-4 menu-seccion1">
           <div className="menu-text1">
             <h4>
@@ -92,8 +92,9 @@ const Menu = () => {
           />
         </div>
       </div>
+      <MenuDesk />
       <div className="Section-btnMenu">
-        <Link to="/menu">
+        <Link className="nav-link" to="/menu">
           <button className="Section-button">Ver Menú Completo</button>
         </Link>
       </div>

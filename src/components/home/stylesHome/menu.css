@@ -1,11 +1,121 @@
-.seccion-menu{
-    position: relative;
+:root {
+  --font-family: "Jost", sans-serif;
+  --font-familySecundario: "Train One";
+  --color-primary: rgba(254, 254, 254, 1);
+  --color-secondary: rgba(250, 208, 44, 1);
+  --color-background: rgba(1, 1, 1, 1);
+  ---buttom-shadow: 0 0 20px #fad02c, 0 0 4px #fad02c, 0 0 20px #fad02c;
+}
+
+.seccion-menu {
+  position: relative;
+  padding: 0 17px;
 }
 
 .seccion-menu .vector {
-    position: absolute;
-    width: 100%;
-    top: 55%;
-    transform: translateY(-50%);
-    left: 0;
+  position: absolute;
+  width: 100%;
+  top: 35%;
+  transform: translateY(-50%);
+  left: 0;
+}
+
+.seccion-menu .menu-seccion1 {
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  position: relative;
+}
+
+.seccion-menu .menu-seccion1 .menu-text1 h4 {
+  font-size: 18px;
+  font-weight: 600;
+  font-family: var(--font-family);
+  text-align: left;
+}
+.seccion-menu .menu-seccion1 .menu-text1 p {
+  font-size: 16px;
+  font-weight: 400;
+  font-family: var(--font-family);
+  text-align: left;
+}
+.seccion-menu .menu-seccion2 {
+  display: flex;
+  flex-direction: row-reverse;
+  justify-content: space-between;
+  align-items: center;
+  margin-top: -10%;
+}
+.seccion-menu .menu-seccion2 .menu-text2 h4 {
+  font-size: 18px;
+  font-weight: 600;
+  font-family: var(--font-family);
+  text-align: right;
+}
+.seccion-menu .menu-seccion2 .menu-text2 p {
+  font-size: 16px;
+  font-weight: 400;
+  font-family: var(--font-family);
+  text-align: right;
+}
+.seccion-menu .menu-seccion1 img {
+  width: 223px;
+  height: 279px;
+  transform: translateX(-10%);
+  z-index: 2;
+}
+.seccion-menu .menu-seccion2 img {
+  width: 320px;
+  height: 360px;
+  z-index: 2;
+}
+
+.seccion-menu .menu-seccion3 {
+  display: none;
+}
+
+.Section-btnMenu {
+  display: flex;
+  justify-content: flex-end;
+  z-index: 2;
+}
+.Section-button {
+  position: relative;
+  border-radius: 5px;
+  padding: 5px 40px;
+  text-decoration: none;
+  list-style: none;
+  font-size: 16px;
+  font-weight: 400;
+  cursor: pointer;
+  z-index: 2;
+}
+@media (min-width: 768px) {
+  .seccion-menu {
+    position: relative;
+    padding: 40px 0;
   }
+  .seccion-menu .menu-mobile {
+    display: none;
+  }
+
+  .seccion-menu .vector {
+    display: none;
+  }
+}
+@media (min-width: 991px) {
+  .seccion-menu {
+    position: relative;
+    padding: 0 80px;
+  }
+  .Section-button{
+    border: 1px solid var(--color-secondary);
+    color: var(--color-secondary);
+    text-decoration: none;
+    border-radius: 5px;
+    font-family: "Jost", sans-serif;
+    padding: 4px 15px;
+    font-size: 32px;
+    margin-left: 40px;
+  }
+}
