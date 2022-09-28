@@ -15,8 +15,8 @@ const Home = () => {
       <Booking />
       <Experience />
       <Lugar />
-      {/* <Menu />
-      <Eventos />
+      <Menu />
+      {/*<Eventos />
       <Instagram /> */}
     </div>
   );

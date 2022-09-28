@@ -1,21 +1,17 @@
 import React from "react";
 import { Link } from "react-router-dom";
+import { TituloSecciones } from "../Header/Header";
 import "./stylesHome/lugar.css";
 
 const Lugar = () => {
+
+
+  const titulo = "EL LUGAR"
+  const subtitulo = "Unos boxes muy chingones"
+  const link = " Ver más..."
   return (
     <div className="lugar">
-      <div className="lugar-titulo">
-        <div>
-          <h2 className="lugar-title">EL LUGAR</h2>
-          <p className="Section-sub-title">Unos boxes muy chingones</p>
-        </div>
-        <div className="lugar-link">
-          <Link className="nav-link Section-link" to="/lugar">
-            Ver más...
-          </Link>
-        </div>
-      </div>
+      <TituloSecciones titulo={titulo} subtitulo = {subtitulo} verMas = {link}/>
       <div className="row mx-0">
         <div className="col-12 col-md-4 px-0">
           <img

@@ -1,9 +1,15 @@
 import React from "react";
-import "./stylesHome/home.css";
+import "./stylesHome/menu.css";
+import { TituloSecciones } from "../Header/Header";
 import { motion } from "framer-motion/dist/framer-motion";
 import { Link } from "react-router-dom";
 
 const Menu = () => {
+
+  const titulo = "EL MENÚ"
+  const subtitulo = "Puesta a punto de sabores"
+  const link = " Ver más..."
+
   const textLugarAnimate = {
     offscreen: { filter: " drop-shadow(2px 2px 10px rgb(0, 0, 0))" },
     onscreen: {
@@ -21,23 +27,12 @@ const Menu = () => {
       viewport={{ once: false, amount: 0.5 }}
       className="container-fluid seccion-menu"
     >
-      <div className="lugar-titulo">
-        <motion.img
-          variants={textLugarAnimate}
-          className="menu-linea"
-          src="./imgSlider/vector.png"
-        />
-
-        <div>
-          <h2 className="Section-title">EL MENÚ</h2>
-          <p className="Section-sub-title">Puesta a punto de sabores</p>
-        </div>
-        <div className="menu-link">
-          <Link className="Section-link" to="/lugar">
-            Ver más...
-          </Link>
-        </div>
-      </div>
+      <motion.img
+        variants={textLugarAnimate}
+        className="vector"
+        src="./assets/vector/vect.png"
+      />
+       <TituloSecciones titulo={titulo} subtitulo = {subtitulo} verMas = {link}/>
       <div className="row">
         <div className="col-12 col-md-4 menu-seccion1">
           <div className="menu-text1">

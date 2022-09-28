@@ -17,24 +17,7 @@
   position: relative;
   padding: 40px 17px;
 }
-.lugar-title {
-  font-size: 20px;
-  font-weight: 700;
-}
-.Section-sub-title {
-  font-family: var(--font-familySecundario);
-  font-size: 16px;
-  font-weight: 400;
-  text-align: left;
-}
-.lugar .lugar-link {
-  position: absolute;
-  font-size: 16px;
-  top: 10%;
-  right: 0;
-  transform: translateX(-50%);
-  color: var(--color-secondary);
-}
+
 .lugar .Lugar-img {
   padding: 5px;
   height: 100%;
@@ -43,7 +26,7 @@
   display: none;
 }
 .Section-btn {
-    margin: 40px 0;
+  margin: 40px 0;
   display: flex;
   justify-content: flex-end;
 }
@@ -64,18 +47,11 @@
     position: relative;
     padding: 40px 34px;
   }
-  .lugar-title {
-    font-size: 30px;
-    font-weight: 700;
-  }
+
   .oculto {
     display: block;
   }
-  .Section-sub-title {
-    font-family: var(--font-familySecundario);
-    font-size: 24px;
-    font-weight: 400;
-  }
+
   .mostrar {
     display: none;
   }
@@ -103,25 +79,7 @@
     position: relative;
     padding: 40px 80px;
   }
-  .lugar-title {
-    font-size: 48px;
-    font-weight: 800;
-  }
-  .Section-sub-title {
-    font-family: var(--font-familySecundario);
-    font-size: 36px;
-    font-weight: 400;
-    text-align: left;
-  }
-  .lugar .lugar-link {
-    position: absolute;
-    font-weight: 500;
-    font-size: 36px;
-    top: 13%;
-    right: 0;
-    transform: translateX(-50%);
-    color: var(--color-secondary);
-  }
+
   .Section-button {
     display: flex;
     justify-content: flex-end;

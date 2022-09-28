@@ -46,59 +46,118 @@
   }
 }
 
-.header-textos{
+.header-textos {
   margin-bottom: 3em;
 }
 
-.header-textos h1{
+.header-textos h1 {
   font-family: var(--font-family);
   color: var(--color-primary);
   font-size: 24px;
   font-weight: 700;
   position: relative;
-  z-index:2;
+  z-index: 2;
   text-align: center;
 }
-.header-textos h3{
+.header-textos h3 {
   font-family: var(--font-familySecundario);
   color: var(--color-primary);
   font-size: 16px;
   font-weight: 400;
   position: relative;
-  z-index:2;
+  z-index: 2;
   text-align: center;
 }
 @media screen and (min-width: 700px) {
-  .header-textos h1{
+  .header-textos h1 {
     font-family: var(--font-family);
     font-size: 48px;
     font-weight: 700;
     position: relative;
-    z-index:2;
+    z-index: 2;
   }
-  .header-textos h3{
+  .header-textos h3 {
     font-family: var(--font-familySecundario);
     font-size: 30px;
     font-weight: 400;
     position: relative;
-    z-index:2;
+    z-index: 2;
     color: var(--color-primary);
   }
 }
 @media screen and (min-width: 991px) {
-  .header-textos h1{
+  .header-textos h1 {
     font-family: var(--font-family);
     font-size: 78px;
     font-weight: 700;
     position: relative;
-    z-index:2;
+    z-index: 2;
   }
-  .header-textos h3{
+  .header-textos h3 {
     font-family: var(--font-familySecundario);
     font-size: 60px;
     font-weight: 400;
     position: relative;
-    z-index:2;
+    z-index: 2;
     color: var(--color-primary);
+  }
+}
+
+.lugar-titulo{
+  position: relative;
+}
+.lugar-title {
+  font-size: 20px;
+  font-weight: 700;
+  color: var(--color-primary);
+ 
+}
+.Section-sub-title {
+  font-family: var(--font-familySecundario);
+  font-size: 16px;
+  font-weight: 400;
+  text-align: left;
+}
+.lugar-link {
+  position: absolute;
+  font-size: 16px;
+  bottom:5%;
+  right: 0;
+  transform: translateX(-50%);
+  color: var(--color-secondary);
+}
+@media (min-width: 768px) {
+  .lugar-title {
+    font-size: 30px;
+    font-weight: 700;
+  }
+  .oculto {
+    display: block;
+  }
+  .Section-sub-title {
+    font-family: var(--font-familySecundario);
+    font-size: 24px;
+    font-weight: 400;
+  }
+}
+@media (min-width: 991px) {
+  .lugar-title {
+    font-size: 48px;
+    font-weight: 800;
+  }
+  .Section-sub-title {
+    font-family: var(--font-familySecundario);
+    font-size: 36px;
+    font-weight: 400;
+    text-align: left;
+  }
+  .lugar .lugar-link {
+    position: absolute;
+    font-weight: 500;
+    font-size: 36px;
+    top: 13%;
+    right: 0;
+    transform: translateX(-50%);
+    color: var(--color-secondary);
   }
 }
