@@ -1,0 +1,112 @@
+
+.Reservas-text{
+  font-size: 12px;
+  font-family: "Jost";
+  margin-bottom:4em ;
+}
+
+.Reservas-form{
+  max-width: 768px;
+  width: 85%;
+  margin: auto;
+  background-color: black;
+  padding: 20px 10px;
+  box-shadow: 2px 2px 30px #dd1919;
+  position:relative;
+  margin-bottom: 10em;
+}
+
+.Reservas-h2{
+  font-family: "Train One";
+  color: white;
+  font-size: 24px;
+  text-shadow: 0px 4px 87px rgba(251, 3, 3, 0.23), 0px 1.6711px 36.3465px rgba(251, 3, 3, 0.165337), 0px 0.893452px 19.4326px rgba(251, 3, 3, 0.137105), 0px 0.500862px 10.8938px rgba(251, 3, 3, 0.115), 0px 0.266004px 5.78559px rgba(251, 3, 3, 0.0928953), 0px 0.11069px 2.40751px rgba(251, 3, 3, 0.0646635);
+  text-align: center;
+  top:-25px;
+  padding: 5px 1px;
+  position: absolute;
+  background-color: black;
+  transform: translateX(50%);
+  right:50%;
+  
+}
+
+@media only screen and (min-width: 768px) {
+
+  .Reservas-text{
+    font-size: 25px;
+}
+  .Reservas-form{
+      font-size:20px;
+  }
+  .inputContainer input{
+    padding: 12px 5px;
+}
+.inputContainer input::placeholder{
+    font-size: 20px;
+}
+
+.inputContainer label{
+    font-size: 20px;
+    top: 0.1em;
+    left: 2em;
+}
+.Reservas-h2{
+  font-size: 35px;
+  top:-30px;
+}
+}
+
+.inputContainer{
+  position: relative;
+  padding: 1em;
+}
+
+.Reservas-form input{
+  background-color: transparent;
+  border: 1px solid #817F7F;
+  border-radius: 5px;
+  width: 100%;
+  padding: 7px 8px;
+  color:white;
+}
+
+select{
+  background-color: transparent;
+  border: 1px solid #817F7F;
+  border-radius: 5px;
+  width: 100%;
+  padding: 7px 8px;
+  color:white;
+}
+select:focus{
+  border:none;
+  background-color: transparent;
+  outline:white solid 1.5px;
+}
+
+input:focus{
+  border:none;
+  background-color: transparent;
+  outline:white solid 1.5px;
+}
+
+.Reservas-form input::placeholder{
+  font-family: "Jost";
+  color: #817F7F;
+  font-size: 12px;
+  padding: 5px 3px;
+}
+
+.Reservas-form label{
+  font-family: "Jost";
+  color: white;
+  position:absolute;
+  top: 0.5em;
+  z-index: 1;
+  left: 3.5em;
+  background-color: black;
+  padding: 3px 10px;
+  font-size: 10px;
+}
+
