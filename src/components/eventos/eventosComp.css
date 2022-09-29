@@ -11,7 +11,7 @@
     flex-direction: column;
     align-items: center;
     max-width: 1440px;
-        padding: 37px 25px;
+        /* padding: 37px 25px; */
         background-image: url("../nosotros/fondo.png");
         background-repeat: no-repeat;
         background-size: cover;
@@ -100,6 +100,9 @@ input:focus{
     border-radius: 5px;
 }
 
+.Eventos-detalle{
+    width:100%
+}
 
 .Eventos-detalle-content{
     position:relative;
@@ -107,11 +110,17 @@ input:focus{
     max-width: 1440px;
 }
 
+.Eventos-detalle-wrapper{
+    position:relative;
+    z-index:2;
+}
+
 .Eventos-detalle-vector{
     position:absolute;
+    /* background-color: #dd1919; */
     width: 100%;
     top: 6em;
-    z-index: -1;
+    z-index: 1;
 }
 
 .Eventos-detalle p{
