@@ -9,13 +9,13 @@ const ReservasComp = () => {
 
   return (
     <>
-    <div>
+
       <div>
         <Header img={img} />
       </div>
-      <Texto texto1={h1} texto2={h3} />
-    </div>
     <section className="Reservas-content">
+      <Texto texto1={h1} texto2={h3} />
+
     <p className="Reservas-text">
     Haz tu reserva en linea y asegurate tu lugar en EL TALLER. <br />
     Ten en cuenta que nuestro horario de atención es de        

@@ -8,11 +8,11 @@ const EventosComp = () => {
   const h3 = "Diversión a toda marcha";
   return (
     <div>
-      <div className="wrapper mx-auto">
+      
         <Header img={img} />
-        <Texto texto1={h1} texto2={h3} />
-      </div>
       <section className="Eventos-content mx-auto">
+        <Texto texto1={h1} texto2={h3} />
+
         <p className="Eventos-text">
       Nos ocupamos de organizar tu evento. Contanos los detalles del mismo y solicita una cotización. Un asesor se encargará de enviarte los servicios que ofrecemos y el valor de los mismos.
         </p>
@@ -50,7 +50,6 @@ const EventosComp = () => {
             </div>
           </form>
         </div>
-              </section>
 
         <div className="Eventos-detalle">
             <p>
@@ -78,6 +77,7 @@ const EventosComp = () => {
             </div>
         </div>
 
+              </section>
 
     </div>
   );

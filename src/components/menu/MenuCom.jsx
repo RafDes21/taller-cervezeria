@@ -11,8 +11,8 @@ const MenuCom = () => {
   return (
     <div className="Menu-wrapper">
         <Header img={img} />
-        <Texto texto1={h1} texto2={h3} />
       <section className="Menu-content-mobile">
+        <Texto texto1={h1} texto2={h3} />
         <div className="Menu-comida">
           <div className="Menu-comida-card">
             <img src="./img/menu/menuA.png" alt="imagen menu" />

@@ -1,3 +1,13 @@
+.Reservas-content{
+
+    padding: 37px 25px;
+    background-image: url("../nosotros/fondo.png");
+    background-repeat: no-repeat;
+    background-size: cover;
+    background-attachment: fixed;
+
+}
+
 
 .Reservas-text{
   font-size: 12px;
