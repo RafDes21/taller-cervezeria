@@ -1,6 +1,8 @@
 import React from "react";
 import { motion } from "framer-motion/dist/framer-motion";
 import "./menuDesk.css";
+import Item from "./Item";
+import menus from "./menu";
 
 const MenuDesk = () => {
   const textLugarAnimate = {
@@ -21,59 +23,12 @@ const MenuDesk = () => {
         className="vectorDesk"
         src="./assets/vector/path.png"
       />
-      <div className="col-md-4">
-        <img
-          src="./img/menu/menu1.png"
-          alt="imagen menu"
-          className="menu-img menu1"
-        />
-        <h4>
-          TACOS
-          <br />
-          VELOCES
-        </h4>
-        <p>
-          Sabrosa carne
-          <br />
-          vacuna, palta
-          <br />y cebolla
-        </p>
-      </div>
-      <div className="col-md-4">
-        <img
-          src="./img/menu/menu1.png"
-          alt="imagen menu"
-          className="menu-img menu1"
-        />
-        <h4>
-          TACOS
-          <br />
-          VELOCES
-        </h4>
-        <p>
-          Sabrosa carne
-          <br />
-          vacuna, palta
-          <br />y cebolla
-        </p>
-      </div>
-      <div className="col-md-4">
-        <img
-          src="./img/menu/menu1.png"
-          alt="imagen menu"
-          className="menu-img menu1"
-        />
-        <h4>
-          TACOS
-          <br />
-          VELOCES
-        </h4>
-        <p>
-          Sabrosa carne
-          <br />
-          vacuna, palta
-          <br />y cebolla
-        </p>
+      <div className="row mx-0">
+        {menus.map((menu, index) => (
+          <div className="col-md-4" key={index}>
+            <Item menu={menu} />
+          </div>
+        ))}
       </div>
     </div>
   );

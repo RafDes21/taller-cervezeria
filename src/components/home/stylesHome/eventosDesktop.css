@@ -1,0 +1,39 @@
+:root {
+  --font-family: "Jost", sans-serif;
+  --font-familySecundario: "Train One";
+  --color-primary: rgba(254, 254, 254, 1);
+  --color-secondary: rgba(250, 208, 44, 1);
+  --color-background: rgba(1, 1, 1, 1);
+}
+
+.eventos-Desktop {
+  color: var(--color-primary);
+}
+.eventos-Desktop h2 {
+  font-family: var(--font-familySecundario);
+  font-size: 72px;
+  font-weight: 400;
+}
+.eventos-Desktop .eventos-caja1 h3 {
+  font-family: var(--font-family);
+  font-size: 32px;
+  font-weight: 400;
+}
+.eventos-Desktop .eventos-caja2 h2 {
+  text-align: end;
+}
+.eventos-Desktop img {
+  height: 402px;
+  width: 428px;
+}
+.eventos-Desktop .eventos-caja__imagen {
+  display: flex;
+  justify-content: flex-end;
+  transform: translateY(15%);
+}
+.eventos-Desktop .eventos-caja2 img {
+  transform: translateY(-15%);
+}
+.eventos-Desktop .eventos-caja2 h2 {
+  transform: translateY(-35%);
+}

@@ -1,0 +1,101 @@
+@import url("https://fonts.googleapis.com/css2?family=Jost:ital,wght@0,200;0,400;1,100&family=Oleo+Script&display=swap");
+@import url("https://fonts.googleapis.com/css2?family=Oleo+Script+Swash+Caps&display=swap");
+
+/*Etiquetas comunes a las secciones*/
+:root {
+  --font-family: "Jost", sans-serif;
+  --font-familySecundario: "Train One";
+  --color-primary: rgba(254, 254, 254, 1);
+  --color-secondary: rgba(250, 208, 44, 1);
+  --color-background: rgba(1, 1, 1, 1);
+  ---buttom-shadow: 0 0 20px #fad02c, 0 0 4px #fad02c, 0 0 20px #fad02c;
+}
+
+.Section-title {
+  font-family: var(--font-family);
+  font-size: 20px;
+  font-weight: 700;
+  margin-top: 11px;
+}
+.Section-texto {
+  font-family: var(--font-family);
+  z-index: 2;
+}
+.Section-sub-title {
+  font-family: var(--font-familySecundario);
+  font-size: 16px;
+  font-weight: 400;
+}
+.Section-link {
+  text-decoration: none;
+  color: #fad02c;
+}
+.Section-link:hover {
+  background-color: #fad02c;
+  color: #010101;
+  padding: 4px;
+  border-radius: 5px;
+}
+
+.Section-btn {
+  display: flex;
+  justify-content: flex-end;
+  background-color: #010101;
+  padding: 10px 0;
+}
+.Section-button {
+  border: 1px solid #fad02c;
+  color: #fad02c;
+  background: none;
+  margin: 10px;
+  text-decoration: none;
+  padding: 5px 40px;
+  border-radius: 5px;
+  font-family: "Jost", sans-serif;
+  font-size: 18px;
+}
+.Section-button:hover {
+  background-color: #fad02c;
+  color: black;
+  box-shadow: var(---buttom-shadow);
+}
+
+.instagram {
+  position: relative;
+  color: #ffffff;
+  margin-top: 40px;
+}
+.instagram-link {
+  position: absolute;
+  top: 3%;
+  left: 50%;
+}
+.row .instagram-imagenes {
+  width: 30%;
+}
+.instagram .instagram-oculto1 {
+  display: none;
+}
+.instagram .instagram-oculto2 {
+  display: none;
+}
+
+.caja-instagram {
+  display: flex;
+
+  justify-content: space-between;
+}
+
+@media (min-width: 768px) {
+  .instagram .instagram-oculto1 {
+    display: flex;
+    justify-content: space-between;
+  }
+  .instagram .instagram-oculto2 {
+    display: flex;
+    justify-content: space-between;
+  }
+  .caja-instagram {
+    margin: 20px 0;
+  }
+}

@@ -23,10 +23,10 @@ export const TituloSecciones = ({ titulo, subtitulo, verMas }) => {
     <div className="lugar-titulo">
       <div>
         <h2 className="lugar-title">{titulo}</h2>
-        <p className="Section-sub-title">{subtitulo}</p>
+        <p className="sub-title">{subtitulo}</p>
       </div>
       <div className="lugar-link">
-        <Link className="nav-link Section-link" to="/lugar">
+        <Link className="nav-link link" to="/lugar">
           {verMas}
         </Link>
       </div>

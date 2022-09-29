@@ -145,7 +145,7 @@
     font-size: 48px;
     font-weight: 800;
   }
-  .Section-sub-title {
+  .sub-title {
     font-family: var(--font-familySecundario);
     font-size: 36px;
     font-weight: 400;
@@ -159,5 +159,8 @@
     right: 0;
     transform: translateX(-50%);
     color: var(--color-secondary);
+  }
+  .lugar-titulo .link{
+    font-size: 32px;
   }
 }

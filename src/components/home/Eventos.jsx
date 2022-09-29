@@ -2,9 +2,15 @@ import React from "react";
 import { Link } from "react-router-dom";
 import { motion } from "framer-motion/dist/framer-motion";
 
-import "./stylesHome/home.css";
+import "./stylesHome/eventos.css";
+import { TituloSecciones } from "../Header/Header";
+import EventosMobile from "./EventosMobile";
+import EventosDesktop from "./EventosDesktop";
 
 const Eventos = () => {
+  const titulo = "EVENTOS ";
+  const link = " Ver más...";
+  const subtitulo = "Diversión a toda marcha";
 
   const textLugarAnimate = {
     offscreen: { filter: " drop-shadow(2px 2px 10px rgb(0, 0, 0))" },
@@ -13,57 +19,42 @@ const Eventos = () => {
       filter: "drop-shadow(2px 2px 10px rgb(255, 0, 0))",
       transition: {
         duration: 0.1,
-        yoyo:4
+        yoyo: 4,
       },
     },
   };
   return (
     <motion.div
-     initial={"offscreen"}
+      initial={"offscreen"}
       whileInView={"onscreen"}
-      viewport={{ once: false, amount: 0.5 }} 
-    className="eventos">
-      <div className="lugar-titulo">
-        
-          <motion.img  variants={textLugarAnimate} className="eventos-linea" src="./imgSlider/vector.png" />
-        
-        <div>
-          <h2 className="Section-title">EVENTOS</h2>
-          <p className="Section-sub-title">Diversión a toda marcha</p>
-        </div>
-        <div className="eventos-link">
-          <Link className="Section-link" to="/lugar">
-            Ver más...
-          </Link>
-        </div>
+      viewport={{ once: false, amount: 0.5 }}
+      className="eventos"
+    >
+      <motion.img
+        variants={textLugarAnimate}
+        className="eventos-linea"
+        src="./assets/vector/vect.png"
+      />
+      <motion.img
+        variants={textLugarAnimate}
+        className="vectEventos"
+        src="./assets/vector/vecEventos.png"
+      />
+      <TituloSecciones titulo={titulo} subtitulo={subtitulo} verMas={link} />
+      <div className="mobile">
+        <EventosMobile />
       </div>
-      <div className="row">
-        <div className="col-6 eventos1">
-          <div className="eventos-text">
-            <h4>Karaoke</h4>
-            <p>Jueves 21 horas</p>
-          </div>
-          <img
-            className="eventos-img1"
-            src="./img/eventos/eventos1.png"
-            alt="imagen-eventos"
-          />
-        </div>
-        <div className="col-6 eventos2">
-          <div className="eventos-text">
-            <h4>Karaoke</h4>
-            <p>Jueves 21 horas</p>
-          </div>
-          <img
-            className="eventos-img2"
-            src="./img/eventos/eventos2.png"
-            alt="imagen-eventos"
-          />
-        </div>
+      <div className="desktop">
+        <EventosDesktop/>
       </div>
-      <div className="Section-btnMenu">
-        <Link to="/lugar">
-          <button className="Section-button">Arma tu evento</button>
+      <div className="boton-eventos">
+        <Link className="btn-eventos" to="/eventos">
+          <button className="Section-button w-100">Arma tu evento</button>
+        </Link>
+      </div>
+      <div className="eventos-boton">
+        <Link className="nav-link" to="/menu">
+          <button className="Section-button">Cotizá tu Evento</button>
         </Link>
       </div>
     </motion.div>

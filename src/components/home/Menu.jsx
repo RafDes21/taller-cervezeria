@@ -93,10 +93,9 @@ const Menu = () => {
         </div>
       </div>
       <div className="desktopMenu">
-
-      <MenuDesk />
+        <MenuDesk />
       </div>
-      <div className="Section-btnMenu">
+      <div className="Section-btnMenu boton-menu">
         <Link className="nav-link" to="/menu">
           <button className="Section-button">Ver Menú Completo</button>
         </Link>

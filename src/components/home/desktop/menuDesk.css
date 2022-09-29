@@ -1,5 +1,51 @@
-@media (max-width: 768px) {
-    .menu-desktop{
-        display: none;
-      }
+:root {
+  --font-family: "Jost", sans-serif;
+  --color-primary: rgba(254, 254, 254, 1);
+  --color-secondary: rgba(250, 208, 44, 1);
+  --color-background: rgba(1, 1, 1, 1);
+}
+
+.menu-desktop .row {
+  height: 100%;
+}
+.item-menu {
+  display: inline-block;
+  justify-content: center;
+  align-items: center;
+  height: 100%;
+  width: 100%;
+
+  color: var(--color-primary);
+  font-family: var(--font-family);
+}
+
+.item-menu .item-header {
+  height: 60%;
+  width: 100%;
+  display: flex;
+  justify-content: center;
+}
+
+.item-menu .item-header img {
+  height: 408px;
+  width: 408px;
+  position: relative;
+  z-index: 2;
+  margin: 0 auto;
+}
+.item-menu h2 {
+  margin-top: 40px;
+  font-weight: 600;
+  font-size: 40px;
+}
+.item-menu p {
+  font-weight: 400;
+  font-size: 28px;
+}
+
+.menu-desktop .vectorDesk {
+  position: absolute;
+  top: -60%;
+  transform: translateY(50%);
+  left: 0;
 }

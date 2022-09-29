@@ -61,12 +61,13 @@
 .seccion-menu .menu-seccion1 img {
   width: 223px;
   height: 279px;
-  transform: translateX(-10%);
+  transform: translateX(-5%);
   z-index: 2;
 }
 .seccion-menu .menu-seccion2 img {
-  width: 320px;
-  height: 360px;
+  width: 233px;
+  height: 279px;
+  transform: translateX(5%);
   z-index: 2;
 }
 
@@ -90,8 +91,8 @@
   cursor: pointer;
   z-index: 2;
 }
-.desktopMenu{
-    display: none;
+.desktopMenu {
+  display: none;
 }
 
 @media (min-width: 768px) {
@@ -106,17 +107,17 @@
   .seccion-menu .vector {
     display: none;
   }
-  .desktopMenu{
+  .desktopMenu {
     display: block;
-}
-
+    height: 100%;
+  }
 }
 @media (min-width: 991px) {
   .seccion-menu {
     position: relative;
     padding: 0 80px;
   }
-  .Section-button{
+  .Section-button {
     border: 1px solid var(--color-secondary);
     color: var(--color-secondary);
     text-decoration: none;
