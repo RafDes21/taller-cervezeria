@@ -16,6 +16,7 @@
   font-size: 20px;
   font-weight: 700;
   margin-top: 11px;
+ 
 }
 .Section-texto {
   font-family: var(--font-family);
@@ -64,6 +65,7 @@
   position: relative;
   color: #ffffff;
   margin-top: 40px;
+  padding: 0 17px;
 }
 .instagram-link {
   position: absolute;
@@ -87,6 +89,9 @@
 }
 
 @media (min-width: 768px) {
+  .instagram{
+    padding: 0 40px;
+  }
   .instagram .instagram-oculto1 {
     display: flex;
     justify-content: space-between;
@@ -98,4 +103,10 @@
   .caja-instagram {
     margin: 20px 0;
   }
+}
+@media (min-width: 991px) {
+  .instagram{
+    padding: 0 80px;
+  }
+ 
 }

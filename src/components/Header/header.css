@@ -112,16 +112,17 @@
   color: var(--color-primary);
  
 }
-.Section-sub-title {
+.sub-title {
   font-family: var(--font-familySecundario);
   font-size: 16px;
   font-weight: 400;
   text-align: left;
 }
-.lugar-link {
+.lugar-titulo .link{
   position: absolute;
+  font-weight: 500;
   font-size: 16px;
-  bottom:5%;
+  top: 13%;
   right: 0;
   transform: translateX(-50%);
   color: var(--color-secondary);
@@ -151,7 +152,8 @@
     font-weight: 400;
     text-align: left;
   }
-  .lugar .lugar-link {
+ 
+  .lugar-titulo .link{
     position: absolute;
     font-weight: 500;
     font-size: 36px;
@@ -159,8 +161,5 @@
     right: 0;
     transform: translateX(-50%);
     color: var(--color-secondary);
-  }
-  .lugar-titulo .link{
-    font-size: 32px;
   }
 }
