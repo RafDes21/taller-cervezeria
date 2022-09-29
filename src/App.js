@@ -8,7 +8,7 @@ import { NosotrosMas } from "./routes/NosotrosMas";
 import Home from "./routes/Home";
 import Navbar from "./components/Navbar";
 import { LugarMas } from "./routes/LugarMas";
-import MenuCom from "./components/menu/MenuCom.jsx";
+import { MenuMas } from "./routes/MenuMas";
 
 
 function App() {
@@ -18,7 +18,7 @@ function App() {
       <Routes>
         <Route exact path="/" element={<Home />} />
         <Route exact path="/lugar" element={<LugarMas/>} />
-        <Route exact path="/menu" element={<MenuCom />} />
+        <Route exact path="/menu" element={<MenuMas />} />
         <Route exact path="/eventos" element={<EventosMas />} />
         <Route exact path="/reservas" element={<ReservasMas />} />
         <Route exact path="/nosotros" element={<NosotrosMas />} />
