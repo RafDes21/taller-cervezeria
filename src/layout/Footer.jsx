@@ -27,7 +27,11 @@ const Footer = () => {
             </p>
           </div>
           <div className="col-6 col-sm-4 footerLogo">
-            <img className="footer-logo" src="./assets/logos/logo.png" alt="logo" />
+            <img
+              className="footer-logo"
+              src="./assets/logos/logo.png"
+              alt="logo"
+            />
             <p className="footer-p">
               +54-22152312 <br />
               Lunes a domingos de 9 a 23 hs
