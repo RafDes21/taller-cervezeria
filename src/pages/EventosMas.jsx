@@ -1,9 +1,10 @@
 import React from 'react'
 import EventosComp from '../components/eventos/EventosComp'
 
-export const EventosMas = () => {
+const EventosMas = () => {
   return (
     <EventosComp/>
   )
 }
 
+export default EventosMas

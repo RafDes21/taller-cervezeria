@@ -1,9 +1,10 @@
 import React from 'react'
 import Nosotros from '../components/nosotros/Nosotros'
 
-export const NosotrosMas = () => {
+const NosotrosMas = () => {
   return (
     <Nosotros/>
   )
 }
 
+export default NosotrosMas

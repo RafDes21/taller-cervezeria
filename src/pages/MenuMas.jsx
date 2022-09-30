@@ -1,7 +1,7 @@
 import React from 'react'
 import MenuCom from '../components/menu/MenuCom'
 
- export const MenuMas = () => {
+ const MenuMas = () => {
   return (
     <div>
       <MenuCom/>
@@ -9,3 +9,4 @@ import MenuCom from '../components/menu/MenuCom'
   )
 }
 
+export default MenuMas
