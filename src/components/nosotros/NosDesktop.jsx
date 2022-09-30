@@ -3,7 +3,7 @@ import "./nosDesktop.css";
 
 const NosDesktop = () => {
   return (
-    <div className="nosDesktop">
+    <div className="nosDesktop nosDesktop-wrapper">
       <div className="row nosDesktop-caja1">
         <div className="col-7">
           <p>
@@ -25,58 +25,61 @@ const NosDesktop = () => {
           </p>
         </div>
         <div className="col-5">
-        <div className="logos-index">
+          <div className="logos-index">
           <img
             className="logo1"
-            src="./assets/nosotros/logoTaller.png"
+            src="./assets/nosotros/logoTaller2.png"
             alt="logo"
           />
           <img
             className="logo2"
-            src="./assets/nosotros/logoTaller.png"
+            src="./assets/nosotros/logoTaller2.png"
             alt="logo"
           />
           <img
             className="logo3"
-            src="./assets/nosotros/logoTaller.png"
+            src="./assets/nosotros/logoTaller2.png"
             alt="logo"
           />
           </div>
         </div>
       </div>
       <div className="nosDesktop-caja2">
-        <h3>Nuestra inspiración</h3>
+        <h3 className="nosDesktop-caja2-h3">Nuestra inspiración</h3>
+        
+        <div className="nosDesktop-caja2-wrapper">
         <img
-          className="circular-vector"
-          src="./assets/vector/vectDesktop.png"
+          className="circular-vector-desk"
+          src="./assets/vector/vectorNosDesk.png"
           alt="imagenVector"
-        />
+          />
         <div className="caja2-logos">
           <img
             className=" logos circular1"
-            src="./assets/nosotros/img4.png"
+            src="./assets/nosotros/inspiA.png"
             alt="imagenCircular"
-          />
+            />
           <img
             className=" logos circular2"
-            src="./assets/nosotros/img4.png"
+            src="./assets/nosotros/inspiB.png"
             alt="imagenCircular"
-          />
+            />
           <img
             className=" logos circular3"
-            src="./assets/nosotros/img4.png"
+            src="./assets/nosotros/inspiC.png"
             alt="imagenCircular"
-          />
+            />
           <img
             className=" logos circular4"
-            src="./assets/nosotros/img4.png"
+            src="./assets/nosotros/inspiD.png"
             alt="imagenCircular"
-          />
+            />
           <img
             className=" logos circular5"
-            src="./assets/nosotros/img4.png"
+            src="./assets/nosotros/inspiE.png"
             alt="imagenCircular"
-          />
+            />
+            </div>
         </div>
       </div>
       <div className="nosDesktop-caja3">

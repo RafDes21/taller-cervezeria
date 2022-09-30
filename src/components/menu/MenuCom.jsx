@@ -52,6 +52,7 @@ const MenuCom = () => {
       </section>
 
       <section className="Menu-content-desktop">
+      <Texto texto1={h1} texto2={h3} />
           <div className="Menu-desktop-section">
             <h4 className="Menu-desktop-h4">DESAYUNOS</h4>
             <div className="Menu-section-wrapper">

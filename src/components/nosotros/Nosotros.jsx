@@ -9,11 +9,11 @@ const Nosotros = () => {
   const h3 = "La pasión nos inspira"
   return (
     <div id="nosotros">
-      <img className="vector" src="./assets/vector/vect.png" alt="vector-imagen"/>
       <Header img={img}/>
       <div className="nosotros">
         <Texto texto1={h1} texto2={h3}/>
         <section className="nosotros-seccion">
+      {/* <img className="vector" src="./assets/vector/vectorNosMob.png" alt="vector-imagen"/> */}
           <div className="nosotros-seccion__caja1">
             <p className="text-center">
               Somos un restaurant de comida urbana, inspirado en la historia
@@ -35,6 +35,7 @@ const Nosotros = () => {
             </p>
           </div>
           <div className="nosotros-seccion__caja2">
+          <img className="vector" src="./assets/vector/vectorNosMob.png" alt="vector-imagen"/>
             <img src="./assets/nosotros/logo.png" alt="imagen-logo"/>
           </div>
           <div className="nosotros-seccion__caja3">
@@ -58,7 +59,7 @@ const Nosotros = () => {
             </p>
           </div>
         </section>
-        <div className="nosotros-desktop">
+        <div className="nosotros-desktop-componente">
           <NosDesktop />
         </div>
       </div>
