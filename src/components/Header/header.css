@@ -45,7 +45,7 @@
     box-shadow: 0 50px 50px #070707;
   }
 }
-
+/* Header textos */
 .header-textos {
   margin-bottom: 3em;
 }
@@ -103,6 +103,7 @@
   }
 }
 
+/* Titulos */
 .lugar-titulo{
   position: relative;
 }

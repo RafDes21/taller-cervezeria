@@ -33,63 +33,41 @@ const Menu = () => {
         src="./assets/vector/vect.png"
       />
       <TituloSecciones titulo={titulo} subtitulo={subtitulo} verMas={link} />
-      <div className="row menu-mobile">
-        <div className="col-12 col-md-4 menu-seccion1">
-          <div className="menu-text1">
-            <h4>
-              TACOS
-              <br />
-              VELOCES
-            </h4>
-            <p>
-              Sabrosa carne
-              <br />
-              vacuna, palta
-              <br />y cebolla
-            </p>
+      <div className="menu-mobile">
+        <div className="row mx-0 menu-fila1">
+          <div className="col-4 menu-texto">
+            <div className="menu-text1">
+              <h4>LA MONSTER TALLER</h4>
+              <p>
+                Doble carne de res, queso amarillo y manchego, piña, tocino y
+                bbq.
+              </p>
+            </div>
           </div>
-          <img
-            src="./img/menu/menu1.png"
-            alt="imagen menu"
-            className="menu-img menu1"
-          />
+          <div className="col-8 menu-imagen">
+            <img
+              src="./img/menu/menu1.png"
+              alt="imagen menu"
+              className="menu1"
+            />
+          </div>
         </div>
-        <div className="col-12 col-md-4 menu-seccion2">
-          <div className="menu-text2">
-            <h4>
-              BURRITOS
-              <br /> MECANICOS
-            </h4>
-            <p>
-              Sabrosa carne
-              <br />
-              vacuna, palta
-              <br />y cebolla
-            </p>
+        <div className="row mx-0 menu-fila2">
+          <div className="col-8 menu-imagen">
+            <img
+              src="./img/menu/menu2.png"
+              alt="imagen-menu"
+              className="menu2"
+            />
           </div>
-          <img
-            src="./img/menu/menu2.png"
-            alt="imagen menu"
-            className="menu-img menu2"
-          />
-        </div>
-        <div className="col-0 col-md-4 menu-mostrar menu-seccion3">
-          <div className="menu-text3">
-            <h4>
-              BURRITOS
-              <br /> MECANICOS
-            </h4>
-            <p>
-              Sabrosa carne <br />
-              vacuna, palta
-              <br />y cebolla
-            </p>
+          <div className="col-4">
+            <div className="menu-text2">
+              <h4>LAS PETRÓLEO</h4>
+              <p>
+                Deliciosas alitas bañadas en nuestra salsa especial “el taller”.
+              </p>
+            </div>
           </div>
-          <img
-            src="./img/menu/menu3.png"
-            alt="imagen menu"
-            className="menu-img menu3"
-          />
         </div>
       </div>
       <div className="desktopMenu">

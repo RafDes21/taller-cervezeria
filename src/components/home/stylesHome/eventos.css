@@ -6,13 +6,14 @@
 }
 
 .eventos {
-  padding: 0 17px;
+  padding: 40px 17px;
   position: relative;
 }
 .eventos .eventos-linea {
   position: absolute;
   width: 100%;
-  top: -70%;
+  transform: translateY(-50%);
+  top: 40%;
   left: 0;
 }
 
@@ -26,31 +27,42 @@
   font-weight: 400;
 }
 .mobile img {
-  width: 264px;
-  height: 276px;
+  width: 100%;
+  height: 50%;
   z-index: 2;
 }
 .mobile .cajas-imagen {
   display: flex;
   justify-content: center;
   align-items: center;
+
+  position: relative;
 }
 .mobile .mobile-caja1 .mobile-img1 {
-  width: 190px;
-  height: 210px;
+  height: 80%;
+  width: 80%;
+}
+.mobile .mobile-caja2 .mobile-img2 {
+  height: 80%;
+  width: 80%;
 }
 .mobile .mobile-text1 {
   display: inline-block;
   justify-content: flex-start;
-  left: 0;
+  margin-left: 10%;
 }
 .mobile .mobile-text1 p {
   margin-left: -15%;
 }
 .mobile .mobile-text2 {
-  display: inline-block;
-  margin-top: -40%;
-  transform: translateX(80%);
+  margin-right: 10%;
+}
+.mobile .mobile-text2 h4 {
+  padding-top: 10%;
+  text-align: right;
+}
+.mobile .mobile-text2 p {
+  text-align: right;
 }
 .boton-eventos {
   display: flex;
@@ -66,10 +78,10 @@
 .eventos .boton-menu {
   display: none;
 }
-.eventos .vectEventos{
+.eventos .vectEventos {
   display: none;
 }
-.eventos-boton{
+.eventos-boton {
   display: none;
 }
 @media (min-width: 768px) {
@@ -102,9 +114,9 @@
     margin-top: 5%;
   }
   .eventos .eventos-linea {
-  display: none;
+    display: none;
   }
-  .eventos .vectEventos{
+  .eventos .vectEventos {
     display: block;
     position: absolute;
     left: 0;

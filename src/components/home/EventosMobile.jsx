@@ -20,13 +20,13 @@ const EventosMobile = () => {
         <div className="cajas-imagen">
           <img
             className="mobile-img2"
-            src="./img/eventos/eventos1.png"
+            src="./img/eventos/eventosA.png"
             alt="imagen-eventos"
           />
         </div>
         <div className="mobile-text2">
-          <h4 className="text-right">Bandas <br/>en vivo</h4>
-          <p>Viernes 21 horas</p>
+          <h4 className="text-right">Armá tu <br/>evento</h4>
+          
         </div>
       </div>
     </div>

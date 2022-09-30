@@ -23,9 +23,9 @@ const MenuDesk = () => {
         className="vectorDesk"
         src="./assets/vector/path.png"
       />
-      <div className="row mx-0">
+      <div className="row menu-fila mx-0 px-0">
         {menus.map((menu, index) => (
-          <div className="col-md-4" key={index}>
+          <div className="col-md-4 menu-columna" key={index}>
             <Item menu={menu} />
           </div>
         ))}

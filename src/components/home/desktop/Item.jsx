@@ -6,8 +6,10 @@ const Item = ({ menu }) => {
       <div className="item-header">
         <img src={menu.img} />
       </div>
-      <h2 className="text-center">{menu.titulo}</h2>
-      <p>{menu.descripcion}</p>
+      <div className="item-texto">
+        <h2 className="text-center">{menu.titulo}</h2>
+        <p>{menu.descripcion}</p>
+      </div>
     </div>
   );
 };
