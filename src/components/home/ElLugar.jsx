@@ -1,17 +1,15 @@
 import React from "react";
 import { Link } from "react-router-dom";
 import { TituloSecciones } from "../Header/Header";
-import "./stylesHome/lugar.css";
+import "./homeCss/lugar.css";
 
-const Lugar = () => {
-
-
-  const titulo = "EL LUGAR"
-  const subtitulo = "Unos boxes muy chingones"
-  const link = " Ver más..."
+const ElLugar = () => {
+  const titulo = "EL LUGAR";
+  const subtitulo = "Unos boxes muy chingones";
+  const link = " Ver más...";
   return (
     <div className="lugar">
-      <TituloSecciones titulo={titulo} subtitulo = {subtitulo} verMas = {link}/>
+      <TituloSecciones titulo={titulo} subtitulo={subtitulo} verMas={link} />
       <div className="row mx-0">
         <div className="col-12 col-md-4 px-0">
           <img
@@ -49,4 +47,4 @@ const Lugar = () => {
   );
 };
 
-export default Lugar;
+export default ElLugar;

@@ -2,10 +2,10 @@ import React from "react";
 import { Link } from "react-router-dom";
 import { motion } from "framer-motion/dist/framer-motion";
 
-import "./stylesHome/eventos.css";
+import "./homeCss/eventos.css";
 import { TituloSecciones } from "../Header/Header";
-import EventosMobile from "./EventosMobile";
-import EventosDesktop from "./EventosDesktop";
+import EventosMobile from "./desktop/eventos/EventosMobile";
+import EventosDesktop from "./desktop/eventos/EventosDesktop";
 
 const Eventos = () => {
   const titulo = "EVENTOS ";

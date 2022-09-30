@@ -1,8 +1,8 @@
 import React from "react";
-import "./stylesHome/experiencia.css";
+import "./homeCss/experiencia.css";
 import { motion } from "framer-motion/dist/framer-motion";
 
-const Experience = () => {
+const Experiencia = () => {
   const textLugarAnimate = {
     offscreen: { filter: " drop-shadow(2px 2px 10px rgb(0, 0, 0))" },
     onscreen: {
@@ -26,32 +26,27 @@ const Experience = () => {
         className="vector"
         src="./assets/vector/vect.png"
       />
-
-      <h1 className="experiencia-h1">EXPERIENCIA</h1>
       <h1 className="experiencia-desktop">EXPERIENCIA "EL TALLER"</h1>
       <motion.img
-      variants={textLugarAnimate}
+        variants={textLugarAnimate}
         className="experiencia-desktop__vector"
-        src="./assets/vector/vectorDesktop.png"
+        src="./assets/vector/vecExperiencia.png"
         alt="vectorimagen"
       />
       <div className="row mx-0">
-        <div className="col-6 experiencia-caja1 px-0">
+        <div className="col-6 col-md-8 experiencia-caja1 px-0">
           <p className="experiencia-caja1__texto">
-            Un lugar que combina la amistad, rica comida y la pasión por los
-            carros
+            Nos inspiramos en la historia detrás de los platillos que se comían
+            en los talleres mecánicos de los años 50.
           </p>
-          <p className="experiencia-desktop__p">
-            Un lugar que combina la amistad, rica comida y la pasión por los
-            carros, Veni a vivir esta experiencia única
-          </p>
+
           <img
             className="experiencia-desktop__logo"
             src="./assets/logos/logo.png"
             alt="logoDesktop"
           />
         </div>
-        <div className="col-6 experiencia-caja2 px-0">
+        <div className="col-6 col-md-4 experiencia-caja2 px-0">
           <img
             className="experiencia-logo"
             src="./assets/logos/logo.png"
@@ -68,4 +63,4 @@ const Experience = () => {
   );
 };
 
-export default Experience;
+export default Experiencia;

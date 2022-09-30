@@ -1,7 +1,7 @@
 import React, { useEffect, useState } from "react";
-import "./stylesHome/slider.css";
+import "./homeCss/slider.css";
 // import imagenes from "./SliderImg"; //array de imágenes
-import menus from "./menus"; //array de imágenes
+import menus from "./js/sliderMenu"; //array de imágenes
 
 const Slider = () => {
   const [active1, setActive1] = useState({ opacity: "1", transition: "0.2s" });

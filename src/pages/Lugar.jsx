@@ -1,11 +1,11 @@
 import React from "react";
 import LugarCom from "../components/lugar/LugarCom";
 
- const LugarMas = () => {
+ const Lugar = () => {
   return (
     <>
       <LugarCom />
     </>
   );
 };
-export default LugarMas
+export default Lugar

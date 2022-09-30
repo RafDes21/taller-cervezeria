@@ -1,10 +1,10 @@
 import React from "react";
 import Booking from "../components/home/Booking";
-import Eventos from "../components/home/Eventos";
-import Experience from "../components/home/Experience";
+import Eventos from "../components/home/Evento";
+import Experiencia from "../components/home/Experiencia";
 import Instagram from "../components/home/Instagram";
-import Lugar from "../components/home/Lugar";
-import Menu from "../components/home/Menu";
+import ElLugar from "../components/home/ElLugar";
+import Menu from "../components/home/ElMenu";
 import Slider from "../components/home/Slider";
 import "./rutaHome.css";
 
@@ -13,8 +13,8 @@ const Home = () => {
     <div className="main">
       <Slider />
       <Booking />
-      <Experience />
-      <Lugar />
+      <Experiencia />
+      <ElLugar />
       <Menu />
       <Eventos />
       <Instagram />

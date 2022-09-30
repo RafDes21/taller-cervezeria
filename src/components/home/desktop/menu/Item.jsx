@@ -4,7 +4,7 @@ const Item = ({ menu }) => {
   return (
     <div className="item-menu">
       <div className="item-header">
-        <img src={menu.img} />
+        <img src={menu.img} alt="imagen de menu" />
       </div>
       <div className="item-texto">
         <h2 className="text-center">{menu.titulo}</h2>

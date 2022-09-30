@@ -1,6 +1,5 @@
 import React from "react";
-import "./stylesHome/instagram.css";
-import { Link } from "react-router-dom";
+import "./homeCss/instagram.css";
 import { TituloSecciones } from "../Header/Header";
 
 const Instagram = () => {

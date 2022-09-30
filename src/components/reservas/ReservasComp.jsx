@@ -1,4 +1,5 @@
 import React from "react";
+import { Link } from "react-router-dom";
 import { Header, Texto } from "../Header/Header";
 import "./ReservasComp.css"
 
@@ -51,9 +52,9 @@ const ReservasComp = () => {
               </select>
             </div>
             <div className="inputContainer Button-wrapper">
-              <a href=""className="Form-button">
+              <Link to="/reservas"className="Form-button">
                 <button >Reserva</button>
-              </a>
+              </Link>
             </div>
           </form>
         </div>

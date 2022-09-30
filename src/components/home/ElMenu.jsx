@@ -1,9 +1,9 @@
 import React from "react";
-import "./stylesHome/menu.css";
+import "./homeCss/menu.css";
 import { TituloSecciones } from "../Header/Header";
 import { motion } from "framer-motion/dist/framer-motion";
 import { Link } from "react-router-dom";
-import MenuDesk from "./desktop/MenuDesk";
+import MenuDesk from "./desktop/menu/MenuDesk";
 
 const Menu = () => {
   const titulo = "EL MENÚ";
