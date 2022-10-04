@@ -3,7 +3,7 @@ import { Header, Texto } from "../Header/Header";
 import "./LugarMas.css";
 
 const LugarCom = () => {
-  const img = "./assets/Lugar/imagenTop.png";
+  const img = "./assets/lugar/lugarTop.png";
   const h1 = "EL LUGAR";
   const h3 = "Carburamos el mejor ambiente";
 

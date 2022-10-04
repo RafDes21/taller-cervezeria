@@ -17,7 +17,7 @@
   align-items: center;
   position: relative;
   box-shadow: -17px -2px 20px 12px var(--color-background);
-  z-index: 95;
+  z-index: 2;
 }
 .booking-message {
   font-family: var(--font-family);
