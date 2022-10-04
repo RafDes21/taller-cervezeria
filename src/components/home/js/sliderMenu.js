@@ -1,7 +1,7 @@
 const menus = [
-    "./imgSlider/menu1.png",
+    "./assets/slider/menu1.png",
     "./imgSlider/menu2.png",
-    "./imgSlider/menu3.png",
+    "./assets/slider/menu3.png",
     
   ];
   export default menus

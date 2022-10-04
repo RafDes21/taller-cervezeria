@@ -121,8 +121,11 @@
     position: absolute;
     left: 0;
     width: 100%;
-    top: -50%;
+    transform: translateY(50%);
+    bottom: 45%;
+   
   }
+ 
 }
 @media (min-width: 768px) {
   .eventos {

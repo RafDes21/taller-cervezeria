@@ -8,19 +8,17 @@
 .menu-desktop .row {
   height: 100%;
   position: relative;
+  margin: 2% 0;
 }
 .menu-desktop .menu-fila {
   height: 100%;
   width: 100%;
 }
 .menu-desktop .menu-fila .menu-columna {
-  padding: 0;
+  padding: 0 2%;
   margin-bottom: 40px;
 }
 .item-menu {
-  display: inline-block;
-  justify-content: center;
-  align-items: center;
   height: 100%;
 
   color: var(--color-primary);
@@ -28,57 +26,76 @@
 }
 
 .item-menu .item-header {
-  height: 50%;
-  display: flex;
-  justify-content: center;
+  height: 65%;
 }
-/* .item-menu .item-texto {
-  height: 30%;
-  border: 1px solid rgb(29, 227, 42);
-  padding: 20px 50px;
-} */
+.item-menu .item-texto {
+  padding-left: 10%;
+}
 
 .item-menu .item-header img {
-  height: 100%;
-  width: 80%;
-  /* position: relative; */
+  height: 95%;
+  width: 100%;
   z-index: 2;
-  /* margin: 0 auto; */
 }
 .item-menu h2 {
   font-weight: 600;
-  font-size: 25px;
+  font-size: 23px;
+  margin-top: 10%;
 }
 .item-menu p {
   font-weight: 400;
   font-size: 15px;
+  text-align: start;
 }
 
 .menu-desktop .vectorDesk {
   position: absolute;
-  top: -10%;
-  left: 0;
+transform: translateY(-50%);
+top: 35%;
 }
-@media (min-width: 1000px) {
-  .item-menu .item-header {
-    height: 65%;
-    display: flex;
-    justify-content: center;
+@media (min-width: 991px) {
+  .menu-desktop {
+    width: 110%;
+    margin-left: -5%;
+  }
+
+  .item-menu h2 {
+    font-weight: 600;
+    font-size: 28px;
+    margin-top: 10%;
+  }
+  .item-menu p {
+    font-weight: 400;
+    font-size: 20px;
+    text-align: start;
+  }
+  .item-menu .item-texto {
+    padding-left: 0;
+  }
+}
+@media (min-width: 1200px) {
+  .menu-desktop {
+    width: 100%;
+    margin-left: 0;
+   
   }
   .item-menu .item-header img {
-    height: 100%;
-    width: 80%;
-    /* position: relative; */
+    height: 95%;
+    width: 90%;
     z-index: 2;
-    /* margin: 0 auto; */
   }
+
   .item-menu h2 {
     font-weight: 600;
     font-size: 40px;
+    margin-top: 10%;
   }
   .item-menu p {
     font-weight: 400;
     font-size: 28px;
+    text-align: start;
   }
-  
+  .item-menu .item-texto {
+    padding-left: 0;
+  }
 }

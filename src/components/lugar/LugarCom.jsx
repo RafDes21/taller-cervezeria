@@ -3,15 +3,15 @@ import { Header, Texto } from "../Header/Header";
 import "./LugarMas.css";
 
 const LugarCom = () => {
-  const img = "./img/LugarMas/imgHeader.png";
+  const img = "./assets/Lugar/imagenTop.png";
   const h1 = "EL LUGAR";
-  const h3 = "Unos boxes muy chingones";
+  const h3 = "Carburamos el mejor ambiente";
 
   return (
     <div className="Lugar-wrapper">
       <Header img={img} />
+      <Texto texto1={h1} texto2={h3} />
       <section className="content">
-        <Texto texto1={h1} texto2={h3} />
         <div className="wrapper">
           <p className="Lugar-header-text">
             Gracias a nuestra ambientación podras trasnsportante y sentir la
@@ -28,8 +28,8 @@ const LugarCom = () => {
           </p>
 
           <div className="Lugar-container">
-            <h4 className="Lugar-h4">DENTRO DE BOXES</h4>
-            <p>
+            <h4 className="Lugar-h4">ZONA DE REPARACIONES</h4>
+            <p className="Lugar-header-text">
               Disfruta y relajate dentro de nuestro salon principal. Podras
               disfrutar de nuestra increible ambientación y la climatización más
               confortable.
@@ -66,8 +66,8 @@ const LugarCom = () => {
             </div>
           </div>
           <div className="Lugar-container">
-            <h4 className="Lugar-h4 txt-right">FUERA DE BOXES</h4>
-            <p className="txt-right">
+            <h4 className="Lugar-h4 txt-right">ZONA DE ENTREGAS</h4>
+            <p className="txt-right Lugar-header-text">
               Tenemos una amplia terraza, espacio muy codiciado entre nuestros
               clientes. Aprovecha y disfruta de este espacio único en la ciudad.
             </p>
@@ -107,7 +107,7 @@ const LugarCom = () => {
             </div>
           </div>
           <div className="Lugar-container">
-            <h4 className="Lugar-h4 txt-center">DONDE ENCONTRARNOS</h4>
+            <h4 className="Lugar-h4 txt-center">NOS ENCONTRAMOS AQUÍ</h4>
 
             <div className="embed-responsive embed-responsive-16by9 map-wrapper">
               <iframe

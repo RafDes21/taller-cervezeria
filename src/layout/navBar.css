@@ -26,9 +26,13 @@
 .menu {
   display: none;
 }
-#navBar .text-white {
+#navBar .text-white{
+
   display: flex;
   align-items: center;
+}
+#navBar .text-white p {
+  
   font-weight: 900;
   font-size: 24px;
   font-family: var(--font-family);
@@ -54,10 +58,9 @@
 #navBar ul li:hover {
   color: var(--color-secondary);
 }
-#navBar ul li {
+#navBar ul li .nav-link{
   font-weight: 700;
   font-size: 16px;
-
   font-family: var(--font-family);
 }
 @media only screen and (max-width: 1100px) {

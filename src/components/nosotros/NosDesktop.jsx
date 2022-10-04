@@ -45,7 +45,7 @@ const NosDesktop = () => {
         </div>
       </div>
       <div className="nosDesktop-caja2">
-        <h3 className="nosDesktop-caja2-h3">Nuestra inspiración</h3>
+        <h3 className="nosDesktop-caja2-h3 text-center">Nuestra inspiración</h3>
         
         <div className="nosDesktop-caja2-wrapper">
         <img

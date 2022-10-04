@@ -7,7 +7,7 @@ const Item = ({ menu }) => {
         <img src={menu.img} alt="imagen de menu" />
       </div>
       <div className="item-texto">
-        <h2 className="text-center">{menu.titulo}</h2>
+        <h2 className="text-start">{menu.titulo}</h2>
         <p>{menu.descripcion}</p>
       </div>
     </div>

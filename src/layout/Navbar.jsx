@@ -1,6 +1,7 @@
 import React, { useState } from "react";
 import "./navBar.css";
 import { GiHamburgerMenu } from "react-icons/gi";
+import { AiOutlineMinus } from "react-icons/ai";
 import { Link, NavLink } from "react-router-dom";
 
 const Navbar = () => {
@@ -47,7 +48,7 @@ const Navbar = () => {
       </ul>
 
       <div onClick={() => setMobile(!mobile)} className="menu">
-        <GiHamburgerMenu />
+        {mobile ? <AiOutlineMinus /> : <GiHamburgerMenu />}
       </div>
     </div>
   );

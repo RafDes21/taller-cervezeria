@@ -1,6 +1,5 @@
 import React, { useEffect, useState } from "react";
 import "./homeCss/slider.css";
-// import imagenes from "./SliderImg"; //array de imágenes
 import menus from "./js/sliderMenu"; //array de imágenes
 
 const Slider = () => {
@@ -54,26 +53,40 @@ const Slider = () => {
     <div>
       <div id="carrusel">
         <div className="carrusel1" style={active1}>
-          <img alt="imagen" src="./imgSlider/carrusel1.png"/>
           <img
-            className="slider-logo"
+            className="carrusel-imagen"
+            alt="imagen"
+            src="./assets/slider/img1.png"
+          />
+          <img
+            className="slider-logo carrusel-logo1"
             src="./assets/logos/logo2.png"
             alt="imagenLogo"
           />
           <img
             id="slider1"
             className={vector1}
-            src="./imgSlider/vector.png"
+            src="./assets/slider/neon1.png"
             alt="imagenVector"
           />
-          <img className="slider-menu" src={menus[0]} alt="imagenTaco" />
+          <img
+            className="slider-menu carrusel-menu1"
+            src={menus[0]}
+            alt="imagenTaco"
+          />
 
-          <h1 className="slider-mensaje mensaje1">Amigos, Comidas y Carros</h1>
+          <h1 className="slider-mensaje mensaje1">
+            Comida urbana, autos y<br /> el mejor ambiente
+          </h1>
         </div>
         <div className="carrusel2" style={active2}>
-          <img alt="imagen" src="./imgSlider/carrusel2.png"></img>
           <img
-            className="slider-logo"
+            className="carrusel-imagen"
+            alt="imagen"
+            src="./assets/slider/img2.png"
+          ></img>
+          <img
+            className="slider-logo carrusel-logo2"
             src="./assets/logos/logo2.png"
             alt="imagenLogo"
           />
@@ -83,28 +96,43 @@ const Slider = () => {
             src="./imgSlider/vector.png"
             alt="imagenVector"
           />
-          <img className="slider-menu" src={menus[1]} alt="imagenTaco" />
+          <img
+            className="slider-menu carrusel-menu2"
+            src={menus[1]}
+            alt="imagenTaco"
+          />
 
-          <h1 className="slider-mensaje mensaje2">Amigos, Comidas y Carros</h1>
+          <h1 className="slider-mensaje mensaje2">
+            Comida urbana, autos
+            <br />y el mejor ambiente
+          </h1>
         </div>
         <div className="carrusel3" style={active3}>
-          <img alt="imagen" src="./imgSlider/carrusel3.png"></img>
           <img
-            className="slider-logo"
+            className="carrusel-imagen"
+            alt="imagen"
+            src="./assets/slider/img3.png"
+          ></img>
+          <img
+            className="slider-logo carrusel-logo3"
             src="./assets/logos/logo2.png"
             alt="imagenLogo"
           />
           <img
             id="slider3"
             className={vector3}
-            src="./imgSlider/vector.png"
+            src="./assets/slider/neon3.png"
             alt="imagenVector"
           />
-          <img className="slider-menu" src={menus[2]} alt="imagenTaco" />
+          <img
+            className="slider-menu carrusel-menu3"
+            src={menus[2]}
+            alt="imagenTaco"
+          />
 
           <h1 className="slider-mensaje mensaje3">
-            Amigos,
-            <br /> Comidas y<br /> Carros
+            Comida urbana, autos
+            <br />y el mejor ambiente
           </h1>
         </div>
       </div>

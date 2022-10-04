@@ -47,7 +47,10 @@
 }
 /* Header textos */
 .header-textos {
-  margin-bottom: 3em;
+  margin-top: -5%;
+  box-shadow: 0 50px 50px #070707;
+  z-index: 2;
+  position: relative;
 }
 
 .header-textos h1 {

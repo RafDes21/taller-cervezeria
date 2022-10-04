@@ -6,7 +6,7 @@ import "./nosotros.css";
 const Nosotros = () => {
   const img = "./assets/nosotros/nosotros.png"
   const h1="NOSOTROS"
-  const h3 = "La pasión nos inspira"
+  const h3 = "La pasión por los carros nos une"
   return (
     <div id="nosotros">
       <Header img={img}/>
