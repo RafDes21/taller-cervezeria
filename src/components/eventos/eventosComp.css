@@ -23,6 +23,8 @@
     padding: 16px;
     font-size: 12px;
     font-family: "Jost";
+    z-index: 2;
+    position: relative;
 }
 
 

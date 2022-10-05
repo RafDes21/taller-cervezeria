@@ -15,10 +15,7 @@
   position: relative;
   
 }
-.nosotros {
-  margin-top: -20px;
-  z-index: 5;
-}
+
 #nosotros .vector {
   position: absolute;
   min-width: 100%;
@@ -43,14 +40,7 @@
   font-size: 14px;
 }
 
-#nosotros .nosotros {
-  margin: auto;
-  max-width: 1440px;
-  background-image: url("./fondo.png");
-  background-repeat: no-repeat;
-  background-size: cover;
-  background-attachment: fixed;
-}
+
 #nosotros .nosotros-seccion__caja1 {
   padding: 37px 25px;
   position: relative;

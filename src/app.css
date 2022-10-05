@@ -1,0 +1,32 @@
+.nosotros {
+    margin: 0 auto;
+    max-width: 1440px;
+    background-image: url("./back.png");
+    background-repeat: no-repeat;
+    background-size: cover;
+    background-attachment: fixed;
+    padding-bottom: 50px;
+  }
+
+  @media screen and (min-width: 768px) {
+    .nosotros {
+        margin: 0 auto;
+        max-width: 1440px;
+        background-image: url("./back.png");
+        background-repeat: no-repeat;
+        background-size: cover;
+        background-attachment: fixed;
+        padding-bottom: 70px;
+      }
+  }
+  @media screen and (min-width: 991px) {
+    .nosotros {
+        margin: 0 auto;
+        max-width: 1440px;
+        background-image: url("./back.png");
+        background-repeat: no-repeat;
+        background-size: cover;
+        background-attachment: fixed;
+        padding-bottom: 100px;
+      }
+  }

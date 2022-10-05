@@ -1,117 +1,93 @@
-.Reservas-content{
-
-    padding: 37px 25px;
-    background-image: url("../nosotros/fondo.png");
-    background-repeat: no-repeat;
-    background-size: cover;
-    background-attachment: fixed;
-
+.Reservas-content {
+  max-width: 1440px;
+  margin: 0 auto;
+  padding: 0 20px;
+  background-image: url("../nosotros/fondo.png");
+  background-repeat: no-repeat;
+  background-size: cover;
+  background-attachment: fixed;
 }
 
-
-.Reservas-text{
+.Reservas-text {
   font-size: 12px;
   font-family: "Jost";
-  margin-bottom:4em ;
+  margin-top: 1em;
+  margin-bottom: 3em;
+  z-index: 2;
+  position: relative;
 }
 
-.Reservas-form{
-  max-width: 800px;
-  width: 95%;
+.Reservas-form {
+  width: 100%;
   margin: auto;
   background-color: black;
   padding: 20px 10px;
   box-shadow: 2px 2px 30px #dd1919;
-  position:relative;
-  margin-bottom: 10em;
+  position: relative;
+  margin-bottom: 5em;
 }
 
-.Reservas-h2{
+.Reservas-h2 {
   font-family: "Train One";
   color: white;
-  font-size: 19px;
-  text-shadow: 0px 4px 87px rgba(251, 3, 3, 0.23), 0px 1.6711px 36.3465px rgba(251, 3, 3, 0.165337), 0px 0.893452px 19.4326px rgba(251, 3, 3, 0.137105), 0px 0.500862px 10.8938px rgba(251, 3, 3, 0.115), 0px 0.266004px 5.78559px rgba(251, 3, 3, 0.0928953), 0px 0.11069px 2.40751px rgba(251, 3, 3, 0.0646635);
-  text-align: center;
-  top:-25px;
-  padding: 5px 1px;
+  font-size: 24px;
+  text-shadow: 0px 10px 15px rgba(251, 3, 3, 0.5),
+    0px 1.6711px 3.3465px rgba(251, 3, 3, 0.5),
+    0px 0.893452px 2.4326px rgba(251, 3, 3, 0.137105),
+    0px 0.500862px 1.8938px rgba(251, 3, 3, 0.115),
+    0px 0.266004px 2.78559px rgba(251, 3, 3, 0.0928953),
+    0px 0.11069px 3.40751px rgba(251, 3, 3, 0.0646635);
+  top: -4%;
   position: absolute;
-  background-color: black;
-  transform: translateX(50%);
-  right:50%;
-  
+  width: 100%;
+  text-align: center;
 }
 
-@media only screen and (min-width: 768px) {
-
-  .Reservas-text{
-    font-size: 25px;
-}
-  .Reservas-form{
-      font-size:20px;
-  }
-  .inputContainer input{
-    padding: 12px 5px;
-}
-.inputContainer input::placeholder{
-    font-size: 20px;
-}
-
-.inputContainer label{
-    font-size: 20px;
-    top: 0.1em;
-    left: 2em;
-}
-.Reservas-h2{
-  font-size: 35px;
-  top:-30px;
-}
-}
-
-.inputContainer{
+.inputContainer {
   position: relative;
   padding: 1em;
 }
 
-.Reservas-form input{
+.Reservas-form input {
   background-color: transparent;
-  border: 1px solid #817F7F;
+  border: 1px solid #817f7f;
   border-radius: 5px;
   width: 100%;
   padding: 7px 8px;
-  color:white;
+  color: white;
 }
 
-select{
+select {
   background-color: transparent;
-  border: 1px solid #817F7F;
+  border: 1px solid #817f7f;
   border-radius: 5px;
   width: 100%;
   padding: 7px 8px;
-  color:white;
+  color: #817f7f;
 }
-select:focus{
-  border:none;
+select:focus {
+  border: none;
   background-color: transparent;
-  outline:white solid 1.5px;
+  outline: white solid 1.5px;
 }
 
-input:focus{
-  border:none;
+input:focus {
+  border: none;
   background-color: transparent;
-  outline:white solid 1.5px;
+  outline: white solid 1.5px;
 }
 
-.Reservas-form input::placeholder{
+.Reservas-form input::placeholder {
   font-family: "Jost";
-  color: #817F7F;
+  color: #817f7f;
   font-size: 12px;
   padding: 5px 3px;
 }
 
-.Reservas-form label{
+.Reservas-form label {
   font-family: "Jost";
   color: white;
-  position:absolute;
+  position: absolute;
   top: 0.5em;
   z-index: 1;
   left: 3.5em;
@@ -119,4 +95,134 @@ input:focus{
   padding: 3px 10px;
   font-size: 10px;
 }
+.inputContainer button{
+  font-size: 14px;
+}
+@media only screen and (min-width: 768px) {
+  .Reservas-content {
+    padding: 0 40px;
+  }
+  .inputContainer button{
+    font-size: 24px;
+  }
+  .Reservas-text {
+    font-size: 25px;
+  }
+  /* .Reservas-form {
+    font-size: 36px;
+  } */
+  .inputContainer input {
+    padding: 12px 5px;
+  }
+  .inputContainer input::placeholder {
+    font-size: 20px;
+  }
 
+  .inputContainer label {
+    font-size: 20px;
+    top: 0.1em;
+    left: 2em;
+  }
+  /* .Reservas-form {
+    width: 100%;
+    margin: auto;
+    background-color: black;
+    padding: 20px 10px;
+    box-shadow: 2px 2px 30px #dd1919;
+    position: relative;
+    margin-bottom: 10em;
+  } */
+
+  .Reservas-h2 {
+    font-size: 50px;
+    top: -7%;
+  }
+  .inputContainer input {
+    padding: 20px 4px;
+    font-size: 24px;
+  }
+  .inputContainer select {
+    padding: 20px 4px;
+    font-size: 24px;
+  }
+  .Reservas-form input::placeholder {
+    font-family: "Jost";
+    color: #817f7f;
+    font-size: 24px;
+    margin: 10px 0;
+  }
+
+  .Reservas-form label {
+    font-family: "Jost";
+    color: white;
+    position: absolute;
+    top: -0.5em;
+    z-index: 1;
+    left: 1em;
+    background-color: black;
+    padding: 3px 10px;
+    font-size: 24px;
+  }
+}
+@media only screen and (min-width: 1100px) {
+  .Reservas-content {
+    padding: 0 190px;
+  }
+  .Reservas-form {
+    width: 100%;
+    margin: auto;
+    background-color: black;
+    padding: 80px 30px;
+    box-shadow: 2px 2px 30px #dd1919;
+    position: relative;
+    margin-bottom: 15em;
+  }
+  .Reservas-text {
+    font-size: 36px;
+  }
+  /* .Reservas-form {
+    font-size: 36px;
+  } */
+  .Reservas-h2 {
+    font-size: 80px;
+    top: -7%;
+    left: 0;
+    text-shadow: 0px 10px 15px rgba(0, 3, 3, 0.5),
+    0px 1.6711px 3.3465px rgba(0, 3, 3, 0.5),
+    0px 0.893452px 2.4326px rgba(0, 3, 3, 0.137105),
+    0px 0.500862px 1.8938px rgba(0, 3, 3, 0.115),
+    0px 0.266004px 2.78559px rgba(0, 3, 3, 0.0928953),
+    0px 0.11069px 3.40751px rgba(0, 3, 3, 0.0646635);
+  }
+  .inputContainer input {
+    padding: 20px 20px;
+    font-size: 36px;
+    color: #817f7f;
+    margin-bottom: 20px;
+  }
+  .inputContainer select {
+    padding: 20px 20px;
+    font-size: 36px;
+    color: #817f7f;
+  }
+  .Reservas-form input::placeholder {
+    font-family: "Jost";
+    color: #817f7f;
+    font-size: 36px;
+  }
+
+  .Reservas-form label {
+    font-family: "Jost";
+    color: white;
+    position: absolute;
+    top: -0.5em;
+    z-index: 1;
+    left: 1em;
+    background-color: black;
+    padding: 3px 20px;
+    font-size: 32px;
+  }
+  .inputContainer button{
+    font-size: 48px;
+  }
+}

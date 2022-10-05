@@ -1,65 +1,92 @@
 import React from "react";
 import { Link } from "react-router-dom";
 import { Header, Texto } from "../Header/Header";
-import "./ReservasComp.css"
+import "./ReservasComp.css";
 
 const ReservasComp = () => {
   const img = "./assets/reservas/reservas.png";
-  const h1="RESERVAS"
-  const h3 = "Vivi la experiencia a toda marcha"
+  const h1 = "RESERVAS";
+  const h3 = "Vive experiencias únicas";
 
   return (
-    <>
-
-      <div>
-        <Header img={img} />
-      </div>
-    <section className="Reservas-content">
+    <div className="">
+      <Header img={img} />
       <Texto texto1={h1} texto2={h3} />
 
-    <p className="Reservas-text">
-    Haz tu reserva en linea y asegurate tu lugar en EL TALLER. <br />
-    Ten en cuenta que nuestro horario de atención es de        
-    </p>
-    <div className="Reservas-form">
-      <h2 className="Reservas-h2">Reserva tu mesa</h2>
+      <section className="Reservas-content">
+        <p className="Reservas-text">
+          Haz tu reserva en línea y nosotros nos pondremos en contacto.
+          <br /> Nuestro horario es de 9:00 am a 23:00 pm
+        </p>
+        <div className="Reservas-form">
+          <h2 className="Reservas-h2">Reserva tu mesa</h2>
           <form action="">
             <div className="inputContainer">
-              <input type="text" id="nombre" className="" placeholder="Nombre y apellido"/>
-              <label for="nombre" class="label">Nombre</label>
+              <input
+                type="text"
+                id="nombre"
+                className=""
+                placeholder="Nombre y apellido"
+              />
+              <label for="nombre" class="label">
+                Nombre
+              </label>
             </div>
             <div className="inputContainer">
-              <input type="number" id="tel" className="" placeholder="Número de celular"/>
-              <label for="tel" class="label">Teléfono</label>
+              <input
+                type="number"
+                id="tel"
+                className=""
+                placeholder="Número de celular"
+              />
+              <label for="tel" class="label">
+                Teléfono
+              </label>
             </div>
             <div className="inputContainer">
-              <input type="mail" id="mail" className="" placeholder="Dirección de correo electrónico"/>
-              <label for="mail" class="label">E-mail</label>
+              <input
+                type="mail"
+                id="mail"
+                className=""
+                placeholder="Dirección de correo electrónico"
+              />
+              <label for="mail" class="label">
+                E-mail
+              </label>
             </div>
             <div className="inputContainer">
-              <input type="date" id="fecha" className="" placeholder="fecha"/>
-              <label for="fecha" class="label">Fecha</label>
+              <input type="date" id="fecha" className="" placeholder="fecha" />
+              <label for="fecha" class="label">
+                Fecha
+              </label>
             </div>
             <div className="inputContainer">
-              <label for="cant" class="label">Horario</label>
-              <select type="" id="cant" className="" placeholder="Selecciona un horario">
-              <option value="18">18:00</option>
-              <option value="19">19:00</option>
-              <option value="20">20:00</option>
-              <option value="21">21:00</option>
-              <option value="22">22:00</option>
-              <option value="23">23:00</option>
+              <label for="cant" class="label">
+                Horario
+              </label>
+              <select
+                type=""
+                id="cant"
+                className=""
+                placeholder="Selecciona un horario"
+              >
+                <option value="18">18:00</option>
+                <option value="19">19:00</option>
+                <option value="20">20:00</option>
+                <option value="21">21:00</option>
+                <option value="22">22:00</option>
+                <option value="23">23:00</option>
               </select>
             </div>
             <div className="inputContainer Button-wrapper">
-              <Link to="/reservas"className="Form-button">
-                <button >Reserva</button>
+              <Link to="/reservas" className="Form-button">
+                <button>Reservar</button>
               </Link>
             </div>
           </form>
         </div>
-    </section>
-    </>
+      </section>
+    </div>
   );
 };
 
