@@ -1,179 +1,276 @@
-@import url('https://fonts.googleapis.com/css2?family=Train+One&display=swap');
-@import url('https://fonts.googleapis.com/css2?family=Jost:wght@700&display=swap');
+@import url("https://fonts.googleapis.com/css2?family=Train+One&display=swap");
+@import url("https://fonts.googleapis.com/css2?family=Jost:wght@700&display=swap");
 
-.wrapper{
-    max-width: 1440px;
-    margin: auto;
+.wrapper {
+  max-width: 1440px;
+  margin: auto;
 }
 
-.Eventos-content{
-    display: flex;
-    flex-direction: column;
-    align-items: center;
-    max-width: 1440px;
-        /* padding: 37px 25px; */
-        background-image: url("../nosotros/fondo.png");
+.Eventos-content {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  width: 100%;
+
+  /* max-width: 1440px; */
+  /* padding: 37px 25px; */
+  /* background-image: url("../nosotros/fondo.png");
         background-repeat: no-repeat;
         background-size: cover;
-        background-attachment: fixed;
-
+        background-attachment: fixed; */
 }
 
-.Eventos-text{
-    padding: 16px;
-    font-size: 12px;
-    font-family: "Jost";
-    z-index: 2;
-    position: relative;
+.Eventos-text {
+  padding: 16px;
+  font-size: 12px;
+  font-family: "Jost";
+  z-index: 2;
+  position: relative;
 }
 
+.Eventos-form {
+  /* max-width: 768px;
+    width: 85%; */
 
-.Eventos-form{
-    max-width: 768px;
-    width: 85%;
-    margin: 3em 0;
-    background-color: black;
-    padding: 20px 10px;
-    box-shadow: 2px 2px 30px #dd1919;
+  width: 100%;
+  padding: 0 20px;
+}
+.Eventos-form form {
+  box-shadow: 2px 2px 30px #dd1919;
+
+  background-color: black;
 }
 
 @media only screen and (min-width: 768px) {
-    .Eventos-text{
-        font-size: 25px;
-    }
-    .Eventos-form{
-        font-size:20px;
-    }
-}
-
-.inputContainer{
-    position: relative;
-    padding: 1em;
-}
-
-.Eventos-form input{
-    background-color: transparent;
-    border: 1px solid #817F7F;
-    border-radius: 5px;
-    width: 100%;
-    padding: 7px 8px;
-    color:white;
-}
-
-input:focus{
-    border:none;
-    background-color: transparent;
-    outline:white solid 1.5px;
-}
-
-.Eventos-form input::placeholder{
-    font-family: "Jost";
-    color: #817F7F;
-    font-size: 12px;
-    padding: 5px 3px;
-}
-
-.Eventos-form label{
+  .Eventos-text {
+    font-size: 25px;
+  }
+  .Eventos-form {
+    padding: 0 40px;
+  }
+  .Eventos-form form {
+    padding: 40px 20px;
+  }
+  .Eventos-form form label {
     font-family: "Jost";
     color: white;
-    position:absolute;
-    top: 0.5em;
+    position: absolute;
+    top: -0.5em;
     z-index: 1;
-    left: 3.5em;
+    left: 1em;
     background-color: black;
     padding: 3px 10px;
-    font-size: 10px;
-}
-
-.button-wrapper{
-    display: flex;
-}
-
-.Form-button{
-    font-family: "Jost";
-    display: flex;
-    justify-content: flex-end;
-    text-decoration: none;
-    list-style: none;
-    font-size: 12px;
-    font-weight: 400;
+    font-size: 32.35px;
   }
-.Form-button button{
-    border-radius: 5px;
+  .Eventos-form form input::placeholder {
+    font-family: "Jost";
+    font-weight: 500;
+    color: #817f7f;
+    font-size: 36px;
+    padding: 5px 3px;
+  }
 }
 
-.Eventos-detalle{
-    width:100%
+@media only screen and (min-width: 991px) {
+  .Eventos-text {
+    font-size: 25px;
+  }
+  .Eventos-form {
+    padding: 0 190px;
+  }
 }
 
-.Eventos-detalle-content{
-    position:relative;
-    margin: auto;
-    max-width: 1440px;
+.inputContainer {
+  position: relative;
+  padding: 1em;
 }
 
-.Eventos-detalle-wrapper{
-    position:relative;
-    z-index:2;
+.Eventos-form input {
+  background-color: transparent;
+  border: 1px solid #817f7f;
+  border-radius: 5px;
+  width: 100%;
+  padding: 7px 8px;
+  color: white;
 }
 
-.Eventos-detalle-vector{
-    position:absolute;
-    /* background-color: #dd1919; */
-    width: 100%;
-    top: 6em;
-    z-index: 1;
+input:focus {
+  border: none;
+  background-color: transparent;
+  outline: white solid 1.5px;
 }
 
-.Eventos-detalle p{
-    font-size: 1em;
+.Eventos-form input::placeholder {
+  font-family: "Jost";
+  color: #817f7f;
+  font-size: 12px;
+  padding: 5px 3px;
 }
 
-.Eventos-detalle h4{
-    padding:0;
+.Eventos-form label {
+  font-family: "Jost";
+  color: white;
+  position: absolute;
+  top: 0.5em;
+  z-index: 1;
+  left: 3.5em;
+  background-color: black;
+  padding: 3px 10px;
+  font-size: 10px;
+}
+
+.button-wrapper {
+  display: flex;
+}
+
+.Form-button {
+  font-family: "Jost";
+  display: flex;
+  justify-content: flex-end;
+  text-decoration: none;
+  list-style: none;
+  font-size: 12px;
+  font-weight: 400;
+}
+.Form-button button {
+  border-radius: 5px;
+}
+
+/* Eventos-detalle */
+
+.Eventos-detalle {
+  width: 100%;
+  position: relative;
+}
+
+/* .Eventos-detalle-content {
+  margin: auto;
+  max-width: 1440px;
+} */
+
+.Eventos-detalle-wrapper {
+  position: relative;
+  z-index: 2;
+}
+
+.Eventos-detalle-vector {
+  position: absolute;
+  /* background-color: #dd1919; */
+  width: 100%;
+
+  transform: translateY(50%);
+  bottom: 30%;
+  left: 0;
+}
+
+.Eventos-detalle p {
+  font-size: 1em;
+}
+
+.Eventos-detalle h4 {
+  padding: 0;
 }
 
 @media only screen and (min-width: 768px) {
+  .Eventos-detalle p {
+    font-size: 1.5em;
+  }
+  .Eventos-detalle h4 {
+    font-size: 2em;
+  }
+
+  .inputContainer input {
+    padding: 12px 5px;
+  }
+  .inputContainer input::placeholder {
+    font-size: 20px;
+  }
+
+  .inputContainer label {
+    font-size: 20px;
+    top: 0.1em;
+    left: 2em;
+  }
+}
+@media only screen and (min-width: 991px) {
+  .Eventos-detalle {
+    padding: 0 80px;
+    position: relative;
+  }
+  /* .Eventos-detalle-vector{
+        position: absolute;
+        width: 100%;
+    } */
+  /* .Eventos-detalle .Eventos-detalle-content {
+    border: 1px solid white;
+  } */
+  .Eventos-detalle p {
+    font-size: 56px;
+    margin: 70px 0;
+  }
+  .Eventos-detalle h4 {
+    font-size: 72px;
+  }
+  /* .Eventos-detalle-wrapper img{
+    width: 60%;
+    height: 60%;
+    background-color: #dd1919;
+  } */
+  /* .Eventos-detalle .karaoke{
+    border: 1px solid green;
+  } */
+  .Eventos-detalle .karaoke h4 {
+    text-align: start;
+  }
+  .Eventos-detalle .karaoke p {
+    font-size: 32px;
+
+    text-align: start;
+    transform: translateY(-110%);
+  }
+  .Eventos-detalle .bandas h4 {
+    text-align: end;
+  }
+  .inputContainer input {
+    padding: 12px 5px;
+  }
+  .inputContainer input::placeholder {
+    font-size: 20px;
+  }
+
+  .inputContainer label {
+    font-size: 20px;
+    top: 0.1em;
+    left: 2em;
+  }
+}
+
+.Eventos-detalle-wrapper {
+  display: flex;
+  justify-content: space-around;
+  align-items: center;
+  /* background-color: #dd1919; */
+  /* margin: auto; */
+  /* max-width: 80%; */
+}
+
+.Eventos-detalle-wrapper img {
+  width: 60%;
+  /* background-color: yellow; */
+  /* margin: 1em 0; */
+}
+.Eventos-detalle-wrapper .imagen-karaoke {
+    width: 55%;
+    transform: translateX(60%);
     
-    .Eventos-detalle p{
-    font-size: 1.5em;        
-    }
-    .Eventos-detalle h4{
-        font-size: 2em;
-    }
-
-    .inputContainer input{
-        padding: 12px 5px;
-    }
-    .inputContainer input::placeholder{
-        font-size: 20px;
-    }
-
-    .inputContainer label{
-        font-size: 20px;
-        top: 0.1em;
-        left: 2em;
-    }
-}
-
-.Eventos-detalle-wrapper{
-    display: flex;
-    justify-content: space-around;
-    align-items: center;
-    /* background-color: #dd1919; */
-    margin: auto;
-    max-width: 80%;
-}
-
-.Eventos-detalle-wrapper img{
-    width: 90%;
+    position: relative;
     /* background-color: yellow; */
-    margin: 1em 0;
-}
-
-.karaoke{
-    display: flex;
-    flex-direction:column;
-    flex-wrap: nowrap;
-    padding: 2em 0;
+    /* margin: 1em 0; */
+  }
+  
+.karaoke {
+  display: flex;
+  flex-direction: column;
+  flex-wrap: nowrap;
+  padding: 2em 0;
 }

@@ -6,17 +6,16 @@ import "./eventosComp.css";
 const EventosComp = () => {
   const img = "./assets/eventos/eventos.png";
   const h1 = "EVENTOS";
-  const h3 = "Diversión a toda marcha";
+  const h3 = "Reparamos tu diversión";
   return (
-    <div>
+    <div className="wrapper">
       <Header img={img} />
       <Texto texto1={h1} texto2={h3} />
 
       <section className="Eventos-content mx-auto">
         <p className="Eventos-text">
-          Nos ocupamos de organizar tu evento. Contanos los detalles del mismo y
-          solicita una cotización. Un asesor se encargará de enviarte los
-          servicios que ofrecemos y el valor de los mismos.
+          Hacemos de tu evento, un formula 1.<br/> Cuéntanos, qué quieres celebrar y
+          ¡Arrancamos motores!
         </p>
 
         <div className="Eventos-form">
@@ -89,7 +88,7 @@ const EventosComp = () => {
         </div>
 
         <div className="Eventos-detalle">
-          <p>Ven a disfrutar de nuestras noches únicas:</p>
+          <p>Disfruta las mejores noches:</p>
 
           <div className="Eventos-detalle-content">
             <img
@@ -97,25 +96,26 @@ const EventosComp = () => {
               className="Eventos-detalle-vector"
               alt=""
             />
-            <div className="Eventos-detalle-wrapper">
-              <div className="karaoke">
+            <div className="Eventos-detalle-wrapper row">
+              <div className="karaoke col-6 col-md-6">
                 <img
                   src="./img/eventos/eventosA.png"
                   alt="karaoke en el taller"
+                  className="imagen-karaoke"
                 />
                 <>
                   <h4>Karaoke</h4>
-                  <p>Viernes 7pm</p>
+                  <p>Viernes 7 a 12 pm</p>
                 </>
               </div>
-              <div className="bandas">
+              <div className="bandas col-6 col-md-6">
                 <>
                   <h4>
-                    Bandas en
+                    Arma tu
                     <br />
-                    vivo
+                    evento
                   </h4>
-                  <p>Viernes 7pm</p>
+                  {/* <p>Viernes 7pm</p> */}
                 </>
                 <img
                   src="./img/eventos/eventosB.png"
