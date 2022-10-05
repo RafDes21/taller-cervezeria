@@ -17,22 +17,22 @@ const MenuCom = () => {
       <section className="Menu-content-mobile">
         <div className="Menu-comida">
           <div className="Menu-comida-card">
-            <img src="./img/menu/menua.png" alt="imagen menu" />
+            <img src="./img/menu/Menua.png" alt="imagen menu" />
             <h5>Alitas por kilo</h5>
             <p>Dos sabores a elección</p>
           </div>
           <div className="Menu-comida-card">
-            <img src="./img/menu/menuB.png" alt="imagen menu" />
+            <img src="./img/menu/MenuB.png" alt="imagen menu" />
             <h5>Pozole</h5>
             <p>Caldo a base de maiz con torillas</p>
           </div>
           <div className="Menu-comida-card">
-            <img src="./img/menu/menuC.png" alt="imagen menu" />
+            <img src="./img/menu/MenuC.png" alt="imagen menu" />
             <h5>La monster taller </h5>
             <p>Hamburguesa doble con piña y salsa bbq</p>
           </div>
           <div className="Menu-comida-card">
-            <img src="./img/menu/menuD.png" alt="imagen menu" />
+            <img src="./img/menu/MenuD.png" alt="imagen menu" />
             <h5>Tacos Baterías</h5>
             <p>Bistec, cebolla y cilantro. </p>
           </div>
