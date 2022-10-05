@@ -67,7 +67,7 @@ const MenuCom = () => {
               <div className="Menu-desktop-card">
                 <img src="./assets/menu/imgMenu/menuA1.png" alt="desayunos" />
                 <h5>Chilaquiles</h5>
-                <p>Con hyevo, pollo o bisteck</p>
+                <p>Con huevo, pollo o bisteck</p>
               </div>
               <div className="Menu-desktop-card">
                 <img src="./assets/menu/imgMenu/menuA2.png" alt="desayunos" />
@@ -75,9 +75,9 @@ const MenuCom = () => {
                 <p>Verdes o mole</p>
               </div>
               <div className="Menu-desktop-card">
-                <img src="./assets/menu/imgMenu/menuA3.png" alt="desayunos" />
+                <img className="desayuno-imagen3" src="./assets/menu/imgMenu/menuA3.png" alt="desayunos" />
                 <h5>Hotcakes Taller</h5>
-                <p>Verdes o mole</p>
+                <p>Hot Cakes con 2 huevos fritos estrellados y tocino</p>
               </div>
             </div>
           </div>
@@ -124,7 +124,7 @@ const MenuCom = () => {
                 <p>Burrito de huevo, tocino y queso.</p>
               </div>
               <div className="Menu-desktop-card">
-                <img src="./assets/menu/imgMenu/menuC2.png" alt="desayunos" />
+                <img  className="burrito-imagen2" src="./assets/menu/imgMenu/menuC2.png" alt="desayunos" />
                 <h5>El torno</h5>
                 <p>
                   Burrito de cerdo a la bbq acompañado de cebolla caramelizada.
@@ -150,12 +150,12 @@ const MenuCom = () => {
               <div className="Menu-desktop-card">
                 <img src="./assets/menu/imgMenu/menuD1.png" alt="desayunos" />
                 <h5>3 ejes</h5>
-                <p>Carne al pastor, cebolla, cilantro y piña.</p>
+                <p>Carne al pastor, cebolla,<br/> cilantro y piña.</p>
               </div>
               <div className="Menu-desktop-card">
                 <img src="./assets/menu/imgMenu/menuD2.png" alt="desayunos" />
                 <h5>Baterías</h5>
-                <p>Bistec, cebolla y cilantro.</p>
+                <p>Bistec, cebolla y<br/> cilantro.</p>
               </div>
               <div className="Menu-desktop-card">
                 <img src="./assets/menu/imgMenu/menuD3.png" alt="desayunos" />
@@ -175,7 +175,7 @@ const MenuCom = () => {
             />
             <div className="Menu-desktop-cards">
               <div className="Menu-desktop-card">
-                <img src="./assets/menu/imgMenu/menuC1.png" alt="desayunos" />
+                <img  className="hamburguesas-imagen1" src="./assets/menu/imgMenu/menuC1.png" alt="desayunos" />
                 <h5>La desarmadora</h5>
                 <p>Carne de res con champiñones y cebolla caramelizada.</p>
               </div>
@@ -185,7 +185,7 @@ const MenuCom = () => {
                 <p>Carne de res, queso monchego y piña.</p>
               </div>
               <div className="Menu-desktop-card">
-                <img src="./assets/menu/imgMenu/menuC3.png" alt="desayunos" />
+                <img className="hamburguesas-imagen3" src="./assets/menu/imgMenu/menuC3.png" alt="desayunos" />
                 <h5>La monster Taller</h5>
                 <p>
                   Doble carne de res con queso amarillo y monchego <br />

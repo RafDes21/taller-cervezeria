@@ -187,3 +187,28 @@ align-items: center;
     width: 90%;
     margin-bottom: 1em;
 }
+@media only screen and (min-width:650px) {
+    .Menu-wrapper .Menu-content-desktop h5{
+        font-size: 44px;
+    }
+    .Menu-wrapper .Menu-content-desktop p{
+        font-size: 32px;
+        font-weight: 400;
+    }
+    .Menu-desktop-card .desayuno-imagen3{
+        width: 70%;
+       
+    }
+    .Menu-desktop-card .burrito-imagen2{
+        width: 55%;
+       
+    }
+    .Menu-desktop-card .hamburguesas-imagen1{
+        width: 60%;
+       
+    }
+    .Menu-desktop-card .hamburguesas-imagen3{
+        width: 60%;
+       
+    }
+}
