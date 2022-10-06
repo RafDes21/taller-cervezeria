@@ -148,4 +148,10 @@
   .nosDesktop .nosDesktop-caja3 {
     margin: 5em;
   }
+  .nosDesktop .nosDesktop-caja2 .circular-vector-desk {
+    position: absolute;
+    width: 100%;
+    transform: translateY(50%);
+    bottom: 60%;
+  }
 }

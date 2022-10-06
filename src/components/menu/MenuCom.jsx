@@ -8,37 +8,31 @@ const MenuCom = () => {
   const img = "./assets/menu/imgMenu/imgTop.png";
   const h1 = "EL MENU";
   const h3 = " Afinamos tu paladar";
-
-  const textLugarAnimate = {
+  const menuDeskAnimate = {
     offscreen: { filter: " drop-shadow(2px 2px 10px rgb(0, 0, 0))" },
     onscreen: {
-      // opacity: 1,
       filter: "drop-shadow(2px 2px 10px rgb(255, 0, 0))",
       transition: {
-        duration: 0.1,
+        duration: 0.2,
         yoyo: 4,
       },
     },
   };
 
   return (
-    <div className="Menu-wrapper">
+    <motion.div
+      initial={"offscreen"}
+      whileInView={"onscreen"}
+      viewport={{ once: false, amount: 0.1 }}
+      className="Menu-wrapper"
+    >
       <Header img={img} />
       <Texto texto1={h1} texto2={h3} />
 
-      <motion.section
-        initial={"offscreen"}
-        whileInView={"onscreen"}
-        viewport={{ once: false, amount: 0.5 }}
-        className="Menu-content-mobile"
-      >
+      <section className="Menu-content-mobile">
         <div className="Menu-comida">
           <div className="Menu-comida-card">
-            <motion.img
-              variants={textLugarAnimate}
-              src="./img/menu/Menua.png"
-              alt="imagen menu"
-            />
+            <img src="./img/menu/Menua.png" alt="imagen menu" />
             <h5>DESAYUNOS</h5>
             {/* <p>Dos sabores a elección</p> */}
           </div>
@@ -72,13 +66,14 @@ const MenuCom = () => {
             <button>Ver Menú Completo</button>
           </Link>
         </div>
-      </motion.section>
+      </section>
       {/* DESKTOP */}
       <section className="Menu-content-desktop">
         <div className="Menu-desktop-section">
           <h4 className="Menu-desktop-h4">DESAYUNOS</h4>
           <div className="Menu-section-wrapper">
-            <img
+            <motion.img
+              variants={menuDeskAnimate}
               src="./assets/vector/vectorMenuDesktop.png"
               className="Menu-desktop-vector"
               alt=""
@@ -111,7 +106,8 @@ const MenuCom = () => {
         <div className="Menu-desktop-section">
           <h4 className="Menu-desktop-h4">ENTRADAS</h4>
           <div className="Menu-section-wrapper">
-            <img
+            <motion.img
+              variants={menuDeskAnimate}
               src="./assets/vector/vectorMenuDesktop.png"
               className="Menu-desktop-vector"
               alt=""
@@ -144,7 +140,8 @@ const MenuCom = () => {
         <div className="Menu-desktop-section">
           <h4 className="Menu-desktop-h4">BURRITOS</h4>
           <div className="Menu-section-wrapper">
-            <img
+            <motion.img
+              variants={menuDeskAnimate}
               src="./assets/vector/vectorMenuDesktop.png"
               className="Menu-desktop-vector"
               alt=""
@@ -184,7 +181,8 @@ const MenuCom = () => {
         <div className="Menu-desktop-section">
           <h4 className="Menu-desktop-h4">TACOS</h4>
           <div className="Menu-section-wrapper">
-            <img
+            <motion.img
+              variants={menuDeskAnimate}
               src="./assets/vector/vectorMenuDesktop.png"
               className="Menu-desktop-vector"
               alt=""
@@ -216,7 +214,8 @@ const MenuCom = () => {
         <div className="Menu-desktop-section">
           <h4 className="Menu-desktop-h4">HAMBURGUESAS</h4>
           <div className="Menu-section-wrapper">
-            <img
+            <motion.img
+              variants={menuDeskAnimate}
               src="./assets/vector/vectorMenuDesktop.png"
               className="Menu-desktop-vector"
               alt=""
@@ -263,7 +262,7 @@ const MenuCom = () => {
           </div>
         </div>
       </section>
-    </div>
+    </motion.div>
   );
 };
 

@@ -9,7 +9,7 @@ const NosDesktop = () => {
     onscreen: {
       filter: "drop-shadow(2px 2px 10px rgb(255, 0, 0))",
       transition: {
-        duration: 0.1,
+        duration: 0.2,
         yoyo: 4,
       },
     },
@@ -20,7 +20,7 @@ const NosDesktop = () => {
     <motion.div
       initial={"offscreen"}
       whileInView={"onscreen"}
-      viewport={{ once: false, amount: 0.5 }}
+      viewport={{ once: false, amount: 0.4 }}
       className="nosDesktop nosDesktop-wrapper"
     >
       <div className="row nosDesktop-caja1">
@@ -75,17 +75,20 @@ const NosDesktop = () => {
             alt="imagenVector"
           />
           <div className="caja2-logos">
-            <img
+            <motion.img
+             variants={menuAnimate}
               className=" logos circular1"
               src="./assets/nosotros/inspiA.png"
               alt="imagenCircular"
             />
-            <img
+            <motion.img
+             variants={menuAnimate}
               className=" logos circular2"
               src="./assets/nosotros/inspiB.png"
               alt="imagenCircular"
             />
-            <img
+            <motion.img
+             variants={menuAnimate}
               className=" logos circular3"
               src="./assets/nosotros/inspiC.png"
               alt="imagenCircular"
@@ -95,7 +98,8 @@ const NosDesktop = () => {
               src="./assets/nosotros/inspiD.png"
               alt="imagenCircular"
             />
-            <img
+            <motion.img
+             variants={menuAnimate}
               className=" logos circular5"
               src="./assets/nosotros/inspiE.png"
               alt="imagenCircular"

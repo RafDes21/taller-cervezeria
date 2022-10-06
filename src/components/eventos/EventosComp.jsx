@@ -2,13 +2,29 @@ import React from "react";
 import { Link } from "react-router-dom";
 import { Header, Texto } from "../Header/Header";
 import "./eventosComp.css";
+import { motion } from "framer-motion/dist/framer-motion";
 
 const EventosComp = () => {
   const img = "./assets/eventos/eventos.png";
   const h1 = "EVENTOS";
   const h3 = "Reparamos tu diversión";
+
+  const menuAnimate = {
+    offscreen: { filter: " drop-shadow(2px 2px 10px rgb(0, 0, 0))" },
+    onscreen: {
+      filter: "drop-shadow(2px 2px 10px rgb(255, 0, 0))",
+      transition: {
+        duration: 0.2,
+        yoyo: 4,
+      },
+    },
+  };
   return (
-    <div className="wrapper">
+    <motion.div 
+     initial={"offscreen"}
+      whileInView={"onscreen"}
+      viewport={{ once: false, amount: 0.1}}
+    className="wrapper">
       <Header img={img} />
       <Texto texto1={h1} texto2={h3} />
 
@@ -91,7 +107,8 @@ const EventosComp = () => {
           <h2 className="text-center">Ven a disfrutar de nuestras noches únicas:</h2>
 
           <div className="Eventos-detalle-content">
-            <img
+            <motion.img
+            variants={menuAnimate}
               src="./assets/vector/vectoreventos.png"
               className="Eventos-detalle-vector"
               alt=""
@@ -126,7 +143,7 @@ const EventosComp = () => {
           </div>
         </div>
       </section>
-    </div>
+    </motion.div>
   );
 };
 

@@ -2,13 +2,31 @@ import React from "react";
 import { Header, Texto } from "../Header/Header";
 import NosDesktop from "./NosDesktop";
 import "./nosotros.css";
+import { motion } from "framer-motion/dist/framer-motion";
 
 const Nosotros = () => {
   const img = "./assets/nosotros/nosotros.png";
   const h1 = "NOSOTROS";
   const h3 = "La pasión por los carros nos une";
+
+
+  const menuAnimate = {
+    offscreen: { filter: " drop-shadow(2px 2px 10px rgb(0, 0, 0))" },
+    onscreen: {
+      filter: "drop-shadow(2px 2px 10px rgb(255, 0, 0))",
+      transition: {
+        duration: 0.2,
+        yoyo: 4,
+      },
+    },
+  };
   return (
-    <div id="nosotros">
+    <motion.div id="nosotros"
+    
+    initial={"offscreen"}
+      whileInView={"onscreen"}
+      viewport={{ once: false, amount: 0.4 }}
+    >
       <Header img={img} />
       <Texto texto1={h1} texto2={h3} />
       <section className="nosotros-seccion">
@@ -33,12 +51,13 @@ const Nosotros = () => {
           </p>
         </div>
         <div className="nosotros-seccion__caja2">
-          <img
+          <motion.img
+          variants={menuAnimate}
             className="vector"
             src="./assets/vector/vectorNosMob.png"
             alt="vector-imagen"
           />
-          <img src="./assets/nosotros/logo.png" alt="imagen-logo" />
+          <img className="menu-logo" src="./assets/nosotros/logo.png" alt="imagen-logo" />
         </div>
         <div className="nosotros-seccion__caja3">
           <h3 className="text-center">Nuestra inspiración</h3>
@@ -64,7 +83,7 @@ const Nosotros = () => {
       <div className="nosotros-desktop-componente">
         <NosDesktop />
       </div>
-    </div>
+    </motion.div>
   );
 };
 
