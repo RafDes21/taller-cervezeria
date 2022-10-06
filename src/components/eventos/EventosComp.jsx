@@ -13,7 +13,7 @@ const EventosComp = () => {
       <Texto texto1={h1} texto2={h3} />
 
       <section className="Eventos-content mx-auto">
-        <p className="Eventos-text">
+        <p className="Eventos-text text-center">
           Hacemos de tu evento, un formula 1.<br/> Cuéntanos, qué quieres celebrar y
           ¡Arrancamos motores!
         </p>
@@ -88,7 +88,7 @@ const EventosComp = () => {
         </div>
 
         <div className="Eventos-detalle">
-          <p>Disfruta las mejores noches:</p>
+          <h2 className="text-center">Ven a disfrutar de nuestras noches únicas:</h2>
 
           <div className="Eventos-detalle-content">
             <img
@@ -96,7 +96,7 @@ const EventosComp = () => {
               className="Eventos-detalle-vector"
               alt=""
             />
-            <div className="Eventos-detalle-wrapper row">
+            <div className="Eventos-detalle-wrapper row mx-0">
               <div className="karaoke col-6 col-md-6">
                 <img
                   src="./img/eventos/eventosA.png"

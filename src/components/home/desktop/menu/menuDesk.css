@@ -50,8 +50,9 @@
 
 .menu-desktop .vectorDesk {
   position: absolute;
-transform: translateY(-50%);
-top: 35%;
+  transform: translateY(-50%);
+  top: 35%;
+  left: 0;
 }
 @media (min-width: 991px) {
   .menu-desktop {
@@ -77,7 +78,6 @@ top: 35%;
   .menu-desktop {
     width: 100%;
     margin-left: 0;
-   
   }
   .item-menu .item-header img {
     height: 95%;

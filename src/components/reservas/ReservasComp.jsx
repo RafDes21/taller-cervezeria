@@ -14,7 +14,7 @@ const ReservasComp = () => {
       <Texto texto1={h1} texto2={h3} />
 
       <section className="Reservas-content">
-        <p className="Reservas-text">
+        <p className="Reservas-text text-center">
           Haz tu reserva en línea y nosotros nos pondremos en contacto.
           <br /> Nuestro horario es de 9:00 am a 23:00 pm
         </p>

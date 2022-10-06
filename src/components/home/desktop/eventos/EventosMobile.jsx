@@ -1,6 +1,18 @@
 import React from "react";
+import { motion } from "framer-motion/dist/framer-motion";
 
 const EventosMobile = () => {
+
+  const textLugarAnimate = {
+    offscreen: { filter: " drop-shadow(2px 2px 10px rgb(0, 0, 0))" },
+    onscreen: {
+      filter: "drop-shadow(2px 2px 10px rgb(255, 0, 0))",
+      transition: {
+        duration: 0.1,
+        yoyo: 4,
+      },
+    },
+  }
   return (
     <div className="row mobile">
       <div className="col-6 mobile-caja1">
@@ -9,7 +21,8 @@ const EventosMobile = () => {
           <p>Jueves 21 horas</p>
         </div>
         <div className="cajas-imagen">
-          <img
+          <motion.img 
+          variants={textLugarAnimate}
             className="mobile-img1"
             src="./img/eventos/eventos2.png"
             alt="imagen-eventos"
@@ -18,7 +31,8 @@ const EventosMobile = () => {
       </div>
       <div className="col-6 mobile-caja2">
         <div className="cajas-imagen">
-          <img
+          <motion.img
+          variants={textLugarAnimate}
             className="mobile-img2"
             src="./img/eventos/eventosA.png"
             alt="imagen-eventos"

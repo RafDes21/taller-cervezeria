@@ -13,26 +13,26 @@ const LugarCom = () => {
       <Texto texto1={h1} texto2={h3} />
       <section className="content">
         <div className="wrapper">
-          <p className="Lugar-header-text">
-            Gracias a nuestra ambientación podras trasnsportante y sentir la
-            calidez de aquellos <span>talleres mecánicos</span> que son nuestra
-            inspiración.
+          <p className="Lugar-header-text text-center">
+            Esperamos que nuestra ambientación pueda trasnsportante a esos
+            <span> talleres mecánicos</span> que son nuestra inspiración.
           </p>
-          <p className="Lugar-header-text">
-            Hacemos tributo a los valores de amistad y compañerismo que alli se
-            vivian, a la tradición, la buena comida y la pasión por los autos.
+          <p className="Lugar-header-text text-center">
+            Hacemos tributo al “arte automotriz”, la tradición de los maestros
+            mecánicos, la buena comida y la pasión por los autos.
           </p>
-          <p className="Lugar-header-text">
-            En cada rincón podrás crear momentos e historias innolvidables, como
-            se hacía antes.{" "}
+          <p className="Lugar-header-text text-center">
+            Si eres un apasionado o apasionada de los carros, ven a visitarnos y
+            comparte con nosotros tus historias y el amor por la mecánica
+            automotriz. Y ¿por qué no? disfruta de los mejores platillos de
+            comida urbana del norte de la ciudad.
           </p>
 
           <div className="Lugar-container">
             <h4 className="Lugar-h4">ZONA DE REPARACIONES</h4>
             <p className="Lugar-header-text">
-              Disfruta y relajate dentro de nuestro salon principal. Podras
-              disfrutar de nuestra increible ambientación y la climatización más
-              confortable.
+              Vive la experiencia de estar en un taller mecánico, dentro de
+              nuestro salón principal.
             </p>
             <div className="Lugar-img-wrapper ">
               <img
@@ -68,8 +68,8 @@ const LugarCom = () => {
           <div className="Lugar-container">
             <h4 className="Lugar-h4 txt-right">ZONA DE ENTREGAS</h4>
             <p className="txt-right Lugar-header-text">
-              Tenemos una amplia terraza, espacio muy codiciado entre nuestros
-              clientes. Aprovecha y disfruta de este espacio único en la ciudad.
+              ¿Ya hiciste el cambio de bujías? Ahora disfruta de la mejor<br/> 
+              terraza del norte de la ciudad.
             </p>
             <div className="Lugar-img-wrapper ">
               <div className="row">
@@ -113,8 +113,8 @@ const LugarCom = () => {
               <iframe
                 className="embed-responsive-item map "
                 src="https://www.google.com/maps/embed?pb=!1m14!1m8!1m3!1d15044.840074962005!2d-99.1792661!3d19.4895981!3m2!1i1024!2i768!4f13.1!3m3!1m2!1s0x0%3A0x8365a16997cecbf6!2sPasaje%20Ferrer%C3%ADa!5e0!3m2!1ses-419!2sar!4v1664049591781!5m2!1ses-419!2sar"
-                width="1280"
-                height="600"
+                // width="1280"
+                // height="600"
                 title="mapa"
                 allowfullscreen=""
                 loading="lazy"

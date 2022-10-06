@@ -9,7 +9,6 @@ const Nosotros = () => {
   const h3 = "La pasión por los carros nos une";
   return (
     <div id="nosotros">
-
       <Header img={img} />
       <Texto texto1={h1} texto2={h3} />
       <section className="nosotros-seccion">
@@ -29,8 +28,8 @@ const Nosotros = () => {
             vivian, a la tradición, la buena comida y la pasión por los autos.
           </p>
           <p className="text-center">
-            En cada rincón podrás crear momentos e historias innolvidables, como
-            se hacía antes.
+            Si eres un apasionado por los carros, ven a visitarnos y disfruta de
+            los mejores platillos.
           </p>
         </div>
         <div className="nosotros-seccion__caja2">

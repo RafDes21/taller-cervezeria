@@ -1,155 +1,137 @@
-@import url('https://fonts.googleapis.com/css2?family=Train+One&display=swap');
-@import url('https://fonts.googleapis.com/css2?family=Jost:wght@700&display=swap');
-.Lugar-wrapper{
-    margin:0 auto;
-    /* background-color: aqua; */
-    max-width: 1440px;
+@import url("https://fonts.googleapis.com/css2?family=Train+One&display=swap");
+@import url("https://fonts.googleapis.com/css2?family=Jost:wght@700&display=swap");
+.Lugar-wrapper {
+  margin: 0 auto;
+  max-width: 1440px;
 }
 .content {
-    padding: 37px 25px;
-    background-image: url(/img/LugarMas/back.png);
-    background-repeat: no-repeat;
-    background-size: cover;
-    background-attachment: fixed;
-  }
+  padding: 0 17px;
+}
 
-/* .content{
+.Lugar-h4 {
+  color: white;
+  font-family: "Train One", cursive;
+  font-size: 16px;
+  font-weight: 400;
+  text-align: left;
+  margin-bottom: 30px;
+}
+
+p {
+  font-family: "Jost";
+  color: white;
+}
+
+.Lugar-header-text {
+  color: white;
+  font-size: 12px;
+  z-index: 2;
+  position: relative;
+  font-family: "Jost";
+}
+.Lugar-header-text span {
+  font-family: "Train One", cursive;
+}
+.txt-left {
+  text-align: left;
+}
+.txt-right {
+  text-align: right;
+}
+.txt-center {
+  text-align: center;
+}
+
+.Lugar-img-wrapper {
+  max-width: 1420px;
+  margin: auto;
+}
+
+.Lugar-img {
+  width: 100%;
+}
+
+.Lugar-img-dsk {
+  display: none;
+  width: 100%;
+}
+
+.map-wrapper {
+  display: flex;
+  justify-content: center;
+  height: 200px;
+  width: 100%;
+  margin-bottom: 90px;
+ 
+}
+.map-wrapper iframe{
     width: 100%;
-    background-image: url(/img/LugarMas/back.png);
-    background-repeat: repeat-y;
-    background-size: cover;
-    background-attachment:fixed;
-    background-position: left;
-    padding:2em;
-} */
-
-/* .wrapper{
-    max-width: 1440px;
-    margin:auto;
-} */
-
-/* .Header-text{
-     margin-top: -10%;
-    min-width:100%;
-    background-color: crimson;
-} */
-/* .Lugar-header-img{
-    min-width: 100%;
-    mask-image: -webkit-gradient(linear, left top, 
-    left bottom, from(rgba(0,0,0,1)), to(rgba(0,0,0,0)));
-    -webkit-mask-image: -webkit-gradient(linear, left top, 
-    left bottom, from(rgba(0,0,0,1)), to(rgba(0,0,0,0)));
-} */
-
-/* .Lugar-h2{
-    color: white;
-    /* background-color: yellow; 
-    font-family: 'Jost', sans-serif;
-    font-weight: 700;
-    font-size: 3em;
-    text-align: center;
-    z-index: 2;
-    position: relative;
-} */
-
-/* .Lugar-h3{
-    color: white;
-    font-family: 'Train One', cursive;
-    font-size: 1.5em;
-    /* background-color: orange; 
-    text-align: center;
-} */
-
-.Lugar-h4{
-    color: white;
-    font-family: 'Train One', cursive;
-    font-size: 16px;
-    font-weight: 400;
-    /* background-color: orange; */
-    text-align: left;
+    
 }
-
-p{
-    font-family: 'Jost';
-    color: white;
+.map {
+  border-radius: 20px;
 }
-
-.Lugar-container{
-    max-width: 100%;
-    /* background-color: darkgoldenrod; */
-    margin: 3em 0;
-}
-
-.Lugar-header-text{
-    /* background-color: blueviolet; */
-    color:white;
-    font-size: 12px;
-    z-index: 2;
-    position: relative;
-}
-
-.txt-left{
-    text-align: left;
-}
-.txt-right{
-    text-align: right;
-}
-.txt-center{
-    text-align: center;
-}
-
-.Lugar-img-wrapper{
-    max-width: 1420px;
-    margin:auto;
-}
-
-.Lugar-img{
-    /* min-height: 10em; */
-    width: 100%;
-    /* background-color:deeppink; */
-
-}
-
-.Lugar-img-dsk{
-    display: none;
-    width: 100%;
-    /* min-height: 10em;
-    background-color: red; */
-}
-
-.map-wrapper{
-    display: flex;
-    justify-content: center;
-}
-
-.map{
-    border-radius: 20px;
-}
-/* @media (min-width: 768px) {
-    .Lugar-img-dsk{
-        display:block;
-    }
-
-} */
 
 @media (min-width: 768px) {
-    .Lugar-img-dsk{
-        display:block;
-    }
-    .Lugar-h4{
-        color: white;
-        font-family: 'Train One', cursive;
-        font-size: 60px;
-        font-weight: 400;
-        /* background-color: orange; */
-        /* text-align: left; */
-    }
-    .Lugar-header-text{
-        /* background-color: blueviolet; */
-        color:white;
-        font-size: 34px;
-        font-weight: 400;
-    }
-    
-
+  .content {
+    padding: 0 40px;
+  }
+  .Lugar-img-dsk {
+    display: block;
+  }
+  .Lugar-h4 {
+    color: white;
+    font-family: "Train One", cursive;
+    font-size: 30px;
+    font-weight: 400;
+  }
+  .Lugar-header-text {
+    color: white;
+    font-size: 24px;
+    font-weight: 400;
+  }
+  .map-wrapper {
+    display: flex;
+    justify-content: center;
+    height: 400px;
+    width: 100%;
+  }
+  .map-wrapper iframe{
+      width: 100%;
+      
+  }
+}
+@media (min-width: 991px) {
+  .content {
+    padding: 0 80px;
+  }
+  .Lugar-h4 {
+    color: white;
+    font-family: "Train One", cursive;
+    font-size: 60px;
+    font-weight: 400;
+    padding: 0;
+    margin: 50px 0;
+  }
+  .Lugar-header-text {
+    color: white;
+    font-size: 34px;
+    z-index: 2;
+    position: relative;
+    font-family: "Jost";
+  }
+  .Lugar-wrapper .content .Lugar-container{
+    margin-bottom: 150px;
+    margin-top: 100px;
+  }
+  .map-wrapper {
+    display: flex;
+    justify-content: center;
+    height: 570px;
+    width: 100%;
+  }
+  .map-wrapper iframe{
+      width: 100%;
+      
+  }
 }

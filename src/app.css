@@ -5,9 +5,9 @@
     background-repeat: no-repeat;
     background-size: cover;
     background-attachment: fixed;
-    padding-bottom: 50px;
+    padding-bottom: 40px;
   }
-
+/* 
   @media screen and (min-width: 768px) {
     .nosotros {
         margin: 0 auto;
@@ -16,10 +16,10 @@
         background-repeat: no-repeat;
         background-size: cover;
         background-attachment: fixed;
-        padding-bottom: 70px;
+        padding-bottom: 30px;
       }
-  }
-  @media screen and (min-width: 991px) {
+  } */
+  /* @media screen and (min-width: 991px) {
     .nosotros {
         margin: 0 auto;
         max-width: 1440px;
@@ -27,6 +27,6 @@
         background-repeat: no-repeat;
         background-size: cover;
         background-attachment: fixed;
-        padding-bottom: 100px;
+        padding-bottom: 50px;
       }
-  }
+  } */

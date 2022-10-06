@@ -1,9 +1,9 @@
 import React from "react";
 import "./homeCss/menu.css";
 import { TituloSecciones } from "../Header/Header";
-import { motion } from "framer-motion/dist/framer-motion";
 import { Link } from "react-router-dom";
 import MenuDesk from "./desktop/menu/MenuDesk";
+import { motion } from "framer-motion/dist/framer-motion";
 
 const Menu = () => {
   const titulo = "EL MENÚ";
@@ -45,7 +45,8 @@ const Menu = () => {
             </div>
           </div>
           <div className="col-8 menu-imagen">
-            <img
+            <motion.img
+            variants={textLugarAnimate}
               src="./img/menu/menu1.png"
               alt="imagen menu"
               className="menu1"
@@ -54,7 +55,8 @@ const Menu = () => {
         </div>
         <div className="row mx-0 menu-fila2">
           <div className="col-8 menu-imagen">
-            <img
+            <motion.img
+            variants={textLugarAnimate}
               src="./img/menu/menu2.png"
               alt="imagen-menu"
               className="menu2"

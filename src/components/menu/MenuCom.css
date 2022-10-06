@@ -1,214 +1,194 @@
-@import url('https://fonts.googleapis.com/css2?family=Train+One&display=swap');
-@import url('https://fonts.googleapis.com/css2?family=Jost:wght@700&display=swap');
+@import url("https://fonts.googleapis.com/css2?family=Train+One&display=swap");
+@import url("https://fonts.googleapis.com/css2?family=Jost:wght@700&display=swap");
 
-.Menu-wrapper{
-    /* margin: auto; */
-    /* margin-top: 4em; */
-    /* display: flex;
-    flex-direction: column;
-    justify-content: center;
-    align-items: center; */
-    margin: 0 auto;
-    max-width: 1440px;
+.Menu-wrapper {
+  margin: 0 auto;
+  max-width: 1440px;
 }
 
-.Menu-content-mobile{
-    padding: 37px 25px;
-    background-image: url("../nosotros/fondo.png");
-    background-repeat: no-repeat;
-    background-size: cover;
-    background-attachment: fixed;
-    
+.Menu-content-mobile {
+  padding: 37px 25px;
+  background-image: url("../nosotros/fondo.png");
+  background-repeat: no-repeat;
+  background-size: cover;
+  background-attachment: fixed;
+}
+
+.Menu-content-desktop {
+  display: none;
+  padding: 37px 25px;
+  background-image: url("../nosotros/fondo.png");
+  background-repeat: no-repeat;
+  background-size: cover;
+  background-attachment: fixed;
+}
+
+@media only screen and (min-width: 768px) {
+  .Menu-content-mobile {
+    display: none;
   }
-
-  .Menu-content-desktop{
-    display:none;
-    padding: 37px 25px;
-    background-image: url("../nosotros/fondo.png");
-    background-repeat: no-repeat;
-    background-size: cover;
-    background-attachment: fixed;
-    
+  .Menu-content-desktop {
+    display: block;
   }
-
-  @media only screen and (min-width:650px) {
-    .Menu-content-mobile{
-        display:none;
-    }
-    .Menu-content-desktop{
-        display:block;
-    }
-  }
-/* .Menu-h2{
-    color: white;
-    /* background-color: yellow; 
-    font-family: 'Jost';
-    font-weight: 700;
-    font-size: 3em;
-    text-align: center;
-    z-index: 2;
-    position: relative;
 }
 
-h3{
-    color: white;
-    font-family: 'Train One', cursive;
-    font-size: 1.5em;
-    /* background-color: orange; 
-    text-align: center;
-    padding-bottom: 2em;
-    z-index: 2;
-    position: relative;
-} */
-
-h4{
-    color: white;
-    font-family: 'Train One', cursive;
-    font-size: 1.5em;
-    /* background-color: orange; */
-    text-align: center;
-    padding-top: 2em;
+h4 {
+  color: white;
+  font-family: "Train One", cursive;
+  font-size: 1.5em;
+  /* background-color: orange; */
+  text-align: center;
+  padding-top: 2em;
 }
-h5{
-    color: white;
-    font-family: 'Jost', cursive;
-    font-size: 20px;
-    /* background-color: orange; */
-    text-align: left;
-    font-weight: 600!important ;
+h5 {
+  color: white;
+  font-family: "Train One";
+  font-size: 20px;
+  /* background-color: orange; */
+  /* text-align: left; */
+  font-weight: 400;
+  margin-top: 20px;
 }
 
-p{
-    font-family: 'Jost';
-    color: white;
-    text-align: center;
-    font-size: 14px;
+p {
+  font-family: "Jost";
+  color: white;
+  text-align: center;
+  font-size: 14px;
 }
 
-button{
-    border: 1px solid #fad02c;
-    color: #fad02c;
-    background: none;
-    margin: 10px;
-    text-decoration: none;
-    padding: 5px 40px;
-    border-radius: 5px;
-    font-family: "Jost", sans-serif;
-    font-size: 18px;
+button {
+  border: 1px solid #fad02c;
+  color: #fad02c;
+  background: none;
+  margin: 10px;
+  text-decoration: none;
+  padding: 5px 40px;
+  border-radius: 5px;
+  font-family: "Jost", sans-serif;
+  font-size: 18px;
 }
 
-button:hover{
-        background-color: #fad02c;
-        color: black;
-        box-shadow: var(---buttom-shadow);
-      }
-
-.Menu-header{
-    width: 100%;
-    display: flex;
-    flex-direction: column;
-
+button:hover {
+  background-color: #fad02c;
+  color: black;
+  box-shadow: var(---buttom-shadow);
 }
 
-.Menu-header-img{
-    width: 100%;
-    min-height: 50vh;
-    /* background-color: violet; */
+.Menu-header {
+  width: 100%;
+  display: flex;
+  flex-direction: column;
 }
 
-.Menu-titulo{
-    margin-top: -2.5em;
+.Menu-header-img {
+  width: 100%;
+  min-height: 50vh;
 }
 
-.Menu-comida-card{
-    display: flex;
-    flex-direction: column;
-    align-items: center;
-    padding-bottom: 2em;
-}
-.Menu-comida-card img{
-    width:70%;
-    margin-bottom: 1em;
-    /* background-color: tomato; */
+.Menu-titulo {
+  margin-top: -2.5em;
 }
 
-.Menu-bebidas-slider{
-display: flex;
-flex-wrap: nowrap;
-flex-direction: row;
-justify-content: space-around;
-align-items: center;
+.Menu-comida-card {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  padding-bottom: 2em;
 }
-.Menu-bebidas-slider img{
-    width: 30%;
+.Menu-comida-card img {
+  width: 70%;
+  margin-bottom: 1em;
 }
 
-.Menu-carta{
-    display: flex;
-    flex-direction: column;
-    align-items: center;
-    padding-bottom: 3em;
+.Menu-bebidas-slider {
+  display: flex;
+  flex-wrap: nowrap;
+  flex-direction: row;
+  justify-content: space-around;
+  align-items: center;
+}
+.Menu-bebidas-slider img {
+  width: 30%;
+}
+
+.Menu-carta {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  padding-bottom: 3em;
 }
 
 /*Desktop*/
-
-.Menu-section-wrapper{
-    position: relative;
+.Menu-content-desktop {
+  position: relative;
 }
 
-.Menu-desktop-h4{
-    margin-left: .5em;
+.Menu-desktop-vector {
+  width: 100%;
+  position: absolute;
+  left: 0;
+  transform: translateY(-5%);
+}
+.Menu-desktop-h4 {
+  margin-left: 0.5em;
+  text-align: left;
+  font-size: 30px;
+  font-family: "Train One";
+  font-weight: 400;
+  margin-top: 50px;
+}
+
+.Menu-desktop-card {
+  padding: 0;
+}
+
+.Menu-desktop-card img {
+  width: 100%;
+  height: 70%;
+  z-index: 2;
+  position: relative;
+}
+.Menu-desktop-card h5 {
+  font-size: 30px;
+  font-weight: 700;
+  font-family: "Jost";
+}
+.Menu-desktop-card p {
+  font-size: 20px;
+  font-weight: 400;
+  font-family: "Jost";
+}
+@media only screen and (min-width: 991px) {
+  .Menu-desktop-h4 {
+    margin-left: 0.5em;
     text-align: left;
     font-size: 60px;
-    padding-top: 1em;
-}
+    font-family: "Train One";
+    font-weight: 400;
+    margin-top: 0;
+  }
+  .Menu-desktop-card h5 {
+    font-size: 44px;
+    font-weight: 700;
+    font-family: "Jost";
+  }
+  .Menu-desktop-card p {
+    font-size: 32px;
+    font-weight: 400;
+    font-family: "Jost";
+  }
+  .Menu-desktop-card img {
+    width: 100%;
+    height: 70%;
 
-.Menu-desktop-vector{
+    z-index: 2;
+    position: relative;
+  }
+  .Menu-desktop-vector {
     width: 100%;
     position: absolute;
-    z-index: 1;
-    top:-1em;
-}
-
-.Menu-desktop-cards{
-    position:relative;
-    z-index:2;
-    display: flex;
-    justify-content: space-evenly;
-}
-
-.Menu-desktop-card{
-    display: flex;
-    flex-direction: column;
-    align-items: center;
-}
-
-.Menu-desktop-card img{
-    width: 90%;
-    margin-bottom: 1em;
-}
-@media only screen and (min-width:650px) {
-    .Menu-wrapper .Menu-content-desktop h5{
-        font-size: 44px;
-    }
-    .Menu-wrapper .Menu-content-desktop p{
-        font-size: 32px;
-        font-weight: 400;
-    }
-    .Menu-desktop-card .desayuno-imagen3{
-        width: 70%;
-       
-    }
-    .Menu-desktop-card .burrito-imagen2{
-        width: 55%;
-       
-    }
-    .Menu-desktop-card .hamburguesas-imagen1{
-        width: 60%;
-       
-    }
-    .Menu-desktop-card .hamburguesas-imagen3{
-        width: 60%;
-       
-    }
+    left: 0;
+    transform: translateY(0%);
+  }
 }
