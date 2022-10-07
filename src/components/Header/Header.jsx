@@ -18,7 +18,7 @@ export const Texto = ({ texto1, texto2 }) => {
     </div>
   );
 };
-export const TituloSecciones = ({ titulo, subtitulo, verMas }) => {
+export const TituloSecciones = ({ titulo, subtitulo, verMas, verMasOut,href, to }) => {
   return (
     <div className="lugar-titulo">
       <div>
@@ -26,7 +26,8 @@ export const TituloSecciones = ({ titulo, subtitulo, verMas }) => {
         <p className="sub-title">{subtitulo}</p>
       </div>
       <div className="lugar-link">
-        <Link className="nav-link link" to="/lugar">
+        <a href={href} className="nav-link link" target="_blank">{verMasOut}</a>
+        <Link className="nav-link link" to={to} target="_blank">
           {verMas}
         </Link>
       </div>

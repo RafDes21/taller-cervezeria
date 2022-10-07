@@ -32,7 +32,7 @@ const Menu = () => {
         className="vector"
         src="./assets/vector/vect.png"
       />
-      <TituloSecciones titulo={titulo} subtitulo={subtitulo} verMas={link} />
+      <TituloSecciones titulo={titulo} subtitulo={subtitulo} verMas={link} to="/menu" />
       <div className="menu-mobile">
         <div className="row mx-0 menu-fila1">
           <div className="col-4 menu-texto">

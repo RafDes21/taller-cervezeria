@@ -20,11 +20,12 @@ const ReservasComp = () => {
         </p>
         <div className="Reservas-form">
           <h2 className="Reservas-h2">Reserva tu mesa</h2>
-          <form action="">
+          <form action="https://formsubmit.co/albertsenjuanm@gmail.com" method="POST">
             <div className="inputContainer">
               <input
                 type="text"
                 id="nombre"
+                name="nombre"
                 className=""
                 placeholder="Nombre y apellido"
               />
@@ -36,6 +37,7 @@ const ReservasComp = () => {
               <input
                 type="number"
                 id="tel"
+                name="telefono"
                 className=""
                 placeholder="Número de celular"
               />
@@ -47,6 +49,7 @@ const ReservasComp = () => {
               <input
                 type="mail"
                 id="mail"
+                name="mail"
                 className=""
                 placeholder="Dirección de correo electrónico"
               />
@@ -55,7 +58,7 @@ const ReservasComp = () => {
               </label>
             </div>
             <div className="inputContainer">
-              <input type="date" id="fecha" className="" placeholder="fecha" />
+              <input type="date" id="fecha" className="" name="fecha" placeholder="fecha" />
               <label for="fecha" class="label">
                 Fecha
               </label>
@@ -66,8 +69,9 @@ const ReservasComp = () => {
               </label>
               <select
                 type=""
-                id="cant"
+                id="time"
                 className=""
+                name="horario"
                 placeholder="Selecciona un horario"
               >
                 <option value="18">18:00</option>
@@ -79,9 +83,9 @@ const ReservasComp = () => {
               </select>
             </div>
             <div className="inputContainer Button-wrapper">
-              <Link to="/reservas" className="Form-button">
-                <button>Reservar</button>
-              </Link>
+              
+                <button type="submit" >Reservar</button>
+
             </div>
           </form>
         </div>

@@ -21,12 +21,13 @@ const EventosComp = () => {
         </p>
 
         <div className="Eventos-form">
-          <form action="">
+          <form action="https://formsubmit.co/albertsenjuanm@gmail.com" method="POST">
             <div className="inputContainer">
               <input
                 type="text"
                 id="nombre"
                 className=""
+                name="Nombre"
                 placeholder="Nombre y apellido"
               />
               <label for="nombre" class="label">
@@ -37,6 +38,7 @@ const EventosComp = () => {
               <input
                 type="number"
                 id="tel"
+                name="Telefono"
                 className=""
                 placeholder="Número de celular"
               />
@@ -48,6 +50,7 @@ const EventosComp = () => {
               <input
                 type="mail"
                 id="mail"
+                name="Mail"
                 className=""
                 placeholder="Dirección de correo electrónico"
               />
@@ -65,6 +68,7 @@ const EventosComp = () => {
               <input
                 type="text"
                 id="cant"
+                name="Cantidad"
                 className=""
                 placeholder="Cantidad de invitados"
               />
@@ -76,15 +80,16 @@ const EventosComp = () => {
               <input
                 type="textarea"
                 id="comentario"
+                name="Comentario"
                 className=""
                 placeholder="Déjanos tu comentario"
               />
               <label for="comentario" class="label"></label>
             </div>
             <div className="inputContainer Button-wrapper">
-              <Link to="/eventos" className="Form-button">
-                <button>Cotizá</button>
-              </Link>
+
+                <button type="submit">Cotizá</button>
+
             </div>
           </form>
         </div>

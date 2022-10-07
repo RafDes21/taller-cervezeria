@@ -49,15 +49,15 @@ const Footer = () => {
             <h4>Seguinos:</h4>
             <h4 className="footerRedes-texto">Seguinos en nuestras redes:</h4>
             <div className="caja-footerRedes">
-              <Link className="redes" to="/lugar">
+              <a className="redes" href="https://www.instagram.com/eltallercerveceriamx/" target="_blank">
                 <AiOutlineInstagram />
-              </Link>
-              <Link className="redes" to="/lugar">
+              </a>
+              <a className="redes" href='https://www.facebook.com/eltallercerveceriamx' target="_blank">
                 <AiOutlineFacebook />
-              </Link>
-              <Link className="redes" to="/lugar">
+              </a>
+              <a className="redes" href="mailto:soyeltallercerveceria@gmail.com" target="_blank">
                 <AiOutlineMail />
-              </Link>
+              </a>
             </div>
           </div>
         </div>

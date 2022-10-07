@@ -6,12 +6,14 @@ const Instagram = () => {
   const titulo = "INSTAGRAM";
   const subtitulo = "Seguí nuestro camino";
   const link = "Ir a instagram";
+  const href = 'https://www.instagram.com/eltallercerveceriamx/'
   return (
     <div className="instagram">
       <div className="lugar-titulo">
-        <TituloSecciones titulo={titulo} subtitulo={subtitulo} verMas={link} />
+        <TituloSecciones titulo={titulo} subtitulo={subtitulo} verMasOut={link} href={href} />
       </div>
-      <div className="row mx-0">
+      <div class="elfsight-app-6de1c778-e635-43cc-93be-d4342132b8c5"></div>
+      {/* <div className="row mx-0">
         <div className="col-12 col-md-6 caja-instagram">
           <img
             className="instagram-imagenes"
@@ -82,8 +84,10 @@ const Instagram = () => {
             alt="imagenInstagram"
           />
         </div>
-      </div>
+      </div> */}
+
     </div>
+    
   );
 };
 

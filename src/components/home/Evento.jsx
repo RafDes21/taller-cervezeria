@@ -40,7 +40,7 @@ const Eventos = () => {
         className="vectEventos"
         src="./assets/vector/vecEventos.png"
       />
-      <TituloSecciones titulo={titulo} subtitulo={subtitulo} verMas={link} />
+      <TituloSecciones titulo={titulo} subtitulo={subtitulo} verMas={link} to='/eventos' />
       <div className="mobile">
         <EventosMobile />
       </div>
@@ -53,7 +53,7 @@ const Eventos = () => {
         </Link>
       </div>
       <div className="eventos-boton">
-        <Link className="nav-link" to="/menu">
+        <Link className="nav-link" to="/eventos">
           <button className="Section-button">Cotizá tu Evento</button>
         </Link>
       </div>

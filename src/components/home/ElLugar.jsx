@@ -9,7 +9,7 @@ const ElLugar = () => {
   const link = " Ver más...";
   return (
     <div className="lugar">
-      <TituloSecciones titulo={titulo} subtitulo={subtitulo} verMas={link} />
+      <TituloSecciones titulo={titulo} subtitulo={subtitulo} verMas={link} to="/lugar" />
       <div className="row mx-0">
         <div className="col-12 col-md-4 px-0">
           <img
