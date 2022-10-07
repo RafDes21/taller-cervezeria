@@ -9,29 +9,15 @@ const EventosComp = () => {
   const h1 = "EVENTOS";
   const h3 = "Reparamos tu diversión";
 
-  const menuAnimate = {
-    offscreen: { filter: " drop-shadow(2px 2px 10px rgb(0, 0, 0))" },
-    onscreen: {
-      filter: "drop-shadow(2px 2px 10px rgb(255, 0, 0))",
-      transition: {
-        duration: 0.2,
-        yoyo: 4,
-      },
-    },
-  };
   return (
-    <motion.div 
-     initial={"offscreen"}
-      whileInView={"onscreen"}
-      viewport={{ once: false, amount: 0.1}}
-    className="wrapper">
+    <div className="wrapper">
       <Header img={img} />
       <Texto texto1={h1} texto2={h3} />
 
       <section className="Eventos-content mx-auto">
         <p className="Eventos-text text-center">
-          Hacemos de tu evento, un formula 1.<br/> Cuéntanos, qué quieres celebrar y
-          ¡Arrancamos motores!
+          Hacemos de tu evento, un formula 1.
+          <br /> Cuéntanos, qué quieres celebrar y ¡Arrancamos motores!
         </p>
 
         <div className="Eventos-form">
@@ -104,18 +90,37 @@ const EventosComp = () => {
         </div>
 
         <div className="Eventos-detalle">
-          <h2 className="text-center">Ven a disfrutar de nuestras noches únicas:</h2>
+          <h2 className="text-center">
+            Ven a disfrutar de nuestras noches únicas:
+          </h2>
 
           <div className="Eventos-detalle-content">
             <motion.img
-            variants={menuAnimate}
+              initial={{ filter: " drop-shadow(2px 2px 10px rgb(0, 0, 0))" }}
+              whileInView={{
+                filter: "drop-shadow(2px 2px 10px rgb(255, 0, 0))",
+                transition: {
+                  duration: 0.2,
+                  yoyo: 4,
+                },
+              }}
               src="./assets/vector/vectoreventos.png"
               className="Eventos-detalle-vector"
               alt=""
             />
             <div className="Eventos-detalle-wrapper row mx-0">
               <div className="karaoke col-6 col-md-6">
-                <img
+                <motion.img
+                  initial={{
+                    filter: " drop-shadow(2px 2px 10px rgb(0, 0, 0))",
+                  }}
+                  whileInView={{
+                    filter: "drop-shadow(2px 2px 10px rgb(255, 0, 0))",
+                    transition: {
+                      duration: 0.2,
+                      yoyo: 4,
+                    },
+                  }}
                   src="./img/eventos/eventosA.png"
                   alt="karaoke en el taller"
                   className="imagen-karaoke"
@@ -134,7 +139,17 @@ const EventosComp = () => {
                   </h4>
                   {/* <p>Viernes 7pm</p> */}
                 </>
-                <img
+                <motion.img
+                  initial={{
+                    filter: " drop-shadow(2px 2px 10px rgb(0, 0, 0))",
+                  }}
+                  whileInView={{
+                    filter: "drop-shadow(2px 2px 10px rgb(255, 0, 0))",
+                    transition: {
+                      duration: 0.2,
+                      yoyo: 4,
+                    },
+                  }}
                   src="./img/eventos/eventosB.png"
                   alt="bandas en el taller"
                 />
@@ -143,7 +158,7 @@ const EventosComp = () => {
           </div>
         </div>
       </section>
-    </motion.div>
+    </div>
   );
 };
 

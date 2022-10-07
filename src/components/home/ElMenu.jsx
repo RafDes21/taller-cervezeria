@@ -15,7 +15,7 @@ const Menu = () => {
     onscreen: {
       filter: "drop-shadow(2px 2px 10px rgb(255, 0, 0))",
       transition: {
-        duration: 0.1,
+        duration: 0.2,
         yoyo: 4,
       },
     },

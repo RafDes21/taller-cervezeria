@@ -200,9 +200,7 @@ input:focus {
 
 .Eventos-detalle-vector {
   position: absolute;
-
   width: 100%;
-
   transform: translateY(50%);
   bottom: 30%;
   left: 0;
