@@ -5,7 +5,7 @@ import {
   AiOutlineFacebook,
   AiOutlineMail,
 } from "react-icons/ai";
-import { Link } from "react-router-dom";
+
 
 const Footer = () => {
   return (
@@ -49,13 +49,13 @@ const Footer = () => {
             <h4>Seguinos:</h4>
             <h4 className="footerRedes-texto">Seguinos en nuestras redes:</h4>
             <div className="caja-footerRedes">
-              <a className="redes" href="https://www.instagram.com/eltallercerveceriamx/" target="_blank">
+              <a className="redes" href="https://www.instagram.com/eltallercerveceriamx/" target="_blank" rel="noopener noreferrer">
                 <AiOutlineInstagram />
               </a>
-              <a className="redes" href='https://www.facebook.com/eltallercerveceriamx' target="_blank">
+              <a className="redes" href='https://www.facebook.com/eltallercerveceriamx' target="_blank" rel="noopener noreferrer">
                 <AiOutlineFacebook />
               </a>
-              <a className="redes" href="mailto:soyeltallercerveceria@gmail.com" target="_blank">
+              <a className="redes" href="mailto:soyeltallercerveceria@gmail.com" target="_blank" rel="noopener noreferrer">
                 <AiOutlineMail />
               </a>
             </div>

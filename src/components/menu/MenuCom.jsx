@@ -325,6 +325,14 @@ const MenuCom = () => {
             </div>
           </div>
         </div>
+
+        <div className="cartaCompleta">
+          <span>MIRA NUESTRA CARTA COMPLETA</span>
+          <img src="./assets/vector/flechasMenu.png" className="flechasCarta" alt="" />
+          <a href="./assets/menu/menu2.pdf" target="_blank" className="imgCarta" rel="noopener noreferrer">
+          <img src="./assets/menu/imgMenu/logoCarta.png" alt="" />
+          </a>
+        </div>
       </section>
     </div>
   );

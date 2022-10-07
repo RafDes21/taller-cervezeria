@@ -1,5 +1,4 @@
 import React from "react";
-import { Link } from "react-router-dom";
 import { Header, Texto } from "../Header/Header";
 import "./eventosComp.css";
 import { motion } from "framer-motion/dist/framer-motion";

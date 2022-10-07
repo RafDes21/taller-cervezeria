@@ -1,6 +1,15 @@
 @import url("https://fonts.googleapis.com/css2?family=Train+One&display=swap");
 @import url("https://fonts.googleapis.com/css2?family=Jost:wght@700&display=swap");
 
+:root {
+  --font-family: "Jost", sans-serif;
+  --font-familySecundario: "Train One";
+  --color-primary: rgba(254, 254, 254, 1);
+  --color-secondary: rgba(250, 208, 44, 1);
+  --color-background: rgba(1, 1, 1, 1);
+}
+
+
 .Menu-wrapper {
   margin: 0 auto;
   max-width: 1440px;
@@ -159,7 +168,34 @@ button:hover {
   font-weight: 400;
   font-family: "Jost";
 }
-@media only screen and (min-width: 991px) {
+
+.cartaCompleta{
+  margin: 2em 1em 1em 1em;
+  display: flex;
+  flex-direction: row;
+  justify-content: space-evenly;
+}
+
+.cartaCompleta span{
+  align-self: center;
+  color: var(--color-secondary);
+  font-family: var(--font-familySecundario);
+  font-size: 40px;
+}
+
+.flechasCarta{
+  max-height: 100px;
+  align-self: center;
+  margin: auto;
+  padding: 0 3em;
+  }
+
+.imgCarta{
+  max-width: 40%;
+}
+
+
+@media only screen and (min-width: 1100px) {
   .Menu-desktop-h4 {
     margin-left: 0.5em;
     text-align: left;

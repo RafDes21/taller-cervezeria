@@ -6,7 +6,7 @@ const Booking = () => {
   return (
     <div id="booKing">
       <span className="booking-message">¡Ven a visitarnos!</span>
-      <Link className="booking" to="/lugar">
+      <Link className="booking" to="/reservas">
         Realizar Reserva
       </Link>
     </div>

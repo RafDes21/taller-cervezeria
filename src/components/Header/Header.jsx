@@ -26,8 +26,8 @@ export const TituloSecciones = ({ titulo, subtitulo, verMas, verMasOut,href, to 
         <p className="sub-title">{subtitulo}</p>
       </div>
       <div className="lugar-link">
-        <a href={href} className="nav-link link" target="_blank">{verMasOut}</a>
-        <Link className="nav-link link" to={to} target="_blank">
+        <a href={href} className="nav-link link" target="_blank" rel="noopener noreferrer">{verMasOut}</a>
+        <Link className="nav-link link" to={to} target="_blank" rel="noopener noreferrer">
           {verMas}
         </Link>
       </div>
