@@ -6,11 +6,11 @@ import Instagram from "../components/home/Instagram";
 import ElLugar from "../components/home/ElLugar";
 import Menu from "../components/home/ElMenu";
 import Slider from "../components/home/Slider";
-import "./rutaHome.css";
+
 
 const Home = () => {
   return (
-    <div className="main">
+    <div >
       <Slider />
       <Booking />
       <Experiencia />

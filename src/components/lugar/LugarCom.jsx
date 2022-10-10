@@ -68,7 +68,8 @@ const LugarCom = () => {
           <div className="Lugar-container">
             <h4 className="Lugar-h4 txt-right">ZONA DE ENTREGAS</h4>
             <p className="txt-right Lugar-header-text">
-              ¿Ya hiciste el cambio de bujías? Ahora disfruta de la mejor<br/> 
+              ¿Ya hiciste el cambio de bujías? Ahora disfruta de la mejor
+              <br />
               terraza del norte de la ciudad.
             </p>
             <div className="Lugar-img-wrapper ">
@@ -113,19 +114,12 @@ const LugarCom = () => {
               <iframe
                 className="embed-responsive-item map "
                 src="https://www.google.com/maps/embed?pb=!1m14!1m8!1m3!1d15044.840074962005!2d-99.1792661!3d19.4895981!3m2!1i1024!2i768!4f13.1!3m3!1m2!1s0x0%3A0x8365a16997cecbf6!2sPasaje%20Ferrer%C3%ADa!5e0!3m2!1ses-419!2sar!4v1664049591781!5m2!1ses-419!2sar"
-                // width="1280"
-                // height="600"
                 title="mapa"
                 allowfullscreen=""
                 loading="lazy"
                 referrerpolicy="no-referrer-when-downgrade"
               ></iframe>
             </div>
-            {/* <img
-            alt="imagen"
-            className="Lugar-img p-3 mb-3 mx-auto"
-            src="./img/LugarMas/donde.png"
-          /> */}
           </div>
         </div>
       </section>

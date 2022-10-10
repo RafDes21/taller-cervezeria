@@ -1,8 +1,8 @@
 import React from "react";
-import { Link } from "react-router-dom";
 import { Header, Texto } from "../Header/Header";
 import "./MenuCom.css";
 import { motion } from "framer-motion/dist/framer-motion";
+import pdf from "../pdf/menu.pdf";
 
 const MenuCom = () => {
   const img = "./assets/menu/imgMenu/imgTop.png";
@@ -91,9 +91,9 @@ const MenuCom = () => {
         </div>
         <div className="Menu-carta">
           <h4>Nuestras cartas</h4>
-          <Link to="/menu">
+          <a href={pdf} download>{/*Menu PDF*/}
             <button>Ver Menú Completo</button>
-          </Link>
+          </a>
         </div>
       </section>
       {/* DESKTOP */}
@@ -328,9 +328,15 @@ const MenuCom = () => {
 
         <div className="cartaCompleta">
           <span>MIRA NUESTRA CARTA COMPLETA</span>
-          <img src="./assets/vector/flechasMenu.png" className="flechasCarta" alt="" />
-          <a href="./assets/menu/menu2.pdf" target="_blank" className="imgCarta" rel="noopener noreferrer">
+          <a href={pdf} download>{/*Menu PDF*/}
+            <img
+              src="./assets/vector/flechasMenu.png"
+              className="flechasCarta"
+              alt=""
+            />
+            {/* <a href="./assets/menu/menu2.pdf" target="_blank" className="imgCarta" rel="noopener noreferrer">
           <img src="./assets/menu/imgMenu/logoCarta.png" alt="" />
+          </a> */}
           </a>
         </div>
       </section>

@@ -1,4 +1,4 @@
-import React, { useState } from "react";
+import React from "react";
 import { Header, Texto } from "../Header/Header";
 import "./ReservasComp.css";
 import {useForm} from "react-hook-form"
@@ -10,12 +10,12 @@ const ReservasComp = () => {
 
 
   const {register, handleSubmit, watch } = useForm()
-  const [msj, setMsj] = useState("")
+  // const [msj, setMsj] = useState("")
 
   const onSubmit = (data) => {
     console.log(data);   
     const name = watch("Nombre");
-    const phone= watch("Telefono");
+    // const phone= watch("Telefono");
     const mail = watch("Mail");
     const date = watch("Fecha");
     const time = watch("Horario");

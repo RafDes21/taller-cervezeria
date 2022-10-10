@@ -9,7 +9,6 @@
   --color-background: rgba(1, 1, 1, 1);
 }
 
-
 .Menu-wrapper {
   margin: 0 auto;
   max-width: 1440px;
@@ -17,19 +16,10 @@
 
 .Menu-content-mobile {
   padding: 37px 25px;
-  background-image: url("../nosotros/fondo.png");
-  background-repeat: no-repeat;
-  background-size: cover;
-  background-attachment: fixed;
 }
 
 .Menu-content-desktop {
   display: none;
-  padding: 37px 25px;
-  background-image: url("../nosotros/fondo.png");
-  background-repeat: no-repeat;
-  background-size: cover;
-  background-attachment: fixed;
 }
 
 @media only screen and (min-width: 768px) {
@@ -45,7 +35,6 @@ h4 {
   color: white;
   font-family: "Train One", cursive;
   font-size: 1.5em;
-  /* background-color: orange; */
   text-align: center;
   padding-top: 2em;
 }
@@ -53,8 +42,6 @@ h5 {
   color: white;
   font-family: "Train One";
   font-size: 20px;
-  /* background-color: orange; */
-  /* text-align: left; */
   font-weight: 400;
   margin-top: 20px;
 }
@@ -169,31 +156,30 @@ button:hover {
   font-family: "Jost";
 }
 
-.cartaCompleta{
+.cartaCompleta {
   margin: 2em 1em 1em 1em;
   display: flex;
   flex-direction: row;
   justify-content: space-evenly;
 }
 
-.cartaCompleta span{
+.cartaCompleta span {
   align-self: center;
   color: var(--color-secondary);
   font-family: var(--font-familySecundario);
   font-size: 40px;
 }
 
-.flechasCarta{
+.flechasCarta {
   max-height: 100px;
   align-self: center;
   margin: auto;
   padding: 0 3em;
-  }
-
-.imgCarta{
-  max-width: 40%;
 }
 
+.imgCarta {
+  max-width: 40%;
+}
 
 @media only screen and (min-width: 1100px) {
   .Menu-desktop-h4 {
@@ -226,6 +212,5 @@ button:hover {
     position: absolute;
     left: 0;
     transform: translateY(0%);
-   
   }
 }

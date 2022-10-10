@@ -9,7 +9,6 @@ const Nosotros = () => {
   const h1 = "NOSOTROS";
   const h3 = "La pasión por los carros nos une";
 
-
   const menuAnimate = {
     offscreen: { filter: " drop-shadow(2px 2px 10px rgb(0, 0, 0))" },
     onscreen: {
@@ -21,16 +20,15 @@ const Nosotros = () => {
     },
   };
   return (
-    <motion.div id="nosotros"
-    
-    initial={"offscreen"}
+    <motion.div
+      id="nosotros"
+      initial={"offscreen"}
       whileInView={"onscreen"}
       viewport={{ once: false, amount: 0.4 }}
     >
       <Header img={img} />
       <Texto texto1={h1} texto2={h3} />
       <section className="nosotros-seccion">
-        {/* <img className="vector" src="./assets/vector/vectorNosMob.png" alt="vector-imagen"/> */}
         <div className="nosotros-seccion__caja1">
           <p className="text-center">
             Somos un restaurant de comida urbana, inspirado en la historia
@@ -52,12 +50,16 @@ const Nosotros = () => {
         </div>
         <div className="nosotros-seccion__caja2">
           <motion.img
-          variants={menuAnimate}
+            variants={menuAnimate}
             className="vector"
             src="./assets/vector/vectorNosMob.png"
             alt="vector-imagen"
           />
-          <img className="menu-logo" src="./assets/nosotros/logo.png" alt="imagen-logo" />
+          <img
+            className="menu-logo"
+            src="./assets/nosotros/logo.png"
+            alt="imagen-logo"
+          />
         </div>
         <div className="nosotros-seccion__caja3">
           <h3 className="text-center">Nuestra inspiración</h3>

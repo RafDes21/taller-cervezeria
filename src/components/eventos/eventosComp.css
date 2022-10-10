@@ -77,9 +77,7 @@ p {
   .Eventos-form {
     padding: 0 40px;
   }
-  /* .Eventos-detalle-wrapper {
-    padding: 0 20px;
-  } */
+ 
   .Eventos-form form label {
     font-family: "Jost";
     color: white;
@@ -319,25 +317,3 @@ input:focus {
   
 }
 
-/* .Eventos-detalle-wrapper {
-  display: flex;
-  justify-content: space-around;
-  align-items: center;
-} */
-
-/* .Eventos-detalle-wrapper img {
-  width: 60%;
-}
-.Eventos-detalle-wrapper .imagen-karaoke {
-  width: 55%;
-  transform: translateX(60%);
-
-  position: relative;
-} */
-
-/* .karaoke {
-  display: flex;
-  flex-direction: column;
-  flex-wrap: nowrap;
-  padding: 2em 0;
-} */
