@@ -79,7 +79,7 @@ const ReservasComp = () => {
               </label>
             </div>
             <div className="inputContainer">
-              <input type="date" id="fecha" className="" name="fecha" placeholder="fecha" value="dd-mm-aaaa"
+              <input type="date" id="fecha" className="" name="fecha" placeholder="fecha" value="dd/mm/aaaa"
               {...register('Fecha')} />
               <label for="fecha" class="label">
                 Fecha
