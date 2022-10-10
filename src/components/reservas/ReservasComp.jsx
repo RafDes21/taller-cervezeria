@@ -1,12 +1,16 @@
-import React from "react";
+import React, { useState } from "react";
 import { Header, Texto } from "../Header/Header";
 import "./ReservasComp.css";
 import {useForm} from "react-hook-form"
+import DatePicker from "react-datepicker";
+import "react-datepicker/dist/react-datepicker.css";
 
 const ReservasComp = () => {
   const img = "./assets/reservas/reservas.png";
   const h1 = "RESERVAS";
   const h3 = "Vive experiencias únicas";
+
+  const [startDate, setStartDate] = useState(new Date())
 
 
   const {register, handleSubmit, watch } = useForm()
@@ -79,10 +83,9 @@ const ReservasComp = () => {
               </label>
             </div>
             <div className="inputContainer">
-            <input type="text" id="fecha" className="inputDate" placeholder="dd/mm/aaaa"  onChange={(e) => console.log(e.target.value)}
-        onFocus={(e) => (e.target.type = "date")}
-        onBlur={(e) => (e.target.type = "text")} 
-              {...register('Fecha')} />
+            <DatePicker selected={startDate} onChange={(date) => setStartDate(date)} />
+            {/* <input type="date" id="fecha" className="inputDate" 
+              /> */}
               <label for="fecha" class="label">
                 Fecha
               </label>
