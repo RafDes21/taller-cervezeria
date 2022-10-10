@@ -133,6 +133,10 @@ p {
   padding: 1em;
 }
 
+.inputDate{
+  min-height: 2.5em;
+}
+
 .Eventos-form input {
   background-color: transparent;
   border: 1px solid #817f7f;

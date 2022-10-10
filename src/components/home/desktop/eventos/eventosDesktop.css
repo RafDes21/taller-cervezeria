@@ -4,6 +4,7 @@
   --color-primary: rgba(254, 254, 254, 1);
   --color-secondary: rgba(250, 208, 44, 1);
   --color-background: rgba(1, 1, 1, 1);
+  -webkit-appearance: none;
 }
 
 .eventos-Desktop {

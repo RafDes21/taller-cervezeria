@@ -68,7 +68,7 @@ const EventosComp = () => {
                 type="text"
                 id="cant"
                 name="Cantidad"
-                className=""
+                className="inputDate"
                 placeholder="Cantidad de invitados"
               />
               <label for="cant" class="label">
