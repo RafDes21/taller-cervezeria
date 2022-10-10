@@ -1,6 +1,9 @@
 @import url("https://fonts.googleapis.com/css2?family=Train+One&display=swap");
 @import url("https://fonts.googleapis.com/css2?family=Jost:wght@700&display=swap");
 
+
+
+
 .wrapper {
   max-width: 1440px;
   margin: auto;
@@ -75,7 +78,7 @@ p {
     color: #ffffff;
   }
   .Eventos-form {
-    padding: 0 40px;
+    padding: 0 35px;
   }
  
   .Eventos-form form label {
@@ -113,7 +116,7 @@ p {
     font-weight: 500;
     color: #817f7f;
     font-size: 36px;
-    padding: 5px 3px;
+    padding: 2px 3px;
   }
   .Eventos-form form label {
     font-family: "Jost";
@@ -142,7 +145,7 @@ p {
   border: 1px solid #817f7f;
   border-radius: 5px;
   width: 100%;
-  padding: 7px 8px;
+  padding: 3px 8px;
   color: #817f7f;
 }
 

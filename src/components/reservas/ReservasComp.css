@@ -13,6 +13,18 @@ input[type=number]::-webkit-outer-spin-button {
   -webkit-appearance: none; 
   margin: 0; }
 
+  input:-webkit-autofill,
+textarea:-webkit-autofill,
+select:-webkit-autofill {
+  -webkit-box-shadow: 0 0 0 1000px black inset !important;
+  -webkit-text-fill-color: white !important;
+}
+
+::-webkit-calendar-picker-indicator {
+  filter: invert(1);
+}
+
+
 .Reservas-text {
   font-size: 12px;
   font-family: "Jost";
@@ -48,14 +60,14 @@ input[type=number]::-webkit-outer-spin-button {
   text-align: center;
 }
 
+
 .inputContainer {
   position: relative;
   padding: 1em;
 }
 
-::-webkit-calendar-picker-indicator {
-  filter: invert(1);
-}
+
+
 
 .inputContainer input {
   padding: 20px 20px;
@@ -167,7 +179,7 @@ input:focus {
     font-size: 24px;
   }
   .inputContainer input {
-    color: #817f7f;
+    color: white;
   }
   .inputContainer select {
     padding: 20px 4px;

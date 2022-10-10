@@ -58,9 +58,7 @@ const EventosComp = () => {
               </label>
             </div>
             <div className="inputContainer">
-              <input type="text" id="fecha" className="inputDate" placeholder="fecha"  onChange={(e) => console.log(e.target.value)}
-        onFocus={(e) => (e.target.type = "date")}
-        onBlur={(e) => (e.target.type = "text")}  />
+              <input type="date" id="fecha" className="inputDate" />
               <label for="fecha" class="label">
                 Fecha
               </label>
