@@ -58,7 +58,7 @@ const EventosComp = () => {
               </label>
             </div>
             <div className="inputContainer">
-              <input type="date" id="fecha" className="inputDate" />
+              <input type="date" id="fecha" className="inputDate" value="2022-10-10"/>
               <label for="fecha" class="label">
                 Fecha
               </label>
