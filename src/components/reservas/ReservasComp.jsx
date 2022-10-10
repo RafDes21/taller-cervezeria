@@ -79,7 +79,9 @@ const ReservasComp = () => {
               </label>
             </div>
             <div className="inputContainer">
-              <input type="date" id="fecha" className="inputDate" name="fecha" placeholder="fecha" value="dd/mm/aaaa"
+            <input type="text" id="fecha" className="inputDate" placeholder="dd/mm/aaaa"  onChange={(e) => console.log(e.target.value)}
+        onFocus={(e) => (e.target.type = "date")}
+        onBlur={(e) => (e.target.type = "text")} 
               {...register('Fecha')} />
               <label for="fecha" class="label">
                 Fecha
