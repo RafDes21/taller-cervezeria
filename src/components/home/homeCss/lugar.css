@@ -16,6 +16,7 @@
   font-family: var(--font-family);
   position: relative;
   padding: 40px 17px;
+ 
 }
 
 .lugar .Lugar-img {
@@ -26,7 +27,7 @@
   display: none;
 }
 .Section-btn {
-  margin: 40px 0;
+  /* margin: 0px 0; */
   display: flex;
   justify-content: flex-end;
 }

@@ -41,7 +41,7 @@
 .Section-btn {
   display: flex;
   justify-content: flex-end;
-  background-color: #010101;
+  /* background-color: #010101; */
   padding: 10px 0;
 }
 .Section-button {
