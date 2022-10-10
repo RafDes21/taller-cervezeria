@@ -48,6 +48,12 @@
   padding: 1em;
 }
 
+
+.inputContainer input {
+  padding: 20px 20px;
+  color: #817f7f;
+  margin-bottom: 20px;
+}
 .Reservas-form input {
   background-color: transparent;
   border: 1px solid #817f7f;
