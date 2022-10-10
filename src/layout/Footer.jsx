@@ -21,9 +21,9 @@ const Footer = () => {
               </p>
             </div>
             <p className="footerDerechos-p">
-              +54-22152312 <br />
+                55 6887 5263 <br />
               Lunes a domingos de 9 a 23 hs
-              <br /> calle 1 nro 2345, pasaje ferreira
+              <br />Antigua Calz. de Guadalupe 99, San Marcos, Azcapotzalco, CDMX
             </p>
           </div>
           <div className="col-6 col-sm-4 footerLogo">
@@ -33,9 +33,9 @@ const Footer = () => {
               alt="logo"
             />
             <p className="footer-p">
-              +54-22152312 <br />
+              55 6887 5263 <br />
               Lunes a domingos de 9 a 23 hs
-              <br /> calle 1 nro 2345, pasaje ferreira
+              <br />Antigua Calz. de Guadalupe 99, San Marcos, Azcapotzalco, CDMXa
             </p>
             <div className="footerLogo-texto">
               <h6>Unite al equipo!</h6>

@@ -98,6 +98,10 @@ input:focus {
 .inputContainer button {
   font-size: 14px;
 }
+
+.inputDate{
+  min-height: 2.5em;
+}
 @media only screen and (min-width: 768px) {
   .Reservas-content {
     padding: 0 40px;
